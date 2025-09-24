@@ -1,0 +1,523 @@
+{% extends 'ui_layout.html' %}
+
+{% load static i18n %}
+
+{% block title %}Around UI Kit | Pagination{% endblock title %}
+
+{% block content %}
+  <section class="container pt-5 pb-4">
+    <div class="row pt-5 pb-2 pb-sm-3">
+      <div class="col-lg-9 offset-lg-3 position-relative z-5">
+        <h1 class="pt-lg-4">Pagination</h1>
+        <div class="d-flex flex-wrap flex-md-nowrap justify-content-between pb-3">
+          <p class="text-body-secondary">Indicate a series of related content exists across multiple pages.</p>
+          <p class="fs-sm fw-semibold ps-md-4">
+            <a class="text-decoration-none text-nowrap" href="https://getbootstrap.com/docs/5.3/components/pagination/"
+               target="_blank" rel="noopener">
+              Bootstrap docs
+              <i class="ai-external-link fs-lg ms-2"></i>
+            </a>
+          </p>
+        </div>
+
+
+        <!-- Basic example -->
+        <section class="card border-0 mb-4" id="pagination-basic">
+          <div class="card-body pb-0">
+            <h2 class="h4 mb-n2">Basic example</h2>
+          </div>
+          <div class="card-header">
+            <ul class="nav nav-tabs card-header-tabs flex-nowrap align-items-center mb-n1" role="tablist">
+              <li class="nav-item me-3">
+                <a class="nav-link px-0 py-2 border-0 rounded-1 active" href="#preview1" data-bs-toggle="tab" role="tab"
+                   aria-controls="preview1" aria-selected="true">
+                  <i class="ai-show fs-lg opacity-90 me-2"></i>
+                  Preview
+                </a>
+              </li>
+              <li class="vr opacity-20 my-3 me-3"></li>
+              <li class="nav-item">
+                <a class="nav-link px-0 py-2 border-0 rounded-1" href="#html1" data-bs-toggle="tab" role="tab"
+                   aria-controls="html1" aria-selected="false">
+                  <i class="ai-code fs-xl opacity-90 me-2"></i>
+                  HTML
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="card-body">
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="preview1" role="tabpanel">
+                <nav aria-label="Page navigation example">
+                  <ul class="pagination">
+                    <li class="page-item">
+                      <a class="page-link" href="#">Prev</a>
+                    </li>
+                    <li class="page-item d-sm-none">
+                      <span class="page-link pe-none">2 / 5</span>
+                    </li>
+                    <li class="page-item d-none d-sm-block">
+                      <a class="page-link" href="#">1</a>
+                    </li>
+                    <li class="page-item active d-none d-sm-block" aria-current="page">
+                      <span class="page-link">2<span class="visually-hidden">(current)</span></span>
+                    </li>
+                    <li class="page-item d-none d-sm-block">
+                      <a class="page-link" href="#">3</a>
+                    </li>
+                    <li class="page-item d-none d-sm-block">
+                      <a class="page-link" href="#">4</a>
+                    </li>
+                    <li class="page-item d-none d-sm-block">
+                      <a class="page-link" href="#">5</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">Next</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="tab-pane fade" id="html1" role="tabpanel">
+                  <pre class="line-numbers"><code class="lang-html">&lt;!-- Pagination basic example --&gt;
+&lt;nav aria-label=&quot;Page navigation example&quot;&gt;
+  &lt;ul class=&quot;pagination&quot;&gt;
+    &lt;li class=&quot;page-item&quot;&gt;
+      &lt;a href=&quot;#&quot; class=&quot;page-link&quot;&gt;Prev&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;page-item d-sm-none&quot;&gt;
+      &lt;span class=&quot;page-link pe-none&quot;&gt;2 / 5&lt;/span&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;page-item d-none d-sm-block&quot;&gt;
+      &lt;a href=&quot;#&quot; class=&quot;page-link&quot;&gt;1&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;page-item active d-none d-sm-block&quot; aria-current=&quot;page&quot;&gt;
+      &lt;span class=&quot;page-link&quot;&gt;
+        2
+        &lt;span class=&quot;visually-hidden&quot;&gt;(current)&lt;/span&gt;
+      &lt;/span&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;page-item d-none d-sm-block&quot;&gt;
+      &lt;a href=&quot;#&quot; class=&quot;page-link&quot;&gt;3&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;page-item d-none d-sm-block&quot;&gt;
+      &lt;a href=&quot;#&quot; class=&quot;page-link&quot;&gt;4&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;page-item d-none d-sm-block&quot;&gt;
+      &lt;a href=&quot;#&quot; class=&quot;page-link&quot;&gt;5&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;page-item&quot;&gt;
+      &lt;a href=&quot;#&quot; class=&quot;page-link&quot;&gt;Next&lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- With icons -->
+        <section class="card border-0 mb-4" id="pagination-icons">
+          <div class="card-body pb-0">
+            <h2 class="h4 mb-n2">With icons</h2>
+          </div>
+          <div class="card-header">
+            <ul class="nav nav-tabs card-header-tabs flex-nowrap align-items-center mb-n1" role="tablist">
+              <li class="nav-item me-3">
+                <a class="nav-link px-0 py-2 border-0 rounded-1 active" href="#preview2" data-bs-toggle="tab" role="tab"
+                   aria-controls="preview2" aria-selected="true">
+                  <i class="ai-show fs-lg opacity-90 me-2"></i>
+                  Preview
+                </a>
+              </li>
+              <li class="vr opacity-20 my-3 me-3"></li>
+              <li class="nav-item">
+                <a class="nav-link px-0 py-2 border-0 rounded-1" href="#html2" data-bs-toggle="tab" role="tab"
+                   aria-controls="html2" aria-selected="false">
+                  <i class="ai-code fs-xl opacity-90 me-2"></i>
+                  HTML
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="card-body">
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="preview2" role="tabpanel">
+                <nav class="mb-4" aria-label="Page navigation example">
+                  <ul class="pagination">
+                    <li class="page-item">
+                      <a class="page-link" href="#" aria-label="Prev page">
+                        <i class="ai-arrow-left fs-xl"></i>
+                      </a>
+                    </li>
+                    <li class="page-item d-sm-none">
+                      <span class="page-link pe-none">2 / 5</span>
+                    </li>
+                    <li class="page-item d-none d-sm-block">
+                      <a class="page-link" href="#">1</a>
+                    </li>
+                    <li class="page-item active d-none d-sm-block" aria-current="page">
+                      <span class="page-link">2<span class="visually-hidden">(current)</span></span>
+                    </li>
+                    <li class="page-item d-none d-sm-block">
+                      <a class="page-link" href="#">3</a>
+                    </li>
+                    <li class="page-item d-none d-sm-block">
+                      <a class="page-link" href="#">4</a>
+                    </li>
+                    <li class="page-item d-none d-sm-block">
+                      <a class="page-link" href="#">5</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#" aria-label="Next page">
+                        <i class="ai-arrow-right fs-xl"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+                <nav aria-label="Page navigation example">
+                  <ul class="pagination">
+                    <li class="page-item">
+                      <a class="page-link" href="#">
+                        <i class="ai-arrow-left fs-xl me-2"></i>
+                        Prev
+                      </a>
+                    </li>
+                    <li class="page-item d-sm-none">
+                      <span class="page-link pe-none">2 / 5</span>
+                    </li>
+                    <li class="page-item d-none d-sm-block">
+                      <a class="page-link" href="#">1</a>
+                    </li>
+                    <li class="page-item active d-none d-sm-block" aria-current="page">
+                      <span class="page-link">2<span class="visually-hidden">(current)</span></span>
+                    </li>
+                    <li class="page-item d-none d-sm-block">
+                      <a class="page-link" href="#">3</a>
+                    </li>
+                    <li class="page-item d-none d-sm-block">
+                      <a class="page-link" href="#">4</a>
+                    </li>
+                    <li class="page-item d-none d-sm-block">
+                      <a class="page-link" href="#">5</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">
+                        Next
+                        <i class="ai-arrow-right fs-xl ms-2"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="tab-pane fade" id="html2" role="tabpanel">
+                  <pre class="line-numbers"><code class="lang-html">&lt;!-- Pagination with prev / next icons only --&gt;
+&lt;nav aria-label=&quot;Page navigation example&quot;&gt;
+  &lt;ul class=&quot;pagination&quot;&gt;
+    &lt;li class=&quot;page-item&quot;&gt;
+      &lt;a href=&quot;#&quot; class=&quot;page-link&quot; aria-label=&quot;Prev page&quot;&gt;
+        &lt;/i class=&quot;ai-arrow-left fs-xl&quot;&gt;&lt;/i&gt;
+      &lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;page-item d-sm-none&quot;&gt;
+      &lt;span class=&quot;page-link pe-none&quot;&gt;2 / 5&lt;/span&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;page-item d-none d-sm-block&quot;&gt;
+      &lt;a href=&quot;#&quot; class=&quot;page-link&quot;&gt;1&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;page-item active d-none d-sm-block&quot; aria-current=&quot;page&quot;&gt;
+      &lt;span class=&quot;page-link&quot;&gt;
+        2
+        &lt;span class=&quot;visually-hidden&quot;&gt;(current)&lt;/span&gt;
+      &lt;/span&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;page-item d-none d-sm-block&quot;&gt;
+      &lt;a href=&quot;#&quot; class=&quot;page-link&quot;&gt;3&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;page-item d-none d-sm-block&quot;&gt;
+      &lt;a href=&quot;#&quot; class=&quot;page-link&quot;&gt;4&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;page-item d-none d-sm-block&quot;&gt;
+      &lt;a href=&quot;#&quot; class=&quot;page-link&quot;&gt;5&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;page-item&quot;&gt;
+      &lt;a href=&quot;#&quot; class=&quot;page-link&quot; aria-label=&quot;Next page&quot;&gt;
+        &lt;/i class=&quot;ai-arrow-right fs-xl&quot;&gt;&lt;/i&gt;
+      &lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+
+&lt;!-- Pagination with prev / next icons + text --&gt;
+&lt;nav aria-label=&quot;Page navigation example&quot;&gt;
+  &lt;ul class=&quot;pagination&quot;&gt;
+    &lt;li class=&quot;page-item&quot;&gt;
+      &lt;a href=&quot;#&quot; class=&quot;page-link&quot;&gt;
+        &lt;/i class=&quot;ai-arrow-left fs-xl me-2&quot;&gt;&lt;/i&gt;
+        Prev
+      &lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;page-item d-sm-none&quot;&gt;
+      &lt;span class=&quot;page-link pe-none&quot;&gt;2 / 5&lt;/span&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;page-item d-none d-sm-block&quot;&gt;
+      &lt;a href=&quot;#&quot; class=&quot;page-link&quot;&gt;1&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;page-item active d-none d-sm-block&quot; aria-current=&quot;page&quot;&gt;
+      &lt;span class=&quot;page-link&quot;&gt;
+        2
+        &lt;span class=&quot;visually-hidden&quot;&gt;(current)&lt;/span&gt;
+      &lt;/span&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;page-item d-none d-sm-block&quot;&gt;
+      &lt;a href=&quot;#&quot; class=&quot;page-link&quot;&gt;3&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;page-item d-none d-sm-block&quot;&gt;
+      &lt;a href=&quot;#&quot; class=&quot;page-link&quot;&gt;4&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;page-item d-none d-sm-block&quot;&gt;
+      &lt;a href=&quot;#&quot; class=&quot;page-link&quot;&gt;5&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;page-item&quot;&gt;
+      &lt;a href=&quot;#&quot; class=&quot;page-link&quot;&gt;
+        Next
+        &lt;/i class=&quot;ai-arrow-right fs-xl ms-2&quot;&gt;&lt;/i&gt;
+      &lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- Sizing -->
+        <section class="card border-0 mb-4" id="pagination-sizing">
+          <div class="card-body pb-0">
+            <h2 class="h4 mb-n2">Sizing</h2>
+          </div>
+          <div class="card-header">
+            <ul class="nav nav-tabs card-header-tabs flex-nowrap align-items-center mb-n1" role="tablist">
+              <li class="nav-item me-3">
+                <a class="nav-link px-0 py-2 border-0 rounded-1 active" href="#preview3" data-bs-toggle="tab" role="tab"
+                   aria-controls="preview3" aria-selected="true">
+                  <i class="ai-show fs-lg opacity-90 me-2"></i>
+                  Preview
+                </a>
+              </li>
+              <li class="vr opacity-20 my-3 me-3"></li>
+              <li class="nav-item">
+                <a class="nav-link px-0 py-2 border-0 rounded-1" href="#html3" data-bs-toggle="tab" role="tab"
+                   aria-controls="html3" aria-selected="false">
+                  <i class="ai-code fs-xl opacity-90 me-2"></i>
+                  HTML
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="card-body">
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="preview3" role="tabpanel">
+                <nav class="mb-4" aria-label="Page navigation example">
+                  <ul class="pagination pagination-lg">
+                    <li class="page-item">
+                      <a class="page-link" href="#">Prev</a>
+                    </li>
+                    <li class="page-item d-sm-none">
+                      <span class="page-link pe-none">2 / 5</span>
+                    </li>
+                    <li class="page-item d-none d-sm-block">
+                      <a class="page-link" href="#">1</a>
+                    </li>
+                    <li class="page-item active d-none d-sm-block" aria-current="page">
+                      <span class="page-link">2<span class="visually-hidden">(current)</span></span>
+                    </li>
+                    <li class="page-item d-none d-sm-block">
+                      <a class="page-link" href="#">3</a>
+                    </li>
+                    <li class="page-item d-none d-sm-block">
+                      <a class="page-link" href="#">4</a>
+                    </li>
+                    <li class="page-item d-none d-sm-block">
+                      <a class="page-link" href="#">5</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">Next</a>
+                    </li>
+                  </ul>
+                </nav>
+                <nav class="mb-4" aria-label="Page navigation example">
+                  <ul class="pagination">
+                    <li class="page-item">
+                      <a class="page-link" href="#">Prev</a>
+                    </li>
+                    <li class="page-item d-sm-none">
+                      <span class="page-link pe-none">2 / 5</span>
+                    </li>
+                    <li class="page-item d-none d-sm-block">
+                      <a class="page-link" href="#">1</a>
+                    </li>
+                    <li class="page-item active d-none d-sm-block" aria-current="page">
+                      <span class="page-link">2<span class="visually-hidden">(current)</span></span>
+                    </li>
+                    <li class="page-item d-none d-sm-block">
+                      <a class="page-link" href="#">3</a>
+                    </li>
+                    <li class="page-item d-none d-sm-block">
+                      <a class="page-link" href="#">4</a>
+                    </li>
+                    <li class="page-item d-none d-sm-block">
+                      <a class="page-link" href="#">5</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">Next</a>
+                    </li>
+                  </ul>
+                </nav>
+                <nav aria-label="Page navigation example">
+                  <ul class="pagination pagination-sm">
+                    <li class="page-item">
+                      <a class="page-link" href="#">Prev</a>
+                    </li>
+                    <li class="page-item d-sm-none">
+                      <span class="page-link pe-none">2 / 5</span>
+                    </li>
+                    <li class="page-item d-none d-sm-block">
+                      <a class="page-link" href="#">1</a>
+                    </li>
+                    <li class="page-item active d-none d-sm-block" aria-current="page">
+                      <span class="page-link">2<span class="visually-hidden">(current)</span></span>
+                    </li>
+                    <li class="page-item d-none d-sm-block">
+                      <a class="page-link" href="#">3</a>
+                    </li>
+                    <li class="page-item d-none d-sm-block">
+                      <a class="page-link" href="#">4</a>
+                    </li>
+                    <li class="page-item d-none d-sm-block">
+                      <a class="page-link" href="#">5</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">Next</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="tab-pane fade" id="html3" role="tabpanel">
+                  <pre class="line-numbers"><code class="lang-html">&lt;!-- Large size --&gt;
+&lt;nav aria-label=&quot;...&quot;&gt;
+  &lt;ul class=&quot;pagination pagination-lg&quot;&gt;
+    &lt;!-- Page links --&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+
+&lt;!-- Normal size --&gt;
+&lt;nav aria-label=&quot;...&quot;&gt;
+  &lt;ul class=&quot;pagination&quot;&gt;
+    &lt;!-- Page links --&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+
+&lt;!-- Small size --&gt;
+&lt;nav aria-label=&quot;...&quot;&gt;
+  &lt;ul class=&quot;pagination pagination-sm&quot;&gt;
+    &lt;!-- Page links --&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- Items per page selector -->
+        <section class="card border-0 mb-4" id="pagination-items">
+          <div class="card-body pb-0">
+            <h2 class="h4 mb-n2">Items per page selector</h2>
+          </div>
+          <div class="card-header">
+            <ul class="nav nav-tabs card-header-tabs flex-nowrap align-items-center mb-n1" role="tablist">
+              <li class="nav-item me-3">
+                <a class="nav-link px-0 py-2 border-0 rounded-1 active" href="#preview4" data-bs-toggle="tab" role="tab"
+                   aria-controls="preview4" aria-selected="true">
+                  <i class="ai-show fs-lg opacity-90 me-2"></i>
+                  Preview
+                </a>
+              </li>
+              <li class="vr opacity-20 my-3 me-3"></li>
+              <li class="nav-item">
+                <a class="nav-link px-0 py-2 border-0 rounded-1" href="#html4" data-bs-toggle="tab" role="tab"
+                   aria-controls="html4" aria-selected="false">
+                  <i class="ai-code fs-xl opacity-90 me-2"></i>
+                  HTML
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="card-body">
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="preview4" role="tabpanel">
+                <div class="d-flex align-items-center justify-content-between">
+                  <div class="d-flex align-items-center"><span class="text-body-secondary fs-sm">Show</span>
+                    <select class="form-select form-select-flush">
+                      <option value="6">6</option>
+                      <option value="8">8</option>
+                      <option value="12" selected>12</option>
+                      <option value="16">16</option>
+                      <option value="24">24</option>
+                    </select>
+                  </div>
+                  <nav aria-label="Page navigation">
+                    <ul class="pagination pagination-sm">
+                      <li class="page-item">
+                        <a class="page-link" href="#">1</a></li>
+                      <li class="page-item active" aria-current="page">
+                        <span class="page-link">2<span class="visually-hidden">(current)</span></span>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">3</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">4</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">5</a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="html4" role="tabpanel">
+                  <pre class="line-numbers"><code class="lang-html">&lt;!-- Pagination with items per page selector --&gt;
+&lt;div class=&quot;d-flex align-items-center justify-content-between&quot;&gt;
+  &lt;div class=&quot;d-flex align-items-center&quot;&gt;
+    &lt;span class=&quot;text-body-secondary fs-sm&quot;&gt;Show&lt;/span&gt;
+    &lt;select class=&quot;form-select form-select-flush&quot;&gt;
+      &lt;option value=&quot;6&quot;&gt;6&lt;/option&gt;
+      &lt;option value=&quot;8&quot;&gt;8&lt;/option&gt;
+      &lt;option value=&quot;12&quot; selected&gt;12&lt;/option&gt;
+      &lt;option value=&quot;16&quot;&gt;16&lt;/option&gt;
+      &lt;option value=&quot;24&quot;&gt;24&lt;/option&gt;
+    &lt;/select&gt;
+  &lt;/div&gt;
+  &lt;nav aria-label=&quot;Page navigation&quot;&gt;
+    &lt;ul class=&quot;pagination pagination-sm&quot;&gt;
+      &lt;li class=&quot;page-item&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;page-link&quot;&gt;1&lt;/a&gt;&lt;/li&gt;
+      &lt;li class=&quot;page-item active&quot; aria-current=&quot;page&quot;&gt;
+        &lt;span class=&quot;page-link&quot;&gt;2&lt;span class=&quot;visually-hidden&quot;&gt;(current)&lt;/span&gt;&lt;/span&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;page-item&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;page-link&quot;&gt;3&lt;/a&gt;&lt;/li&gt;
+      &lt;li class=&quot;page-item&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;page-link&quot;&gt;4&lt;/a&gt;&lt;/li&gt;
+      &lt;li class=&quot;page-item&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;page-link&quot;&gt;5&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/nav&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </section>
+{% endblock content %}

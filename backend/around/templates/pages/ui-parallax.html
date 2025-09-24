@@ -1,0 +1,290 @@
+{% extends 'ui_layout.html' %}
+
+{% load static i18n %}
+
+{% block title %}Around UI Kit | Parallax{% endblock title %}
+
+{% block content %}
+  <section class="container pt-5 pb-4">
+    <div class="row pt-5 pb-2 pb-sm-3">
+      <div class="col-lg-9 offset-lg-3 position-relative z-5">
+        <h1 class="pt-lg-4">Parallax</h1>
+        <div class="d-flex flex-wrap flex-md-nowrap justify-content-between pb-3">
+          <p class="text-body-secondary">Around supports 2 types of parallax effect: on page scrolling and cursor
+            position.</p>
+          <div class="ps-md-4 mb-3">
+            <span class="badge bg-warning fs-sm">Around component</span>
+          </div>
+        </div>
+
+
+        <!-- Background image -->
+        <section class="card border-0 mb-4" id="parallax-background">
+          <div class="card-body pb-0">
+            <h2 class="h4 mb-n2">Background image</h2>
+          </div>
+          <div class="card-header">
+            <ul class="nav nav-tabs card-header-tabs flex-nowrap align-items-center mb-n1" role="tablist">
+              <li class="nav-item me-3">
+                <a class="nav-link px-0 py-2 border-0 rounded-1 active" href="#preview1" data-bs-toggle="tab" role="tab"
+                   aria-controls="preview1" aria-selected="true">
+                  <i class="ai-show fs-lg opacity-90 me-2"></i>
+                  Preview
+                </a>
+              </li>
+              <li class="vr opacity-20 my-3 me-3"></li>
+              <li class="nav-item me-3">
+                <a class="nav-link px-0 py-2 border-0 rounded-1" href="#html1" data-bs-toggle="tab" role="tab"
+                   aria-controls="html1" aria-selected="false">
+                  <i class="ai-code fs-xl opacity-90 me-2"></i>
+                  HTML
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="card-body">
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="preview1" role="tabpanel">
+                <p class="d-block pb-4 mb-3 mx-auto" style="max-width: 38rem;">Sed ut perspiciatis unde omnis iste natus
+                  error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
+                  inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
+                  quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
+                  voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+                  consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore
+                  magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam
+                  corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure
+                  reprehenderit qui in ea voluptate.</p>
+                <div class="jarallax bg-dark py-5" data-jarallax data-speed="0.6"><span
+                  class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></span>
+                  <div class="jarallax-img"
+                       style="background-image: url(/static/img/landing/corporate/hero-bg.jpg);"></div>
+                  <div class="position-relative text-center z-2 px-3 py-sm-5 my-lg-5">
+                    <h2 class="h1 text-white my-5">Parallax scroll effect</h2>
+                  </div>
+                </div>
+                <p class="d-block py-4 my-3 mx-auto" style="max-width: 38rem;">Sed ut perspiciatis unde omnis iste natus
+                  error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
+                  inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
+                  quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
+                  voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+                  consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore
+                  magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam
+                  corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure
+                  reprehenderit qui in ea voluptate.</p>
+                <div class="jarallax bg-dark py-5" data-jarallax data-type="scale" data-speed="0.5"><span
+                  class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></span>
+                  <div class="jarallax-img"
+                       style="background-image: url(/static/img/landing/yoga-studio/hero/01.jpg);"></div>
+                  <div class="position-relative text-center z-2 px-3 py-sm-5 my-lg-5">
+                    <h2 class="h1 text-white my-5">Parallax scale effect</h2>
+                  </div>
+                </div>
+                <p class="d-block py-4 my-3 mx-auto" style="max-width: 38rem;">Sed ut perspiciatis unde omnis iste natus
+                  error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
+                  inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
+                  quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
+                  voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+                  consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore
+                  magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam
+                  corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure
+                  reprehenderit qui in ea voluptate.</p>
+                <div class="jarallax bg-dark py-5" data-jarallax data-type="opacity" data-speed="0.5"><span
+                  class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></span>
+                  <div class="jarallax-img"
+                       style="background-image: url(/static/img/landing/shop-1/hero/bg.jpg);"></div>
+                  <div class="position-relative text-center z-2 px-3 py-sm-5 my-lg-5">
+                    <h2 class="h1 text-white my-5">Parallax opacity effect</h2>
+                  </div>
+                </div>
+                <p class="d-block py-4 my-3 mx-auto" style="max-width: 38rem;">Sed ut perspiciatis unde omnis iste natus
+                  error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
+                  inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
+                  quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
+                  voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+                  consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore
+                  magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam
+                  corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure
+                  reprehenderit qui in ea voluptate.</p>
+                <div class="jarallax bg-dark py-5" data-jarallax data-type="scroll-opacity" data-speed="0.6"><span
+                  class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></span>
+                  <div class="jarallax-img"
+                       style="background-image: url(/static/img/landing/coworking-space/parallax-image.jpg);"></div>
+                  <div class="position-relative text-center z-2 px-3 py-sm-5 my-lg-5">
+                    <h2 class="h1 text-white my-5">Parallax scroll-opacity effect</h2>
+                  </div>
+                </div>
+                <p class="d-block py-4 my-3 mx-auto" style="max-width: 38rem;">Sed ut perspiciatis unde omnis iste natus
+                  error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
+                  inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
+                  quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
+                  voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+                  consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore
+                  magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam
+                  corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure
+                  reprehenderit qui in ea voluptate.</p>
+                <div class="jarallax bg-dark py-5" data-jarallax data-type="scale-opacity" data-speed="0.5"><span
+                  class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></span>
+                  <div class="jarallax-img"
+                       style="background-image: url(/static/img/about/agency/parallax-image.jpg);"></div>
+                  <div class="position-relative text-center z-2 px-3 py-sm-5 my-lg-5">
+                    <h2 class="h1 text-white my-5">Parallax scale-opacity effect</h2>
+                  </div>
+                </div>
+                <p class="d-block pt-4 mt-3 mb-1 mx-auto" style="max-width: 38rem;">Sed ut perspiciatis unde omnis iste
+                  natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
+                  illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
+                  voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos
+                  qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit
+                  amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore
+                  magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam
+                  corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure
+                  reprehenderit qui in ea voluptate.</p>
+              </div>
+              <div class="tab-pane fade" id="html1" role="tabpanel">
+                  <pre class="line-numbers"><code class="lang-html">&lt;!-- Parallax scroll effect --&gt;
+&lt;div class=&quot;jarallax bg-dark py-5&quot; data-jarallax data-speed=&quot;0.6&quot;&gt;
+  &lt;span class=&quot;position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50&quot;&gt;&lt;/span&gt;
+  &lt;div class=&quot;jarallax-img&quot; style=&quot;background-image: url(/static/img/landing/corporate/hero-bg.jpg);&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;position-relative text-center z-2 px-3 py-sm-5 my-lg-5&quot;&gt;
+    &lt;h2 class=&quot;h1 text-white my-5&quot;&gt;Parallax scroll effect&lt;/h2&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Parallax scale effect --&gt;
+&lt;div class=&quot;jarallax bg-dark py-5&quot; data-jarallax  data-type=&quot;scale&quot; data-speed=&quot;0.5&quot;&gt;
+  &lt;span class=&quot;position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50&quot;&gt;&lt;/span&gt;
+  &lt;div class=&quot;jarallax-img&quot; style=&quot;background-image: url(/static/img/landing/yoga-studio/hero/01.jpg);&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;position-relative text-center z-2 px-3 py-sm-5 my-lg-5&quot;&gt;
+    &lt;h2 class=&quot;h1 text-white my-5&quot;&gt;Parallax scale effect&lt;/h2&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Parallax opacity effect --&gt;
+&lt;div class=&quot;jarallax bg-dark py-5&quot; data-jarallax  data-type=&quot;opacity&quot; data-speed=&quot;0.5&quot;&gt;
+  &lt;span class=&quot;position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50&quot;&gt;&lt;/span&gt;
+  &lt;div class=&quot;jarallax-img&quot; style=&quot;background-image: url(/static/img/landing/shop/hero/bg.jpg);&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;position-relative text-center z-2 px-3 py-sm-5 my-lg-5&quot;&gt;
+    &lt;h2 class=&quot;h1 text-white my-5&quot;&gt;Parallax opacity effect&lt;/h2&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Parallax scroll-opacity effect --&gt;
+&lt;div class=&quot;jarallax bg-dark py-5&quot; data-jarallax  data-type=&quot;scroll-opacity&quot; data-speed=&quot;0.6&quot;&gt;
+  &lt;span class=&quot;position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50&quot;&gt;&lt;/span&gt;
+  &lt;div class=&quot;jarallax-img&quot; style=&quot;background-image: url(/static/img/landing/coworking-space/parallax-image.jpg);&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;position-relative text-center z-2 px-3 py-sm-5 my-lg-5&quot;&gt;
+    &lt;h2 class=&quot;h1 text-white my-5&quot;&gt;Parallax scroll-opacity effect&lt;/h2&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Parallax scale-opacity effect --&gt;
+&lt;div class=&quot;jarallax bg-dark py-5&quot; data-jarallax  data-type=&quot;scale-opacity&quot; data-speed=&quot;0.5&quot;&gt;
+  &lt;span class=&quot;position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50&quot;&gt;&lt;/span&gt;
+  &lt;div class=&quot;jarallax-img&quot; style=&quot;background-image: url(/static/img/about/agency/parallax-image.jpg);&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;position-relative text-center z-2 px-3 py-sm-5 my-lg-5&quot;&gt;
+    &lt;h2 class=&quot;h1 text-white my-5&quot;&gt;Parallax scale-opacity effect&lt;/h2&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- Cursor position parallax -->
+        <section class="card border-0 mb-4" id="parallax-cursor">
+          <div class="card-body pb-0">
+            <h2 class="h4 mb-n2">Cursor position parallax</h2>
+          </div>
+          <div class="card-header">
+            <ul class="nav nav-tabs card-header-tabs flex-nowrap align-items-center mb-n1" role="tablist">
+              <li class="nav-item me-3">
+                <a class="nav-link px-0 py-2 border-0 rounded-1 active" href="#preview2" data-bs-toggle="tab" role="tab"
+                   aria-controls="preview2" aria-selected="true">
+                  <i class="ai-show fs-lg opacity-90 me-2"></i>
+                  Preview
+                </a>
+              </li>
+              <li class="vr opacity-20 my-3 me-3"></li>
+              <li class="nav-item me-3">
+                <a class="nav-link px-0 py-2 border-0 rounded-1" href="#html2" data-bs-toggle="tab" role="tab"
+                   aria-controls="html2" aria-selected="false">
+                  <i class="ai-code fs-xl opacity-90 me-2"></i>
+                  HTML
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="card-body">
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="preview2" role="tabpanel">
+                <div class="parallax">
+                  <div class="parallax-layer" data-depth="-0.05">
+                    <img class="d-dark-mode-none" src="{% static '/img/about/product/hero/01-light.png' %}" alt="Layer">
+                    <img class="d-none d-dark-mode-block" src="{% static '/img/about/product/hero/01-dark.png' %}"
+                         alt="Layer">
+                  </div>
+                  <div class="parallax-layer" data-depth="0.1">
+                    <img class="d-dark-mode-none" src="{% static '/img/about/product/hero/02-light.png' %}" alt="Layer">
+                    <img class="d-none d-dark-mode-block" src="{% static '/img/about/product/hero/02-dark.png' %}"
+                         alt="Layer">
+                  </div>
+                  <div class="parallax-layer z-2" data-depth="0.2">
+                    <img class="d-dark-mode-none" src="{% static '/img/about/product/hero/03-light.png' %}" alt="Layer">
+                    <img class="d-none d-dark-mode-block" src="{% static '/img/about/product/hero/03-dark.png' %}"
+                         alt="Layer">
+                  </div>
+                  <div class="parallax-layer" data-depth="-0.2">
+                    <img class="d-dark-mode-none" src="{% static '/img/about/product/hero/04-light.png' %}" alt="Layer">
+                    <img class="d-none d-dark-mode-block" src="{% static '/img/about/product/hero/04-dark.png' %}"
+                         alt="Layer">
+                  </div>
+                  <div class="parallax-layer" data-depth="-0.25">
+                    <img class="d-dark-mode-none" src="{% static '/img/about/product/hero/05-light.png' %}" alt="Layer">
+                    <img class="d-none d-dark-mode-block" src="{% static '/img/about/product/hero/05-dark.png' %}"
+                         alt="Layer">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="html2" role="tabpanel">
+                  <pre class="line-numbers"><code class="lang-html">&lt;!-- Cursor position parallax --&gt;
+&lt;div class=&quot;parallax&quot;&gt;
+
+  &lt;!-- Layer --&gt;
+  &lt;div class=&quot;parallax-layer&quot; data-depth=&quot;-0.05&quot;&gt;
+    &lt;img src=&quot;/img/about/product/hero/01-light.png&quot; class=&quot;d-dark-mode-none&quot; alt=&quot;Layer&quot;&gt;
+    &lt;img src=&quot;/img/about/product/hero/01-dark.png&quot; class=&quot;d-none d-dark-mode-block&quot; alt=&quot;Layer&quot;&gt;
+  &lt;/div&gt;
+
+  &lt;!-- Layer --&gt;
+  &lt;div class=&quot;parallax-layer&quot; data-depth=&quot;0.1&quot;&gt;
+    &lt;img src=&quot;/img/about/product/hero/02-light.png&quot; class=&quot;d-dark-mode-none&quot; alt=&quot;Layer&quot;&gt;
+    &lt;img src=&quot;/img/about/product/hero/02-dark.png&quot; class=&quot;d-none d-dark-mode-block&quot; alt=&quot;Layer&quot;&gt;
+  &lt;/div&gt;
+
+  &lt;!-- Layer --&gt;
+  &lt;div class=&quot;parallax-layer z-2&quot; data-depth=&quot;0.2&quot;&gt;
+    &lt;img src=&quot;/img/about/product/hero/03-light.png&quot; class=&quot;d-dark-mode-none&quot; alt=&quot;Layer&quot;&gt;
+    &lt;img src=&quot;/img/about/product/hero/03-dark.png&quot; class=&quot;d-none d-dark-mode-block&quot; alt=&quot;Layer&quot;&gt;
+  &lt;/div&gt;
+
+  &lt;!-- Layer --&gt;
+  &lt;div class=&quot;parallax-layer&quot; data-depth=&quot;-0.2&quot;&gt;
+    &lt;img src=&quot;/img/about/product/hero/04-light.png&quot; class=&quot;d-dark-mode-none&quot; alt=&quot;Layer&quot;&gt;
+    &lt;img src=&quot;/img/about/product/hero/04-dark.png&quot; class=&quot;d-none d-dark-mode-block&quot; alt=&quot;Layer&quot;&gt;
+  &lt;/div&gt;
+
+  &lt;!-- Layer --&gt;
+  &lt;div class=&quot;parallax-layer&quot; data-depth=&quot;-0.25&quot;&gt;
+    &lt;img src=&quot;/img/about/product/hero/05-light.png&quot; class=&quot;d-dark-mode-none&quot; alt=&quot;Layer&quot;&gt;
+    &lt;img src=&quot;/img/about/product/hero/05-dark.png&quot; class=&quot;d-none d-dark-mode-block&quot; alt=&quot;Layer&quot;&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </section>
+{% endblock content %}

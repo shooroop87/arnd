@@ -1,0 +1,817 @@
+{% extends 'ui_layout.html' %}
+
+{% load static i18n %}
+
+{% block title %}Around UI Kit | Charts{% endblock title %}
+
+{% block content %}
+  <section class="container pt-5 pb-4">
+    <div class="row pt-5 pb-2 pb-sm-3">
+      <div class="col-lg-9 offset-lg-3 position-relative z-5">
+        <h1 class="pt-lg-4">Charts</h1>
+        <div class="d-flex flex-wrap flex-md-nowrap justify-content-between pb-3">
+          <p class="text-body-secondary">Customizable responsive charts, including: Line, Bar, Pie charts and more.</p>
+          <div class="ps-md-4 mb-3">
+            <span class="badge bg-warning fs-sm">Around component</span>
+          </div>
+        </div>
+
+        <!-- Info alert -->
+        <div class="alert alert-info d-flex mb-4" role="alert">
+          <i class="ai-circle-info lead me-2 me-sm-3"></i>
+          <p class="text-break mb-1">This component is powered by <span class="fw-semibold">Chart.js plugin</span>.</p>
+        </div>
+
+        <div class="mb-4 pb-2">
+          <h6 class="fs-sm mb-2">Data attributes API</h6>
+          <p class="fs-sm mb-1">Around added extra layer of data attribute to access the core features of the plugin
+            right in HTML document.</p>
+          <code>data-chart</code><span class="fs-sm"> - to pass in data in JSON format to be displayed in line, bar, pie or other type of chart.</span>
+          <p class="fs-sm pt-2">Check the code examples below.</p>
+          <h6 class="pt-1 fs-sm mb-2">For more features / options visit plugin documentation website:</h6>
+          <a class="fs-sm" href="https://www.chartjs.org/docs/latest/" target="_blank" rel="noopener">https://www.chartjs.org/docs/latest/</a>
+        </div>
+
+
+        <!-- Line chart -->
+        <section class="card border-0 mb-4" id="chart-line">
+          <div class="card-body pb-0">
+            <h2 class="h4 mb-n2">Line chart</h2>
+          </div>
+          <div class="card-header">
+            <ul class="nav nav-tabs card-header-tabs flex-nowrap align-items-center mb-n1" role="tablist">
+              <li class="nav-item me-3">
+                <a class="nav-link px-0 py-2 border-0 rounded-1 active" href="#preview1" data-bs-toggle="tab" role="tab"
+                   aria-controls="preview1" aria-selected="true">
+                  <i class="ai-show fs-lg opacity-90 me-2"></i>
+                  Preview
+                </a>
+              </li>
+              <li class="vr opacity-20 my-3 me-3"></li>
+              <li class="nav-item">
+                <a class="nav-link px-0 py-2 border-0 rounded-1" href="#html1" data-bs-toggle="tab" role="tab"
+                   aria-controls="html1" aria-selected="false">
+                  <i class="ai-code fs-xl opacity-90 me-2"></i>
+                  HTML
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="card-body">
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="preview1" role="tabpanel">
+                <div style="max-width: 35rem;">
+                  <canvas data-chart='{
+                      "type": "line",
+                      "data": {
+                        "labels": ["W1", "W2", "W3", "W4", "W5", "W6", "W7", "W8", "W9"],
+                        "datasets": [
+                          {
+                            "label": "Dataset 1",
+                            "data": [12, 9, 7, 8, 6, 4, 3, 2, 0],
+                            "backgroundColor": "rgba(68,140,116,.35)",
+                            "borderWidth": 2,
+                            "borderColor": "#448c74",
+                            "pointBackgroundColor": "#448c74",
+                            "pointBorderWidth": 8,
+                            "pointBorderColor": "rgba(68,140,116,.35)",
+                            "pointHoverBorderColor": "#448c74",
+                            "pointHoverBorderWidth": 6
+                          },
+                          {
+                            "label": "Dataset 2",
+                            "data": [2, 1, 3, 7, 9, 6, 7.7, 4, 7],
+                            "backgroundColor": "rgba(237,203,80,.35)",
+                            "borderWidth": 2,
+                            "borderColor": "#edcb50",
+                            "pointBackgroundColor": "#edcb50",
+                            "pointBorderWidth": 8,
+                            "pointBorderColor": "rgba(237,203,80,.35)",
+                            "pointHoverBorderColor": "#edcb50",
+                            "pointHoverBorderWidth": 6
+                          },
+                          {
+                            "label": "Dataset 2",
+                            "data": [1, 3, 4, 5, 6, 8, 9, 10, 11],
+                            "backgroundColor": "rgba(237,80,80,.35)",
+                            "borderWidth": 2,
+                            "borderColor": "#ed5050",
+                            "pointBackgroundColor": "#ed5050",
+                            "pointBorderWidth": 8,
+                            "pointBorderColor": "rgba(237,80,80,.35)",
+                            "pointHoverBorderColor": "#ed5050",
+                            "pointHoverBorderWidth": 6
+                          }
+                        ]
+                      },
+                      "options": {
+                        "scales": {
+                          "y": {
+                            "beginAtZero": true,
+                            "border": {
+                              "color": "rgba(133,140,151,.18)"
+                            },
+                            "grid": {
+                              "color": "rgba(133,140,151,.18)"
+                            }
+                          },
+                          "x": {
+                            "border": {
+                              "color": "rgba(133,140,151,.18)"
+                            },
+                            "grid": {
+                              "color": "rgba(133,140,151,.18)"
+                            }
+                          }
+                        }
+                      }
+                    }'></canvas>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="html1" role="tabpanel">
+                  <pre class="line-numbers"><code class="lang-html">&lt;!-- Line chart: Multiple lines of different color + Legend --&gt;
+&lt;canvas data-chart='{
+  &quot;type&quot;: &quot;line&quot;,
+  &quot;data&quot;: {
+    &quot;labels&quot;: [&quot;W1&quot;, &quot;W2&quot;, &quot;W3&quot;, &quot;W4&quot;, &quot;W5&quot;, &quot;W6&quot;, &quot;W7&quot;, &quot;W8&quot;, &quot;W9&quot;],
+    &quot;datasets&quot;: [
+      {
+        &quot;label&quot;: &quot;Dataset 1&quot;,
+        &quot;data&quot;: [12, 9, 7, 8, 6, 4, 3, 2, 0],
+        &quot;backgroundColor&quot;: &quot;rgba(68,140,116,.35)&quot;,
+        &quot;borderWidth&quot;: 2,
+        &quot;borderColor&quot;: &quot;#448c74&quot;,
+        &quot;pointBackgroundColor&quot;: &quot;#448c74&quot;,
+        &quot;pointBorderWidth&quot;: 8,
+        &quot;pointBorderColor&quot;: &quot;rgba(68,140,116,.35)&quot;,
+        &quot;pointHoverBorderColor&quot;: &quot;#448c74&quot;,
+        &quot;pointHoverBorderWidth&quot;: 6
+      },
+      {
+        &quot;label&quot;: &quot;Dataset 2&quot;,
+        &quot;data&quot;: [2, 1, 3, 7, 9, 6, 7.7, 4, 7],
+        &quot;backgroundColor&quot;: &quot;rgba(237,203,80,.35)&quot;,
+        &quot;borderWidth&quot;: 2,
+        &quot;borderColor&quot;: &quot;#edcb50&quot;,
+        &quot;pointBackgroundColor&quot;: &quot;#edcb50&quot;,
+        &quot;pointBorderWidth&quot;: 8,
+        &quot;pointBorderColor&quot;: &quot;rgba(237,203,80,.35)&quot;,
+        &quot;pointHoverBorderColor&quot;: &quot;#edcb50&quot;,
+        &quot;pointHoverBorderWidth&quot;: 6
+      },
+      {
+        &quot;label&quot;: &quot;Dataset 2&quot;,
+        &quot;data&quot;: [1, 3, 4, 5, 6, 8, 9, 10, 11],
+        &quot;backgroundColor&quot;: &quot;rgba(237,80,80,.35)&quot;,
+        &quot;borderWidth&quot;: 2,
+        &quot;borderColor&quot;: &quot;#ed5050&quot;,
+        &quot;pointBackgroundColor&quot;: &quot;#ed5050&quot;,
+        &quot;pointBorderWidth&quot;: 8,
+        &quot;pointBorderColor&quot;: &quot;rgba(237,80,80,.35)&quot;,
+        &quot;pointHoverBorderColor&quot;: &quot;#ed5050&quot;,
+        &quot;pointHoverBorderWidth&quot;: 6
+      }
+    ]
+  },
+  &quot;options&quot;: {
+    &quot;scales&quot;: {
+      &quot;y&quot;: {
+        &quot;beginAtZero&quot;: true,
+        &quot;border&quot;: {
+          &quot;color&quot;: &quot;rgba(133,140,151,.18)&quot;
+        },
+        &quot;grid&quot;: {
+          &quot;color&quot;: &quot;rgba(133,140,151,.18)&quot;
+        }
+      },
+      &quot;x&quot;: {
+        &quot;border&quot;: {
+          &quot;color&quot;: &quot;rgba(133,140,151,.18)&quot;
+        },
+        &quot;grid&quot;: {
+          &quot;color&quot;: &quot;rgba(133,140,151,.18)&quot;
+        }
+      }
+    }
+  }
+}'&gt;&lt;/canvas&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- Bar chart -->
+        <section class="card border-0 mb-4" id="chart-bar">
+          <div class="card-body pb-0">
+            <h2 class="h4 mb-n2">Bar chart</h2>
+          </div>
+          <div class="card-header">
+            <ul class="nav nav-tabs card-header-tabs flex-nowrap align-items-center mb-n1" role="tablist">
+              <li class="nav-item me-3">
+                <a class="nav-link px-0 py-2 border-0 rounded-1 active" href="#preview2" data-bs-toggle="tab" role="tab"
+                   aria-controls="preview2" aria-selected="true">
+                  <i class="ai-show fs-lg opacity-90 me-2"></i>
+                  Preview
+                </a>
+              </li>
+              <li class="vr opacity-20 my-3 me-3"></li>
+              <li class="nav-item">
+                <a class="nav-link px-0 py-2 border-0 rounded-1" href="#html2" data-bs-toggle="tab" role="tab"
+                   aria-controls="html2" aria-selected="false">
+                  <i class="ai-code fs-xl opacity-90 me-2"></i>
+                  HTML
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="card-body">
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="preview2" role="tabpanel">
+                <div style="max-width: 35rem;">
+                  <canvas data-chart='{
+                      "type": "bar",
+                      "data": {
+                        "labels": ["2018", "2019", "2020", "2021", "2022", "2023"],
+                        "datasets": [
+                          {
+                            "label": "Dataset 1",
+                            "data": [12000, 9000, 7000, 8000, 11000, 6000],
+                            "borderWidth": 2,
+                            "borderColor": "#448c74",
+                            "backgroundColor": "rgba(68,140,116,.35)",
+                            "hoverBackgroundColor": "rgba(68,140,116,.75)"
+                          },
+                          {
+                            "label": "Dataset 2",
+                            "data": [3500, 5000, 8750, 1300, 3000, 8750],
+                            "borderWidth": 2,
+                            "borderColor": "#edcb50",
+                            "backgroundColor": "rgba(237,203,80,.35)",
+                            "hoverBackgroundColor": "rgba(237,203,80,.75)"
+                          }
+                        ]
+                      },
+                      "options": {
+                        "scales": {
+                          "y": {
+                            "beginAtZero": true,
+                            "border": {
+                              "color": "rgba(133,140,151,.18)"
+                            },
+                            "grid": {
+                              "color": "rgba(133,140,151,.18)"
+                            }
+                          },
+                          "x": {
+                            "border": {
+                              "color": "rgba(133,140,151,.18)"
+                            },
+                            "grid": {
+                              "color": "rgba(133,140,151,.18)"
+                            }
+                          }
+                        }
+                      }
+                    }'></canvas>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="html2" role="tabpanel">
+                  <pre class="line-numbers"><code class="lang-html">&lt;!-- Bar chart: Multiple bars of different color + Legend --&gt;
+&lt;canva data-chart='{
+  &quot;type&quot;: &quot;bar&quot;,
+  &quot;data&quot;: {
+    &quot;labels&quot;: [&quot;2018&quot;, &quot;2019&quot;, &quot;2020&quot;, &quot;2021&quot;, &quot;2022&quot;, &quot;2023&quot;],
+    &quot;datasets&quot;: [
+      {
+        &quot;label&quot;: &quot;Dataset 1&quot;,
+        &quot;data&quot;: [12000, 9000, 7000, 8000, 11000, 6000],
+        &quot;borderWidth&quot;: 2,
+        &quot;borderColor&quot;: &quot;#448c74&quot;,
+        &quot;backgroundColor&quot;: &quot;rgba(68,140,116,.35)&quot;,
+        &quot;hoverBackgroundColor&quot;: &quot;rgba(68,140,116,.75)&quot;
+      },
+      {
+        &quot;label&quot;: &quot;Dataset 2&quot;,
+        &quot;data&quot;: [3500, 5000, 8750, 1300, 3000, 8750],
+        &quot;borderWidth&quot;: 2,
+        &quot;borderColor&quot;: &quot;#edcb50&quot;,
+        &quot;backgroundColor&quot;: &quot;rgba(237,203,80,.35)&quot;,
+        &quot;hoverBackgroundColor&quot;: &quot;rgba(237,203,80,.75)&quot;
+      }
+    ]
+  },
+  &quot;options&quot;: {
+    &quot;scales&quot;: {
+      &quot;y&quot;: {
+        &quot;beginAtZero&quot;: true,
+        &quot;border&quot;: {
+          &quot;color&quot;: &quot;rgba(133,140,151,.18)&quot;
+        },
+        &quot;grid&quot;: {
+          &quot;color&quot;: &quot;rgba(133,140,151,.18)&quot;
+        }
+      },
+      &quot;x&quot;: {
+        &quot;border&quot;: {
+          &quot;color&quot;: &quot;rgba(133,140,151,.18)&quot;
+        },
+        &quot;grid&quot;: {
+          &quot;color&quot;: &quot;rgba(133,140,151,.18)&quot;
+        }
+      }
+    }
+  }
+}'&gt;&lt;/canvas&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- Pie chart -->
+        <section class="card border-0 mb-4" id="chart-pie">
+          <div class="card-body pb-0">
+            <h2 class="h4 mb-n2">Pie chart</h2>
+          </div>
+          <div class="card-header">
+            <ul class="nav nav-tabs card-header-tabs flex-nowrap align-items-center mb-n1" role="tablist">
+              <li class="nav-item me-3">
+                <a class="nav-link px-0 py-2 border-0 rounded-1 active" href="#preview3" data-bs-toggle="tab" role="tab"
+                   aria-controls="preview3" aria-selected="true">
+                  <i class="ai-show fs-lg opacity-90 me-2"></i>
+                  Preview
+                </a>
+              </li>
+              <li class="vr opacity-20 my-3 me-3"></li>
+              <li class="nav-item">
+                <a class="nav-link px-0 py-2 border-0 rounded-1" href="#html3" data-bs-toggle="tab" role="tab"
+                   aria-controls="html3" aria-selected="false">
+                  <i class="ai-code fs-xl opacity-90 me-2"></i>
+                  HTML
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="card-body">
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="preview3" role="tabpanel">
+                <div style="max-width: 32rem;">
+                  <canvas data-chart='{
+                      "type": "pie",
+                      "data": {
+                        "labels": ["Dataset 1", "Dataset 2", "Dataset 3"],
+                        "datasets": [
+                          {
+                            "label": "Value, %",
+                            "data": [42, 25, 33],
+                            "borderWidth": 0,
+                            "backgroundColor": [
+                              "#448c74",
+                              "#ed5050",
+                              "#edcb50"
+                            ],
+                            "hoverBackgroundColor": [
+                              "#448c74",
+                              "#ed5050",
+                              "#edcb50"
+                            ]
+                          }
+                        ]
+                      },
+                      "options": {
+                        "plugins": {
+                          "legend": {
+                            "position": "right",
+                            "labels": {
+                              "usePointStyle": true,
+                              "boxWidth": 12,
+                              "boxHeight": 12,
+                              "useBorderRadius": true,
+                              "borderRadius": 8,
+                              "padding": 20,
+                              "font": {
+                                "size": 15
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }'></canvas>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="html3" role="tabpanel">
+                  <pre class="line-numbers"><code class="lang-html">&lt;!-- Pie chart: Multiple slices of different color + Legend --&gt;
+&lt;canvas data-chart='{
+  &quot;type&quot;: &quot;pie&quot;,
+  &quot;data&quot;: {
+    &quot;labels&quot;: [&quot;Dataset 1&quot;, &quot;Dataset 2&quot;, &quot;Dataset 3&quot;],
+    &quot;datasets&quot;: [
+      {
+        &quot;label&quot;: &quot;Value, %&quot;,
+        &quot;data&quot;: [42, 25, 33],
+        &quot;borderWidth&quot;: 0,
+        &quot;backgroundColor&quot;: [
+          &quot;#448c74&quot;,
+          &quot;#ed5050&quot;,
+          &quot;#edcb50&quot;
+        ],
+        &quot;hoverBackgroundColor&quot;: [
+          &quot;#448c74&quot;,
+          &quot;#ed5050&quot;,
+          &quot;#edcb50&quot;
+        ]
+      }
+    ]
+  },
+  &quot;options&quot;: {
+    &quot;plugins&quot;: {
+      &quot;legend&quot;: {
+        &quot;position&quot;: &quot;right&quot;,
+        &quot;labels&quot;: {
+          &quot;usePointStyle&quot;: true,
+          &quot;boxWidth&quot;: 12,
+          &quot;boxHeight&quot;: 12,
+          &quot;useBorderRadius&quot;: true,
+          &quot;borderRadius&quot;: 8,
+          &quot;padding&quot;: 20,
+          &quot;font&quot;: {
+            &quot;size&quot;: 15
+          }
+        }
+      }
+    }
+  }
+}'&gt;&lt;/canvas&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- Doughnut chart -->
+        <section class="card border-0 mb-4" id="chart-doughnut">
+          <div class="card-body pb-0">
+            <h2 class="h4 mb-n2">Doughnut chart</h2>
+          </div>
+          <div class="card-header">
+            <ul class="nav nav-tabs card-header-tabs flex-nowrap align-items-center mb-n1" role="tablist">
+              <li class="nav-item me-3">
+                <a class="nav-link px-0 py-2 border-0 rounded-1 active" href="#preview4" data-bs-toggle="tab" role="tab"
+                   aria-controls="preview4" aria-selected="true">
+                  <i class="ai-show fs-lg opacity-90 me-2"></i>
+                  Preview
+                </a>
+              </li>
+              <li class="vr opacity-20 my-3 me-3"></li>
+              <li class="nav-item">
+                <a class="nav-link px-0 py-2 border-0 rounded-1" href="#html4" data-bs-toggle="tab" role="tab"
+                   aria-controls="html4" aria-selected="false">
+                  <i class="ai-code fs-xl opacity-90 me-2"></i>
+                  HTML
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="card-body">
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="preview4" role="tabpanel">
+                <div style="max-width: 32rem;">
+                  <canvas data-chart='{
+                      "type": "doughnut",
+                      "data": {
+                        "labels": ["Dataset 1", "Dataset 2", "Dataset 3"],
+                        "datasets": [
+                          {
+                            "label": "Value, %",
+                            "data": [42, 25, 33],
+                            "borderWidth": 0,
+                            "backgroundColor": [
+                              "#448c74",
+                              "#ed5050",
+                              "#edcb50"
+                            ],
+                            "hoverBackgroundColor": [
+                              "#448c74",
+                              "#ed5050",
+                              "#edcb50"
+                            ]
+                          }
+                        ]
+                      },
+                      "options": {
+                        "plugins": {
+                          "legend": {
+                            "position": "right",
+                            "labels": {
+                              "usePointStyle": true,
+                              "boxWidth": 12,
+                              "boxHeight": 12,
+                              "useBorderRadius": true,
+                              "borderRadius": 8,
+                              "padding": 20,
+                              "font": {
+                                "size": 15
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }'></canvas>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="html4" role="tabpanel">
+                  <pre class="line-numbers"><code class="lang-html">&lt;!-- Doughnut chart: Multiple slices of different color + Legend --&gt;
+&lt;canvas data-chart='{
+  &quot;type&quot;: &quot;doughnut&quot;,
+  &quot;data&quot;: {
+    &quot;labels&quot;: [&quot;Dataset 1&quot;, &quot;Dataset 2&quot;, &quot;Dataset 3&quot;],
+    &quot;datasets&quot;: [
+      {
+        &quot;label&quot;: &quot;Value, %&quot;,
+        &quot;data&quot;: [42, 25, 33],
+        &quot;borderWidth&quot;: 0,
+        &quot;backgroundColor&quot;: [
+          &quot;#448c74&quot;,
+          &quot;#ed5050&quot;,
+          &quot;#edcb50&quot;
+        ],
+        &quot;hoverBackgroundColor&quot;: [
+          &quot;#448c74&quot;,
+          &quot;#ed5050&quot;,
+          &quot;#edcb50&quot;
+        ]
+      }
+    ]
+  },
+  &quot;options&quot;: {
+    &quot;plugins&quot;: {
+      &quot;legend&quot;: {
+        &quot;position&quot;: &quot;right&quot;,
+        &quot;labels&quot;: {
+          &quot;usePointStyle&quot;: true,
+          &quot;boxWidth&quot;: 12,
+          &quot;boxHeight&quot;: 12,
+          &quot;useBorderRadius&quot;: true,
+          &quot;borderRadius&quot;: 8,
+          &quot;padding&quot;: 20,
+          &quot;font&quot;: {
+            &quot;size&quot;: 15
+          }
+        }
+      }
+    }
+  }
+}'&gt;&lt;/canvas&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- Polar area chart -->
+        <section class="card border-0 mb-4" id="chart-polar">
+          <div class="card-body pb-0">
+            <h2 class="h4 mb-n2">Polar area chart</h2>
+          </div>
+          <div class="card-header">
+            <ul class="nav nav-tabs card-header-tabs flex-nowrap align-items-center mb-n1" role="tablist">
+              <li class="nav-item me-3">
+                <a class="nav-link px-0 py-2 border-0 rounded-1 active" href="#preview5" data-bs-toggle="tab" role="tab"
+                   aria-controls="preview5" aria-selected="true">
+                  <i class="ai-show fs-lg opacity-90 me-2"></i>
+                  Preview
+                </a>
+              </li>
+              <li class="vr opacity-20 my-3 me-3"></li>
+              <li class="nav-item">
+                <a class="nav-link px-0 py-2 border-0 rounded-1" href="#html5" data-bs-toggle="tab" role="tab"
+                   aria-controls="html5" aria-selected="false">
+                  <i class="ai-code fs-xl opacity-90 me-2"></i>
+                  HTML
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="card-body">
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="preview5" role="tabpanel">
+                <div style="max-width: 33rem;">
+                  <canvas data-chart='{
+                      "type": "polarArea",
+                      "data": {
+                        "labels": ["Red", "Green", "Yellow", "Grey", "Blue"],
+                        "datasets": [{
+                          "label": "My dataset",
+                          "data": [11, 16, 7, 3, 14],
+                          "borderWidth": 0,
+                          "backgroundColor": [
+                            "#ed5050",
+                            "#448c74",
+                            "#edcb50",
+                            "#e3e9ef",
+                            "#3f7fca"
+                          ],
+                          "hoverBackgroundColor": [
+                            "#ed5050",
+                            "#448c74",
+                            "#edcb50",
+                            "#e3e9ef",
+                            "#3f7fca"
+                          ]
+                        }]
+                      },
+                      "options": {
+                        "scales": {
+                          "r": {
+                            "ticks": {
+                              "backdropColor": "rgba(255,255,255,0)"
+                            },
+                            "grid": {
+                              "color": "rgba(133,140,151,.18)"
+                            }
+                          }
+                        }
+                      }
+                    }'></canvas>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="html5" role="tabpanel">
+                  <pre class="line-numbers"><code class="lang-html">&lt;!-- Polar area chart: Multiple slices of different color + Legend --&gt;
+&lt;canvas data-chart='{
+  &quot;type&quot;: &quot;polarArea&quot;,
+  &quot;data&quot;: {
+    &quot;labels&quot;: [&quot;Red&quot;, &quot;Green&quot;, &quot;Yellow&quot;, &quot;Grey&quot;, &quot;Blue&quot;],
+    &quot;datasets&quot;: [{
+      &quot;label&quot;: &quot;My dataset&quot;,
+      &quot;data&quot;: [11, 16, 7, 3, 14],
+      &quot;borderWidth&quot;: 0,
+      &quot;backgroundColor&quot;: [
+        &quot;#ed5050&quot;,
+        &quot;#448c74&quot;,
+        &quot;#edcb50&quot;,
+        &quot;#e3e9ef&quot;,
+        &quot;#3f7fca&quot;
+      ],
+      &quot;hoverBackgroundColor&quot;: [
+        &quot;#ed5050&quot;,
+        &quot;#448c74&quot;,
+        &quot;#edcb50&quot;,
+        &quot;#e3e9ef&quot;,
+        &quot;#3f7fca&quot;
+      ]
+    }]
+  },
+  &quot;options&quot;: {
+    &quot;scales&quot;: {
+      &quot;r&quot;: {
+        &quot;ticks&quot;: {
+          &quot;backdropColor&quot;: &quot;rgba(255,255,255,0)&quot;
+        },
+        &quot;grid&quot;: {
+          &quot;color&quot;: &quot;rgba(133,140,151,.18)&quot;
+        }
+      }
+    }
+  }
+}'&gt;&lt;/canvas&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- Radar chart -->
+        <section class="card border-0 mb-4" id="chart-radar">
+          <div class="card-body pb-0">
+            <h2 class="h4 mb-n2">Radar chart</h2>
+          </div>
+          <div class="card-header">
+            <ul class="nav nav-tabs card-header-tabs flex-nowrap align-items-center mb-n1" role="tablist">
+              <li class="nav-item me-3">
+                <a class="nav-link px-0 py-2 border-0 rounded-1 active" href="#preview6" data-bs-toggle="tab" role="tab"
+                   aria-controls="preview6" aria-selected="true">
+                  <i class="ai-show fs-lg opacity-90 me-2"></i>
+                  Preview
+                </a>
+              </li>
+              <li class="vr opacity-20 my-3 me-3"></li>
+              <li class="nav-item">
+                <a class="nav-link px-0 py-2 border-0 rounded-1" href="#html6" data-bs-toggle="tab" role="tab"
+                   aria-controls="html6" aria-selected="false">
+                  <i class="ai-code fs-xl opacity-90 me-2"></i>
+                  HTML
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="card-body">
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="preview6" role="tabpanel">
+                <div style="max-width: 35rem;">
+                  <canvas data-chart='{
+                      "type": "radar",
+                      "data": {
+                        "labels": ["Eating", "Drinking", "Sleeping", "Designing", "Coding", "Cycling", "Running"],
+                        "datasets": [
+                          {
+                            "label": "Dataset 1",
+                            "data": [65, 59, 90, 81, 56, 55, 40],
+                            "fill": true,
+                            "backgroundColor": "rgba(237, 80, 80, .15)",
+                            "borderColor": "#ed5050",
+                            "pointBackgroundColor": "#ed5050",
+                            "pointBorderColor": "#fff",
+                            "pointHoverBackgroundColor": "#fff",
+                            "pointHoverBorderColor": "#ed5050"
+                          },
+                          {
+                            "label": "Dataset 2",
+                            "data": [28, 48, 40, 19, 96, 27, 100],
+                            "fill": true,
+                            "backgroundColor": "rgba(63, 127, 202, .15)",
+                            "borderColor": "#3f7fca",
+                            "pointBackgroundColor": "#3f7fca",
+                            "pointBorderColor": "#fff",
+                            "pointHoverBackgroundColor": "#fff",
+                            "pointHoverBorderColor": "#3f7fca"
+                          }
+                        ]
+                      },
+                      "options": {
+                        "elements": {
+                          "line": {
+                            "borderWidth": 3
+                          }
+                        },
+                        "scales": {
+                          "r": {
+                            "ticks": {
+                              "backdropColor": "rgba(255,255,255,0)"
+                            },
+                            "grid": {
+                              "color": "rgba(133,140,151,.18)"
+                            }
+                          }
+                        }
+                      }
+                    }'></canvas>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="html6" role="tabpanel">
+                  <pre class="line-numbers"><code class="lang-html">&lt;!-- Radar chart: Multiple lines of different color with fill enabled + Legend --&gt;
+&lt;canvas data-chart='{
+  &quot;type&quot;: &quot;radar&quot;,
+  &quot;data&quot;: {
+    &quot;labels&quot;: [&quot;Eating&quot;, &quot;Drinking&quot;, &quot;Sleeping&quot;, &quot;Designing&quot;, &quot;Coding&quot;, &quot;Cycling&quot;, &quot;Running&quot;],
+    &quot;datasets&quot;: [
+      {
+        &quot;label&quot;: &quot;Dataset 1&quot;,
+        &quot;data&quot;: [65, 59, 90, 81, 56, 55, 40],
+        &quot;fill&quot;: true,
+        &quot;backgroundColor&quot;: &quot;rgba(237, 80, 80, .15)&quot;,
+        &quot;borderColor&quot;: &quot;#ed5050&quot;,
+        &quot;pointBackgroundColor&quot;: &quot;#ed5050&quot;,
+        &quot;pointBorderColor&quot;: &quot;#fff&quot;,
+        &quot;pointHoverBackgroundColor&quot;: &quot;#fff&quot;,
+        &quot;pointHoverBorderColor&quot;: &quot;#ed5050&quot;
+      },
+      {
+        &quot;label&quot;: &quot;Dataset 2&quot;,
+        &quot;data&quot;: [28, 48, 40, 19, 96, 27, 100],
+        &quot;fill&quot;: true,
+        &quot;backgroundColor&quot;: &quot;rgba(63, 127, 202, .15)&quot;,
+        &quot;borderColor&quot;: &quot;#3f7fca&quot;,
+        &quot;pointBackgroundColor&quot;: &quot;#3f7fca&quot;,
+        &quot;pointBorderColor&quot;: &quot;#fff&quot;,
+        &quot;pointHoverBackgroundColor&quot;: &quot;#fff&quot;,
+        &quot;pointHoverBorderColor&quot;: &quot;#3f7fca&quot;
+      }
+    ]
+  },
+  &quot;options&quot;: {
+    &quot;elements&quot;: {
+      &quot;line&quot;: {
+        &quot;borderWidth&quot;: 3
+      }
+    },
+    &quot;scales&quot;: {
+      &quot;r&quot;: {
+        &quot;ticks&quot;: {
+          &quot;backdropColor&quot;: &quot;rgba(255,255,255,0)&quot;
+        },
+        &quot;grid&quot;: {
+          &quot;color&quot;: &quot;rgba(133,140,151,.18)&quot;
+        }
+      }
+    }
+  }
+}'&gt;&lt;/canvas&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </section>
+{% endblock content %}

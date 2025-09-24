@@ -1,0 +1,1071 @@
+{% extends 'ui_layout.html' %}
+
+{% load static i18n %}
+
+{% block title %}Around UI Kit | Social buttons{% endblock title %}
+
+{% block content %}
+  <section class="container pt-5 pb-4">
+    <div class="row pt-5 pb-2 pb-sm-3">
+      <div class="col-lg-9 offset-lg-3 position-relative z-5">
+        <h1 class="pt-lg-4">Social buttons</h1>
+        <div class="d-flex flex-wrap flex-md-nowrap justify-content-between pb-3">
+          <p class="text-body-secondary">Display links to your social network accounts with social icon buttons.</p>
+          <div class="ps-md-4 mb-3">
+            <span class="badge bg-warning fs-sm">Around component</span>
+          </div>
+        </div>
+
+
+        <!-- Solid buttons-->
+        <section class="card border-0 mb-4" id="sb-solid">
+          <div class="card-body pb-0">
+            <h2 class="h4 mb-n2">Solid buttons</h2>
+          </div>
+          <div class="card-header">
+            <ul class="nav nav-tabs card-header-tabs flex-nowrap align-items-center mb-n1" role="tablist">
+              <li class="nav-item me-3">
+                <a class="nav-link px-0 py-2 border-0 rounded-1 active" href="#preview1" data-bs-toggle="tab" role="tab"
+                   aria-controls="preview1" aria-selected="true">
+                  <i class="ai-show fs-lg opacity-90 me-2"></i>
+                  Preview
+                </a>
+              </li>
+              <li class="vr opacity-20 my-3 me-3"></li>
+              <li class="nav-item">
+                <a class="nav-link px-0 py-2 border-0 rounded-1" href="#html1" data-bs-toggle="tab" role="tab"
+                   aria-controls="html1" aria-selected="false">
+                  <i class="ai-code fs-xl opacity-90 me-2"></i>
+                  HTML
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="card-body">
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="preview1" role="tabpanel">
+                <a class="btn btn-secondary btn-icon btn-sm btn-airbnb my-1 me-2" href="#" aria-label="Airbnb">
+                  <i class="ai-airbnb"></i>
+                </a>
+                <a class="btn btn-secondary btn-icon btn-sm btn-behance my-1 me-2" href="#" aria-label="Behance">
+                  <i class="ai-behance"></i>
+                </a>
+                <a class="btn btn-secondary btn-icon btn-sm btn-blogger my-1 me-2" href="#" aria-label="Blogger">
+                  <i class="ai-blogger"></i>
+                </a>
+                <a class="btn btn-secondary btn-icon btn-sm btn-codepen my-1 me-2" href="#" aria-label="CodePen">
+                  <i class="ai-codepen"></i>
+                </a>
+                <a class="btn btn-secondary btn-icon btn-sm btn-discord my-1 me-2" href="#" aria-label="Discord">
+                  <i class="ai-discord"></i>
+                </a>
+                <a class="btn btn-secondary btn-icon btn-sm btn-disqus my-1 me-2" href="#" aria-label="Disqus">
+                  <i class="ai-disqus"></i>
+                </a>
+                <a class="btn btn-secondary btn-icon btn-sm btn-dribbble my-1 me-2" href="#" aria-label="Dribbble">
+                  <i class="ai-dribbble"></i>
+                </a>
+                <a class="btn btn-secondary btn-icon btn-sm btn-dropbox my-1 me-2" href="#" aria-label="Dropbox">
+                  <i class="ai-dropbox"></i>
+                </a>
+                <a class="btn btn-secondary btn-icon btn-sm btn-evernote my-1 me-2" href="#" aria-label="Evernote">
+                  <i class="ai-evernote"></i>
+                </a>
+                <a class="btn btn-secondary btn-icon btn-sm btn-facebook my-1 me-2" href="#" aria-label="Facebook">
+                  <i class="ai-facebook"></i>
+                </a>
+                <a class="btn btn-secondary btn-icon btn-sm btn-flickr my-1 me-2" href="#" aria-label="Flickr">
+                  <i class="ai-flickr"></i>
+                </a>
+                <a class="btn btn-secondary btn-icon btn-sm btn-foursquare my-1 me-2" href="#" aria-label="Foursquare">
+                  <i class="ai-foursquare"></i>
+                </a>
+                <a class="btn btn-secondary btn-icon btn-sm btn-github my-1 me-2" href="#" aria-label="GitHub">
+                  <i class="ai-github"></i>
+                </a>
+                <a class="btn btn-secondary btn-icon btn-sm btn-google my-1 me-2" href="#" aria-label="Google">
+                  <i class="ai-google"></i>
+                </a>
+                <a class="btn btn-secondary btn-icon btn-sm btn-hangouts my-1 me-2" href="#" aria-label="Hangouts">
+                  <i class="ai-hangouts"></i>
+                </a>
+                <a class="btn btn-secondary btn-icon btn-sm btn-instagram my-1 me-2" href="#" aria-label="Instagram">
+                  <i class="ai-instagram"></i>
+                </a>
+                <a class="btn btn-secondary btn-icon btn-sm btn-kickstarter my-1 me-2" href="#"
+                   aria-label="Kickstarter">
+                  <i class="ai-kickstarter"></i>
+                </a>
+                <a class="btn btn-secondary btn-icon btn-sm btn-linkedin my-1 me-2" href="#" aria-label="LinkedIn">
+                  <i class="ai-linkedin"></i>
+                </a>
+                <a class="btn btn-secondary btn-icon btn-sm btn-medium my-1 me-2" href="#" aria-label="Medium">
+                  <i class="ai-medium"></i>
+                </a>
+                <a class="btn btn-secondary btn-icon btn-sm btn-messenger my-1 me-2" href="#" aria-label="Messenger">
+                  <i class="ai-messenger"></i>
+                </a>
+                <a class="btn btn-secondary btn-icon btn-sm btn-odnoklassniki my-1 me-2" href="#"
+                   aria-label="Odnoklassniki">
+                  <i class="ai-odnoklassniki"></i>
+                </a>
+                <a class="btn btn-secondary btn-icon btn-sm btn-patreon my-1 me-2" href="#" aria-label="Patreon">
+                  <i class="ai-patreon"></i>
+                </a>
+                <a class="btn btn-secondary btn-icon btn-sm btn-pinterest my-1 me-2" href="#" aria-label="Pinterest">
+                  <i class="ai-pinterest"></i>
+                </a>
+                <a class="btn btn-secondary btn-icon btn-sm btn-quora my-1 me-2" href="#" aria-label="Quora">
+                  <i class="ai-quora"></i>
+                </a>
+                <a class="btn btn-secondary btn-icon btn-sm btn-reddit my-1 me-2" href="#" aria-label="Reddit">
+                  <i class="ai-reddit"></i>
+                </a>
+                <a class="btn btn-secondary btn-icon btn-sm btn-skype my-1 me-2" href="#" aria-label="Skype">
+                  <i class="ai-skype"></i>
+                </a>
+                <a class="btn btn-secondary btn-icon btn-sm btn-slack my-1 me-2" href="#" aria-label="Slack">
+                  <i class="ai-slack"></i>
+                </a>
+                <a class="btn btn-secondary btn-icon btn-sm btn-snapchat my-1 me-2" href="#" aria-label="Snapchat">
+                  <i class="ai-snapchat"></i>
+                </a>
+                <a class="btn btn-secondary btn-icon btn-sm btn-soundcloud my-1 me-2" href="#" aria-label="SoundCloud">
+                  <i class="ai-soundcloud"></i>
+                </a>
+                <a class="btn btn-secondary btn-icon btn-sm btn-spotify my-1 me-2" href="#" aria-label="Spotify">
+                  <i class="ai-spotify"></i>
+                </a>
+                <a class="btn btn-secondary btn-icon btn-sm btn-stack-overflow my-1 me-2" href="#"
+                   aria-label="Stack Overflow">
+                  <i class="ai-stack-overflow"></i>
+                </a>
+                <a class="btn btn-secondary btn-icon btn-sm btn-steam my-1 me-2" href="#" aria-label="Steam">
+                  <i class="ai-steam"></i>
+                </a>
+                <a class="btn btn-secondary btn-icon btn-sm btn-telegram my-1 me-2" href="#" aria-label="Telegram">
+                  <i class="ai-telegram"></i>
+                </a>
+                <a class="btn btn-secondary btn-icon btn-sm btn-tiktok my-1 me-2" href="#" aria-label="TikTok">
+                  <i class="ai-tiktok"></i>
+                </a>
+                <a class="btn btn-secondary btn-icon btn-sm btn-tinder my-1 me-2" href="#" aria-label="Tinder">
+                  <i class="ai-tinder"></i>
+                </a>
+                <a class="btn btn-secondary btn-icon btn-sm btn-trello my-1 me-2" href="#" aria-label="Trello">
+                  <i class="ai-trello"></i>
+                </a>
+                <a class="btn btn-secondary btn-icon btn-sm btn-tumblr my-1 me-2" href="#" aria-label="Tumblr">
+                  <i class="ai-tumblr"></i>
+                </a>
+                <a class="btn btn-secondary btn-icon btn-sm btn-twitch my-1 me-2" href="#" aria-label="Twitch">
+                  <i class="ai-twitch"></i>
+                </a>
+                <a class="btn btn-secondary btn-icon btn-sm btn-viber my-1 me-2" href="#" aria-label="Viber">
+                  <i class="ai-viber"></i>
+                </a>
+                <a class="btn btn-secondary btn-icon btn-sm btn-vimeo my-1 me-2" href="#" aria-label="Vimeo">
+                  <i class="ai-vimeo"></i>
+                </a>
+                <a class="btn btn-secondary btn-icon btn-sm btn-vk my-1 me-2" href="#" aria-label="VKontakte">
+                  <i class="ai-vk"></i>
+                </a>
+                <a class="btn btn-secondary btn-icon btn-sm btn-wechat my-1 me-2" href="#" aria-label="WeChat">
+                  <i class="ai-wechat"></i>
+                </a>
+                <a class="btn btn-secondary btn-icon btn-sm btn-whatsapp my-1 me-2" href="#" aria-label="WhatsApp">
+                  <i class="ai-whatsapp"></i>
+                </a>
+                <a class="btn btn-secondary btn-icon btn-sm btn-wordpress my-1 me-2" href="#" aria-label="WordPress">
+                  <i class="ai-wordpress"></i>
+                </a>
+                <a class="btn btn-secondary btn-icon btn-sm btn-x my-1 me-2" href="#" aria-label="X">
+                  <i class="ai-x"></i>
+                </a>
+                <a class="btn btn-secondary btn-icon btn-sm btn-xing my-1 me-2" href="#" aria-label="Xing">
+                  <i class="ai-xing"></i>
+                </a>
+                <a class="btn btn-secondary btn-icon btn-sm btn-yelp my-1 me-2" href="#" aria-label="Yelp">
+                  <i class="ai-yelp"></i>
+                </a>
+                <a class="btn btn-secondary btn-icon btn-sm btn-youtube my-1 me-2" href="#" aria-label="YouTube">
+                  <i class="ai-youtube"></i>
+                </a>
+                <a class="btn btn-secondary btn-icon btn-sm btn-zoom my-1" href="#" aria-label="Zoom">
+                  <i class="ai-zoom"></i>
+                </a>
+              </div>
+              <div class="tab-pane fade" id="html1" role="tabpanel">
+                  <pre class="line-numbers"><code class="lang-html">&lt;!-- Airbnb --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-secondary btn-icon btn-sm btn-airbnb&quot; aria-label=&quot;Airbnb&quot;&gt;
+  &lt;i class=&quot;ai-airbnb&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+&lt;!-- Behance --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-secondary btn-icon btn-sm btn-behance&quot; aria-label=&quot;Behance&quot;&gt;
+  &lt;i class=&quot;ai-behance&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+&lt;!-- Blogger --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-secondary btn-icon btn-sm btn-blogger&quot; aria-label=&quot;Blogger&quot;&gt;
+  &lt;i class=&quot;ai-blogger&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+&lt;!-- CodePen --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-secondary btn-icon btn-sm btn-codepen&quot; aria-label=&quot;CodePen&quot;&gt;
+  &lt;i class=&quot;ai-codepen&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+&lt;!-- Discord --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-secondary btn-icon btn-sm btn-discord&quot; aria-label=&quot;Discord&quot;&gt;
+  &lt;i class=&quot;ai-discord&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+&lt;!-- Disqus --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-secondary btn-icon btn-sm btn-disqus&quot; aria-label=&quot;Diqus&quot;&gt;
+  &lt;i class=&quot;ai-disqus&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+&lt;!-- Dribbble --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-secondary btn-icon btn-sm btn-dribbble&quot; aria-label=&quot;Dribbble&quot;&gt;
+  &lt;i class=&quot;ai-dribbble&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+&lt;!-- Dropbox --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-secondary btn-icon btn-sm btn-dropbox&quot; aria-label=&quot;Dropbox&quot;&gt;
+  &lt;i class=&quot;ai-dropbox&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+&lt;!-- Evernote --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-secondary btn-icon btn-sm btn-evernote&quot; aria-label=&quot;Evernote&quot;&gt;
+  &lt;i class=&quot;ai-evernote&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+&lt;!-- Facebook --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-secondary btn-icon btn-sm btn-facebook&quot; aria-label=&quot;Facebook&quot;&gt;
+  &lt;i class=&quot;ai-facebook&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+&lt;!-- Flickr --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-secondary btn-icon btn-sm btn-flickr&quot; aria-label=&quot;Flickr&quot;&gt;
+  &lt;i class=&quot;ai-flickr&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+&lt;!-- Foursquare --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-secondary btn-icon btn-sm btn-foursquare&quot; aria-label=&quot;Foursquare&quot;&gt;
+  &lt;i class=&quot;ai-foursquare&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+&lt;!-- GitHub --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-secondary btn-icon btn-sm btn-github&quot; aria-label=&quot;GitHub&quot;&gt;
+  &lt;i class=&quot;ai-github&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+&lt;!-- Google --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-secondary btn-icon btn-sm btn-google&quot; aria-label=&quot;Google&quot;&gt;
+  &lt;i class=&quot;ai-google&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+&lt;!-- Hangouts --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-secondary btn-icon btn-sm btn-hangouts&quot; aria-label=&quot;Hangouts&quot;&gt;
+  &lt;i class=&quot;ai-hangouts&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+&lt;!-- Instagram --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-secondary btn-icon btn-sm btn-instagram&quot; aria-label=&quot;Instagram&quot;&gt;
+  &lt;i class=&quot;ai-instagram&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+&lt;!-- Kickstarter --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-secondary btn-icon btn-sm btn-kickstarter&quot; aria-label=&quot;Kickstarter&quot;&gt;
+  &lt;i class=&quot;ai-kickstarter&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+&lt;!-- LinkedIn --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-secondary btn-icon btn-sm btn-linkedin&quot; aria-label=&quot;LinkedIn&quot;&gt;
+  &lt;i class=&quot;ai-linkedin&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+&lt;!-- Medium --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-secondary btn-icon btn-sm btn-medium&quot; aria-label=&quot;Medium&quot;&gt;
+  &lt;i class=&quot;ai-medium&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+&lt;!-- Messenger --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-secondary btn-icon btn-sm btn-messenger&quot; aria-label=&quot;Messenger&quot;&gt;
+  &lt;i class=&quot;ai-messenger&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+&lt;!-- Odnoklassniki --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-secondary btn-icon btn-sm btn-odnoklassniki&quot; aria-label=&quot;Odnoklassniki&quot;&gt;
+  &lt;i class=&quot;ai-odnoklassniki&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+&lt;!-- Patreon --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-secondary btn-icon btn-sm btn-patreon&quot; aria-label=&quot;Patreon&quot;&gt;
+  &lt;i class=&quot;ai-patreon&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+&lt;!-- Pinterest --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-secondary btn-icon btn-sm btn-pinterest&quot; aria-label=&quot;Pinterest&quot;&gt;
+  &lt;i class=&quot;ai-pinterest&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+&lt;!-- Quora --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-secondary btn-icon btn-sm btn-quora&quot; aria-label=&quot;Quora&quot;&gt;
+  &lt;i class=&quot;ai-quora&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+&lt;!-- Reddit --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-secondary btn-icon btn-sm btn-reddit&quot; aria-label=&quot;Reddit&quot;&gt;
+  &lt;i class=&quot;ai-reddit&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+&lt;!-- Skype --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-secondary btn-icon btn-sm btn-skype&quot; aria-label=&quot;Skype&quot;&gt;
+  &lt;i class=&quot;ai-skype&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+&lt;!-- Slack --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-secondary btn-icon btn-sm btn-slack&quot; aria-label=&quot;Slack&quot;&gt;
+  &lt;i class=&quot;ai-slack&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+&lt;!-- Snapchat --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-secondary btn-icon btn-sm btn-snapchat&quot; aria-label=&quot;Snapchat&quot;&gt;
+  &lt;i class=&quot;ai-snapchat&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+&lt;!-- SoundCloud --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-secondary btn-icon btn-sm btn-soundcloud&quot; aria-label=&quot;SoundCloud&quot;&gt;
+  &lt;i class=&quot;ai-soundcloud&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+&lt;!-- Spotify --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-secondary btn-icon btn-sm btn-spotify&quot; aria-label=&quot;Spotify&quot;&gt;
+  &lt;i class=&quot;ai-spotify&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+&lt;!-- Stack Overflow --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-secondary btn-icon btn-sm btn-stack-overflow&quot; aria-label=&quot;Overflow&quot;&gt;
+  &lt;i class=&quot;ai-stack-overflow&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+&lt;!-- Steam --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-secondary btn-icon btn-sm btn-steam&quot; aria-label=&quot;Steam&quot;&gt;
+  &lt;i class=&quot;ai-steam&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+&lt;!-- Telegram --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-secondary btn-icon btn-sm btn-telegram&quot; aria-label=&quot;Telegram&quot;&gt;
+  &lt;i class=&quot;ai-telegram&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+&lt;!-- TikTok --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-secondary btn-icon btn-sm btn-tiktok&quot; aria-label=&quot;TikTok&quot;&gt;
+  &lt;i class=&quot;ai-tiktok&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+&lt;!-- Tinder --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-secondary btn-icon btn-sm btn-tinder&quot; aria-label=&quot;Tinder&quot;&gt;
+  &lt;i class=&quot;ai-tinder&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+&lt;!-- Trello --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-secondary btn-icon btn-sm btn-trello&quot; aria-label=&quot;Trello&quot;&gt;
+  &lt;i class=&quot;ai-trello&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+&lt;!-- Tumblr --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-secondary btn-icon btn-sm btn-tumblr&quot; aria-label=&quot;Tumblr&quot;&gt;
+  &lt;i class=&quot;ai-tumblr&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+&lt;!-- Twitch --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-secondary btn-icon btn-sm btn-twitch&quot; aria-label=&quot;Twitch&quot;&gt;
+  &lt;i class=&quot;ai-twitch&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+&lt;!-- Viber --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-secondary btn-icon btn-sm btn-viber&quot; aria-label=&quot;Viber&quot;&gt;
+  &lt;i class=&quot;ai-viber&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+&lt;!-- Vimeo --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-secondary btn-icon btn-sm btn-vimeo&quot; aria-label=&quot;Vimeo&quot;&gt;
+  &lt;i class=&quot;ai-vimeo&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+&lt;!-- VKontakte --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-secondary btn-icon btn-sm btn-vk&quot; aria-label=&quot;VKontakte&quot;&gt;
+  &lt;i class=&quot;ai-vk&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+&lt;!-- WeChat --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-secondary btn-icon btn-sm btn-wechat&quot; aria-label=&quot;WeChat&quot;&gt;
+  &lt;i class=&quot;ai-wechat&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+&lt;!-- WhatsApp --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-secondary btn-icon btn-sm btn-whatsapp&quot; aria-label=&quot;WhatsApp&quot;&gt;
+  &lt;i class=&quot;ai-whatsapp&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+&lt;!-- WordPress
+&lt;a href=&quot;#&quot; class=&quot;btn btn-secondary btn-icon btn-sm btn-wordpress&quot; aria-label=&quot;WordPress&quot;&gt;
+  &lt;i class=&quot;ai-wordpress&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+&lt;!-- X --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-secondary btn-icon btn-sm btn-x&quot; aria-label=&quot;X&quot;&gt;
+  &lt;i class=&quot;ai-x&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+&lt;!-- Xing --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-secondary btn-icon btn-sm btn-xing&quot; aria-label=&quot;Xing&quot;&gt;
+  &lt;i class=&quot;ai-xing&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+&lt;!-- Yelp --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-secondary btn-icon btn-sm btn-yelp&quot; aria-label=&quot;Yelp&quot;&gt;
+  &lt;i class=&quot;ai-yelp&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+&lt;!-- YouTube --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-secondary btn-icon btn-sm btn-youtube&quot; aria-label=&quot;YouTube&quot;&gt;
+  &lt;i class=&quot;ai-youtube&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+&lt;!-- Zoom --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-secondary btn-icon btn-sm btn-zoom&quot; aria-label=&quot;Zoom&quot;&gt;
+  &lt;i class=&quot;ai-zoom&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- Outline buttons -->
+        <section class="card border-0 mb-4" id="sb-outline">
+          <div class="card-body pb-0">
+            <h2 class="h4 mb-n2">Outline buttons</h2>
+          </div>
+          <div class="card-header">
+            <ul class="nav nav-tabs card-header-tabs flex-nowrap align-items-center mb-n1" role="tablist">
+              <li class="nav-item me-3">
+                <a class="nav-link px-0 py-2 border-0 rounded-1 active" href="#preview2" data-bs-toggle="tab" role="tab"
+                   aria-controls="preview2" aria-selected="true">
+                  <i class="ai-show fs-lg opacity-90 me-2"></i>
+                  Preview
+                </a>
+              </li>
+              <li class="vr opacity-20 my-3 me-3"></li>
+              <li class="nav-item">
+                <a class="nav-link px-0 py-2 border-0 rounded-1" href="#html2" data-bs-toggle="tab" role="tab"
+                   aria-controls="html2" aria-selected="false">
+                  <i class="ai-code fs-xl opacity-90 me-2"></i>
+                  HTML
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="card-body">
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="preview2" role="tabpanel">
+                <a class="btn btn-outline-secondary btn-icon btn-sm btn-airbnb my-1 me-2" href="#" aria-label="Airbnb">
+                  <i class="ai-airbnb"></i>
+                </a>
+                <a class="btn btn-outline-secondary btn-icon btn-sm btn-behance my-1 me-2" href="#"
+                   aria-label="Behance">
+                  <i class="ai-behance"></i>
+                </a>
+                <a class="btn btn-outline-secondary btn-icon btn-sm btn-blogger my-1 me-2" href="#"
+                   aria-label="Blogger">
+                  <i class="ai-blogger"></i>
+                </a>
+                <a class="btn btn-outline-secondary btn-icon btn-sm btn-codepen my-1 me-2" href="#"
+                   aria-label="CodePen">
+                  <i class="ai-codepen"></i>
+                </a>
+                <a class="btn btn-outline-secondary btn-icon btn-sm btn-discord my-1 me-2" href="#"
+                   aria-label="Discord">
+                  <i class="ai-discord"></i>
+                </a>
+                <a class="btn btn-outline-secondary btn-icon btn-sm btn-disqus my-1 me-2" href="#" aria-label="Disqus">
+                  <i class="ai-disqus"></i>
+                </a>
+                <a class="btn btn-outline-secondary btn-icon btn-sm btn-dribbble my-1 me-2" href="#"
+                   aria-label="Dribbble">
+                  <i class="ai-dribbble"></i>
+                </a>
+                <a class="btn btn-outline-secondary btn-icon btn-sm btn-dropbox my-1 me-2" href="#"
+                   aria-label="Dropbox">
+                  <i class="ai-dropbox"></i>
+                </a>
+                <a class="btn btn-outline-secondary btn-icon btn-sm btn-evernote my-1 me-2" href="#"
+                   aria-label="Evernote">
+                  <i class="ai-evernote"></i>
+                </a>
+                <a class="btn btn-outline-secondary btn-icon btn-sm btn-facebook my-1 me-2" href="#"
+                   aria-label="Facebook">
+                  <i class="ai-facebook"></i>
+                </a>
+                <a class="btn btn-outline-secondary btn-icon btn-sm btn-flickr my-1 me-2" href="#" aria-label="Flickr">
+                  <i class="ai-flickr"></i>
+                </a>
+                <a class="btn btn-outline-secondary btn-icon btn-sm btn-foursquare my-1 me-2" href="#"
+                   aria-label="Foursquare">
+                  <i class="ai-foursquare"></i>
+                </a>
+                <a class="btn btn-outline-secondary btn-icon btn-sm btn-github my-1 me-2" href="#" aria-label="GitHub">
+                  <i class="ai-github"></i>
+                </a>
+                <a class="btn btn-outline-secondary btn-icon btn-sm btn-google my-1 me-2" href="#" aria-label="Google">
+                  <i class="ai-google"></i>
+                </a>
+                <a class="btn btn-outline-secondary btn-icon btn-sm btn-hangouts my-1 me-2" href="#"
+                   aria-label="Hangouts">
+                  <i class="ai-hangouts"></i>
+                </a>
+                <a class="btn btn-outline-secondary btn-icon btn-sm btn-instagram my-1 me-2" href="#"
+                   aria-label="Instagram">
+                  <i class="ai-instagram"></i>
+                </a>
+                <a class="btn btn-outline-secondary btn-icon btn-sm btn-kickstarter my-1 me-2" href="#"
+                   aria-label="Kickstarter">
+                  <i class="ai-kickstarter"></i>
+                </a>
+                <a class="btn btn-outline-secondary btn-icon btn-sm btn-linkedin my-1 me-2" href="#"
+                   aria-label="LinkedIn">
+                  <i class="ai-linkedin"></i>
+                </a>
+                <a class="btn btn-outline-secondary btn-icon btn-sm btn-medium my-1 me-2" href="#" aria-label="Medium">
+                  <i class="ai-medium"></i>
+                </a>
+                <a class="btn btn-outline-secondary btn-icon btn-sm btn-messenger my-1 me-2" href="#"
+                   aria-label="Messenger">
+                  <i class="ai-messenger"></i>
+                </a>
+                <a class="btn btn-outline-secondary btn-icon btn-sm btn-odnoklassniki my-1 me-2" href="#"
+                   aria-label="Odnoklassniki">
+                  <i class="ai-odnoklassniki"></i>
+                </a>
+                <a class="btn btn-outline-secondary btn-icon btn-sm btn-patreon my-1 me-2" href="#"
+                   aria-label="Patreon">
+                  <i class="ai-patreon"></i>
+                </a>
+                <a class="btn btn-outline-secondary btn-icon btn-sm btn-pinterest my-1 me-2" href="#"
+                   aria-label="Pinterest">
+                  <i class="ai-pinterest"></i>
+                </a>
+                <a class="btn btn-outline-secondary btn-icon btn-sm btn-quora my-1 me-2" href="#" aria-label="Quora">
+                  <i class="ai-quora"></i>
+                </a>
+                <a class="btn btn-outline-secondary btn-icon btn-sm btn-reddit my-1 me-2" href="#" aria-label="Reddit">
+                  <i class="ai-reddit"></i>
+                </a>
+                <a class="btn btn-outline-secondary btn-icon btn-sm btn-skype my-1 me-2" href="#" aria-label="Skype">
+                  <i class="ai-skype"></i>
+                </a>
+                <a class="btn btn-outline-secondary btn-icon btn-sm btn-slack my-1 me-2" href="#" aria-label="Slack">
+                  <i class="ai-slack"></i>
+                </a>
+                <a class="btn btn-outline-secondary btn-icon btn-sm btn-snapchat my-1 me-2" href="#"
+                   aria-label="Snapchat">
+                  <i class="ai-snapchat"></i>
+                </a>
+                <a class="btn btn-outline-secondary btn-icon btn-sm btn-soundcloud my-1 me-2" href="#"
+                   aria-label="SoundCloud">
+                  <i class="ai-soundcloud"></i>
+                </a>
+                <a class="btn btn-outline-secondary btn-icon btn-sm btn-spotify my-1 me-2" href="#"
+                   aria-label="Spotify">
+                  <i class="ai-spotify"></i>
+                </a>
+                <a class="btn btn-outline-secondary btn-icon btn-sm btn-stack-overflow my-1 me-2" href="#"
+                   aria-label="Stack Overflow">
+                  <i class="ai-stack-overflow"></i>
+                </a>
+                <a class="btn btn-outline-secondary btn-icon btn-sm btn-steam my-1 me-2" href="#" aria-label="Steam">
+                  <i class="ai-steam"></i>
+                </a>
+                <a class="btn btn-outline-secondary btn-icon btn-sm btn-telegram my-1 me-2" href="#"
+                   aria-label="Airbnb">
+                  <i class="ai-telegram"></i>
+                </a>
+                <a class="btn btn-outline-secondary btn-icon btn-sm btn-tiktok my-1 me-2" href="#" aria-label="TikTok">
+                  <i class="ai-tiktok"></i>
+                </a>
+                <a class="btn btn-outline-secondary btn-icon btn-sm btn-tinder my-1 me-2" href="#" aria-label="Tinder">
+                  <i class="ai-tinder"></i>
+                </a>
+                <a class="btn btn-outline-secondary btn-icon btn-sm btn-trello my-1 me-2" href="#" aria-label="Trello">
+                  <i class="ai-trello"></i>
+                </a>
+                <a class="btn btn-outline-secondary btn-icon btn-sm btn-tumblr my-1 me-2" href="#" aria-label="Tumblr">
+                  <i class="ai-tumblr"></i>
+                </a>
+                <a class="btn btn-outline-secondary btn-icon btn-sm btn-twitch my-1 me-2" href="#" aria-label="Twitch">
+                  <i class="ai-twitch"></i>
+                </a>
+                <a class="btn btn-outline-secondary btn-icon btn-sm btn-viber my-1 me-2" href="#" aria-label="Vider">
+                  <i class="ai-viber"></i>
+                </a>
+                <a class="btn btn-outline-secondary btn-icon btn-sm btn-vimeo my-1 me-2" href="#" aria-label="Vimeo">
+                  <i class="ai-vimeo"></i>
+                </a>
+                <a class="btn btn-outline-secondary btn-icon btn-sm btn-vk my-1 me-2" href="#" aria-label="VKontakte">
+                  <i class="ai-vk"></i>
+                </a>
+                <a class="btn btn-outline-secondary btn-icon btn-sm btn-wechat my-1 me-2" href="#" aria-label="WeChat">
+                  <i class="ai-wechat"></i>
+                </a>
+                <a class="btn btn-outline-secondary btn-icon btn-sm btn-whatsapp my-1 me-2" href="#"
+                   aria-label="WhatsApp">
+                  <i class="ai-whatsapp"></i>
+                </a>
+                <a class="btn btn-outline-secondary btn-icon btn-sm btn-wordpress my-1 me-2" href="#"
+                   aria-label="WordPress">
+                  <i class="ai-wordpress"></i>
+                </a>
+                <a class="btn btn-outline-secondary btn-icon btn-sm btn-x my-1 me-2" href="#" aria-label="X">
+                  <i class="ai-x"></i>
+                </a>
+                <a class="btn btn-outline-secondary btn-icon btn-sm btn-xing my-1 me-2" href="#" aria-label="Xing">
+                  <i class="ai-xing"></i>
+                </a>
+                <a class="btn btn-outline-secondary btn-icon btn-sm btn-yelp my-1 me-2" href="#" aria-label="Yelp">
+                  <i class="ai-yelp"></i>
+                </a>
+                <a class="btn btn-outline-secondary btn-icon btn-sm btn-youtube my-1 me-2" href="#"
+                   aria-label="YouTube">
+                  <i class="ai-youtube"></i>
+                </a>
+                <a class="btn btn-outline-secondary btn-icon btn-sm btn-zoom my-1" href="#" aria-label="Zoom">
+                  <i class="ai-zoom"></i>
+                </a>
+              </div>
+              <div class="tab-pane fade" id="html2" role="tabpanel">
+                  <pre class="line-numbers"><code class="lang-html">&lt;!-- Airbnb --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-outline-secondary btn-icon btn-sm btn-airbnb&quot; aria-label=&quot;Airbnb&quot;&gt;
+  &lt;i class=&quot;ai-airbnb&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+&lt;!-- Behance --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-outline-secondary btn-icon btn-sm btn-behance&quot; aria-label=&quot;Behance&quot;&gt;
+  &lt;i class=&quot;ai-behance&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+&lt;!-- Blogger --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-outline-secondary btn-icon btn-sm btn-blogger&quot; aria-label=&quot;Blogger&quot;&gt;
+  &lt;i class=&quot;ai-blogger&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+&lt;!-- CodePen --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-outline-secondary btn-icon btn-sm btn-codepen&quot; aria-label=&quot;CodePen&quot;&gt;
+  &lt;i class=&quot;ai-codepen&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+&lt;!-- Discord --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-outline-secondary btn-icon btn-sm btn-discord&quot; aria-label=&quot;Discord&quot;&gt;
+  &lt;i class=&quot;ai-discord&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+&lt;!-- Disqus --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-outline-secondary btn-icon btn-sm btn-disqus&quot; aria-label=&quot;Disqus&quot;&gt;
+  &lt;i class=&quot;ai-disqus&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+&lt;!-- Dribbble --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-outline-secondary btn-icon btn-sm btn-dribbble&quot; aria-label=&quot;Dribbble&quot;&gt;
+  &lt;i class=&quot;ai-dribbble&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+&lt;!-- Dropbox --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-outline-secondary btn-icon btn-sm btn-dropbox&quot; aria-label=&quot;Dropbox&quot;&gt;
+  &lt;i class=&quot;ai-dropbox&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+&lt;!-- Evernote --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-outline-secondary btn-icon btn-sm btn-evernote&quot; aria-label=&quot;Evernote&quot;&gt;
+  &lt;i class=&quot;ai-evernote&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+&lt;!-- Facebook --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-outline-secondary btn-icon btn-sm btn-facebook&quot; aria-label=&quot;Facebook&quot;&gt;
+  &lt;i class=&quot;ai-facebook&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+&lt;!-- Flickr --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-outline-secondary btn-icon btn-sm btn-flickr&quot; aria-label=&quot;Flickr&quot;&gt;
+  &lt;i class=&quot;ai-flickr&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+&lt;!-- Foursquare --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-outline-secondary btn-icon btn-sm btn-foursquare&quot; aria-label=&quot;Foursquare&quot;&gt;
+  &lt;i class=&quot;ai-foursquare&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+&lt;!-- GitHub --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-outline-secondary btn-icon btn-sm btn-github&quot; aria-label=&quot;GitHub&quot;&gt;
+  &lt;i class=&quot;ai-github&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+&lt;!-- Google --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-outline-secondary btn-icon btn-sm btn-google&quot; aria-label=&quot;Google&quot;&gt;
+  &lt;i class=&quot;ai-google&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+&lt;!-- Hangouts --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-outline-secondary btn-icon btn-sm btn-hangouts&quot; aria-label=&quot;Hangouts&quot;&gt;
+  &lt;i class=&quot;ai-hangouts&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+&lt;!-- Instagram --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-outline-secondary btn-icon btn-sm btn-instagram&quot; aria-label=&quot;Instagram&quot;&gt;
+  &lt;i class=&quot;ai-instagram&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+&lt;!-- Kickstarter --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-outline-secondary btn-icon btn-sm btn-kickstarter&quot; aria-label=&quot;Kickstarter&quot;&gt;
+  &lt;i class=&quot;ai-kickstarter&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+&lt;!-- LinkedIn --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-outline-secondary btn-icon btn-sm btn-linkedin&quot; aria-label=&quot;LinkedIn&quot;&gt;
+  &lt;i class=&quot;ai-linkedin&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+&lt;!-- Medium --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-outline-secondary btn-icon btn-sm btn-medium&quot; aria-label=&quot;Medium&quot;&gt;
+  &lt;i class=&quot;ai-medium&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+&lt;!-- Messenger --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-outline-secondary btn-icon btn-sm btn-messenger&quot; aria-label=&quot;Messenger&quot;&gt;
+  &lt;i class=&quot;ai-messenger&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+&lt;!-- Odnoklassniki --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-outline-secondary btn-icon btn-sm btn-odnoklassniki&quot; aria-label=&quot;Odnoklassniki&quot;&gt;
+  &lt;i class=&quot;ai-odnoklassniki&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+&lt;!-- Patreon --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-outline-secondary btn-icon btn-sm btn-patreon&quot; aria-label=&quot;Patreon&quot;&gt;
+  &lt;i class=&quot;ai-patreon&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+&lt;!-- Pinterest --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-outline-secondary btn-icon btn-sm btn-pinterest&quot; aria-label=&quot;Pinterest&quot;&gt;
+  &lt;i class=&quot;ai-pinterest&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+&lt;!-- Quora --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-outline-secondary btn-icon btn-sm btn-quora&quot; aria-label=&quot;Quora&quot;&gt;
+  &lt;i class=&quot;ai-quora&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+&lt;!-- Reddit --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-outline-secondary btn-icon btn-sm btn-reddit&quot; aria-label=&quot;Reddit&quot;&gt;
+  &lt;i class=&quot;ai-reddit&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+&lt;!-- Skype --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-outline-secondary btn-icon btn-sm btn-skype&quot; aria-label=&quot;Skype&quot;&gt;
+  &lt;i class=&quot;ai-skype&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+&lt;!-- Slack --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-outline-secondary btn-icon btn-sm btn-slack&quot; aria-label=&quot;Slack&quot;&gt;
+  &lt;i class=&quot;ai-slack&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+&lt;!-- Snapchat --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-outline-secondary btn-icon btn-sm btn-snapchat&quot; aria-label=&quot;Snapchat&quot;&gt;
+  &lt;i class=&quot;ai-snapchat&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+&lt;!-- SoundCloud --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-outline-secondary btn-icon btn-sm btn-soundcloud&quot; aria-label=&quot;SoundCloud&quot;&gt;
+  &lt;i class=&quot;ai-soundcloud&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+&lt;!-- Spotify --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-outline-secondary btn-icon btn-sm btn-spotify&quot; aria-label=&quot;Spotify&quot;&gt;
+  &lt;i class=&quot;ai-spotify&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+&lt;!-- Stack Overflow --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-outline-secondary btn-icon btn-sm btn-stack-overflow&quot; aria-label=&quot;Stack Overflow&quot;&gt;
+  &lt;i class=&quot;ai-stack-overflow&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+&lt;!-- Steam --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-outline-secondary btn-icon btn-sm btn-steam&quot; aria-label=&quot;Steam&quot;&gt;
+  &lt;i class=&quot;ai-steam&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+&lt;!-- Telegram --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-outline-secondary btn-icon btn-sm btn-telegram&quot; aria-label=&quot;Telegram&quot;&gt;
+  &lt;i class=&quot;ai-telegram&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+&lt;!-- TikTok --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-outline-secondary btn-icon btn-sm btn-tiktok&quot; aria-label=&quot;TikTok&quot;&gt;
+  &lt;i class=&quot;ai-tiktok&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+&lt;!-- Tinder --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-outline-secondary btn-icon btn-sm btn-tinder&quot; aria-label=&quot;Tinder&quot;&gt;
+  &lt;i class=&quot;ai-tinder&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+&lt;!-- Trello --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-outline-secondary btn-icon btn-sm btn-trello&quot; aria-label=&quot;Trello&quot;&gt;
+  &lt;i class=&quot;ai-trello&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+&lt;!-- Tumblr --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-outline-secondary btn-icon btn-sm btn-tumblr&quot; aria-label=&quot;Tumblr&quot;&gt;
+  &lt;i class=&quot;ai-tumblr&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+&lt;!-- Twitch --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-outline-secondary btn-icon btn-sm btn-twitch&quot; aria-label=&quot;Twitch&quot;&gt;
+  &lt;i class=&quot;ai-twitch&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+&lt;!-- Viber --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-outline-secondary btn-icon btn-sm btn-viber&quot; aria-label=&quot;Viber&quot;&gt;
+  &lt;i class=&quot;ai-viber&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+&lt;!-- Vimeo --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-outline-secondary btn-icon btn-sm btn-vimeo&quot; aria-label=&quot;Vimeo&quot;&gt;
+  &lt;i class=&quot;ai-vimeo&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+&lt;!-- VKontakte --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-outline-secondary btn-icon btn-sm btn-vk&quot; aria-label=&quot;VKontakte&quot;&gt;
+  &lt;i class=&quot;ai-vk&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+&lt;!-- WeChat --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-outline-secondary btn-icon btn-sm btn-wechat&quot; aria-label=&quot;WeChat&quot;&gt;
+  &lt;i class=&quot;ai-wechat&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+&lt;!-- WhatsApp --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-outline-secondary btn-icon btn-sm btn-whatsapp&quot; aria-label=&quot;WhatsApp&quot;&gt;
+  &lt;i class=&quot;ai-whatsapp&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+&lt;!-- WordPress
+&lt;a href=&quot;#&quot; class=&quot;btn btn-outline-secondary btn-icon btn-sm btn-wordpress&quot; aria-label=&quot;WordPress&quot;&gt;
+  &lt;i class=&quot;ai-wordpress&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+&lt;!-- X --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-outline-secondary btn-icon btn-sm btn-x&quot; aria-label=&quot;X&quot;&gt;
+  &lt;i class=&quot;ai-x&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+&lt;!-- Xing --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-outline-secondary btn-icon btn-sm btn-xing&quot; aria-label=&quot;Xing&quot;&gt;
+  &lt;i class=&quot;ai-xing&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+&lt;!-- Yelp --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-outline-secondary btn-icon btn-sm btn-yelp&quot; aria-label=&quot;Yelp&quot;&gt;
+  &lt;i class=&quot;ai-yelp&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+&lt;!-- YouTube --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-outline-secondary btn-icon btn-sm btn-youtube&quot; aria-label=&quot;YouTube&quot;&gt;
+  &lt;i class=&quot;ai-youtube&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+&lt;!-- Zoom --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-outline-secondary btn-icon btn-sm btn-zoom&quot; aria-label=&quot;Zoom&quot;&gt;
+  &lt;i class=&quot;ai-zoom&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- Shape -->
+        <section class="card border-0 mb-4" id="sb-shape">
+          <div class="card-body pb-0">
+            <h2 class="h4 mb-n2">Shape</h2>
+          </div>
+          <div class="card-header">
+            <ul class="nav nav-tabs card-header-tabs flex-nowrap align-items-center mb-n1" role="tablist">
+              <li class="nav-item me-3">
+                <a class="nav-link px-0 py-2 border-0 rounded-1 active" href="#preview3" data-bs-toggle="tab" role="tab"
+                   aria-controls="preview3" aria-selected="true">
+                  <i class="ai-show fs-lg opacity-90 me-2"></i>
+                  Preview
+                </a>
+              </li>
+              <li class="vr opacity-20 my-3 me-3"></li>
+              <li class="nav-item">
+                <a class="nav-link px-0 py-2 border-0 rounded-1" href="#html3" data-bs-toggle="tab" role="tab"
+                   aria-controls="html3" aria-selected="false">
+                  <i class="ai-code fs-xl opacity-90 me-2"></i>
+                  HTML
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="card-body">
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="preview3" role="tabpanel">
+                <a class="btn btn-secondary btn-icon btn-sm btn-dribbble rounded-0 my-1 me-2" href="#"
+                   aria-label="Dribbble">
+                  <i class="ai-dribbble"></i>
+                </a>
+                <a class="btn btn-secondary btn-icon btn-sm btn-dribbble my-1 me-2" href="#" aria-label="Dribbble">
+                  <i class="ai-dribbble"></i>
+                </a>
+                <a class="btn btn-secondary btn-icon btn-sm btn-dribbble rounded-circle my-1" href="#"
+                   aria-label="Dribbble">
+                  <i class="ai-dribbble"></i>
+                </a>
+                <div class="pt-2"></div>
+                <a class="btn btn-outline-secondary btn-icon btn-sm btn-skype rounded-0 my-1 me-2" href="#"
+                   aria-label="Skype">
+                  <i class="ai-skype"></i>
+                </a>
+                <a class="btn btn-outline-secondary btn-icon btn-sm btn-skype my-1 me-2" href="#" aria-label="Skype">
+                  <i class="ai-skype"></i>
+                </a>
+                <a class="btn btn-outline-secondary btn-icon btn-sm btn-skype rounded-circle my-1" href="#"
+                   aria-label="Skype">
+                  <i class="ai-skype"></i>
+                </a>
+              </div>
+              <div class="tab-pane fade" id="html3" role="tabpanel">
+                  <pre class="line-numbers"><code class="lang-html">&lt;!-- Solid square button --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-secondary btn-icon btn-sm btn-dribbble rounded-0&quot; aria-label=&quot;Dribbble&quot;&gt;
+  &lt;i class=&quot;ai-dribbble&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+&lt;!-- Solid rounded button --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-secondary btn-icon btn-sm btn-dribbble&quot; aria-label=&quot;Dribbble&quot;&gt;
+  &lt;i class=&quot;ai-dribbble&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+&lt;!-- Solid circle button --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-secondary btn-icon btn-sm btn-dribbble rounded-circle&quot; aria-label=&quot;Dribbble&quot;&gt;
+  &lt;i class=&quot;ai-dribbble&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+&lt;!-- Outline square button --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-outline-secondary btn-icon btn-sm btn-skype rounded-0&quot; aria-label=&quot;Skype&quot;v&gt;
+  &lt;i class=&quot;ai-skype&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+&lt;!-- Outline rounded button --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-outline-secondary btn-icon btn-sm btn-skype&quot; aria-label=&quot;Skype&quot;&gt;
+  &lt;i class=&quot;ai-skype&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+&lt;!-- Outline circle button --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-outline-secondary btn-icon btn-sm btn-skype rounded-circle&quot; aria-label=&quot;Skype&quot;&gt;
+  &lt;i class=&quot;ai-skype&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- Size -->
+        <section class="card border-0 mb-4" id="sb-size">
+          <div class="card-body pb-0">
+            <h2 class="h4 mb-n2">Size</h2>
+          </div>
+          <div class="card-header">
+            <ul class="nav nav-tabs card-header-tabs flex-nowrap align-items-center mb-n1" role="tablist">
+              <li class="nav-item me-3">
+                <a class="nav-link px-0 py-2 border-0 rounded-1 active" href="#preview4" data-bs-toggle="tab" role="tab"
+                   aria-controls="preview4" aria-selected="true">
+                  <i class="ai-show fs-lg opacity-90 me-2"></i>
+                  Preview
+                </a>
+              </li>
+              <li class="vr opacity-20 my-3 me-3"></li>
+              <li class="nav-item">
+                <a class="nav-link px-0 py-2 border-0 rounded-1" href="#html4" data-bs-toggle="tab" role="tab"
+                   aria-controls="html4" aria-selected="false">
+                  <i class="ai-code fs-xl opacity-90 me-2"></i>
+                  HTML
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="card-body">
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="preview4" role="tabpanel">
+                <a class="btn btn-secondary btn-icon btn-lg btn-linkedin my-1 me-2" href="#" aria-label="LinkedIn">
+                  <i class="ai-linkedin"></i>
+                </a>
+                <a class="btn btn-secondary btn-icon btn-linkedin my-1 me-2" href="#" aria-label="LinkedIn">
+                  <i class="ai-linkedin"></i>
+                </a>
+                <a class="btn btn-secondary btn-icon btn-sm btn-linkedin my-1" href="#" aria-label="LinkedIn">
+                  <i class="ai-linkedin"></i>
+                </a>
+                <div class="pt-2"></div>
+                <a class="btn btn-outline-secondary btn-icon btn-lg btn-twitch my-1 me-2" href="#" aria-label="Twitch">
+                  <i class="ai-twitch"></i>
+                </a>
+                <a class="btn btn-outline-secondary btn-icon btn-twitch my-1 me-2" href="#" aria-label="Twitch">
+                  <i class="ai-twitch"></i>
+                </a>
+                <a class="btn btn-outline-secondary btn-icon btn-sm btn-twitch my-1" href="#" aria-label="Twitch">
+                  <i class="ai-twitch"></i>
+                </a>
+              </div>
+              <div class="tab-pane fade" id="html4" role="tabpanel">
+                  <pre class="line-numbers"><code class="lang-html">&lt;!-- Large solid button --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-secondary btn-icon btn-lg btn-linkedin&quot; aria-label=&quot;LinkedIn&quot;&gt;
+  &lt;i class=&quot;ai-linkedin&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+&lt;!-- Regular solid button --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-secondary btn-icon btn-linkedin&quot; aria-label=&quot;LinkedIn&quot;&gt;
+  &lt;i class=&quot;ai-linkedin&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+&lt;!-- Small solid button --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-secondary btn-icon btn-sm btn-linkedin&quot; aria-label=&quot;LinkedIn&quot;&gt;
+  &lt;i class=&quot;ai-linkedin&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+&lt;!-- Large outline button --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-outline-secondary btn-icon btn-lg btn-twitch&quot; aria-label=&quot;Twitch&quot;&gt;
+  &lt;i class=&quot;ai-twitch&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+&lt;!-- Regular outline button --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-outline-secondary btn-icon btn-twitch&quot; aria-label=&quot;Twitch&quot;&gt;
+  &lt;i class=&quot;ai-twitch&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+&lt;!-- Small outline button --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-outline-secondary btn-icon btn-sm btn-twitch&quot; aria-label=&quot;Twitch&quot;&gt;
+  &lt;i class=&quot;ai-twitch&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </section>
+{% endblock content %}

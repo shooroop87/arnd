@@ -1,0 +1,385 @@
+{% extends 'ui_layout.html' %}
+
+{% load static i18n %}
+
+{% block title %}Around UI Kit | Spinners{% endblock title %}
+
+{% block content %}
+  <section class="container pt-5 pb-4">
+    <div class="row pt-5 pb-2 pb-sm-3">
+      <div class="col-lg-9 offset-lg-3 position-relative z-5">
+        <h1 class="pt-lg-4">Spinners</h1>
+        <div class="d-flex flex-wrap flex-md-nowrap justify-content-between pb-3">
+          <p class="text-body-secondary">Indicate the loading state of a component or page.</p>
+          <p class="fs-sm fw-semibold ps-md-4">
+            <a class="text-decoration-none text-nowrap" href="https://getbootstrap.com/docs/5.3/components/spinners/"
+               target="_blank" rel="noopener">
+              Bootstrap docs
+              <i class="ai-external-link fs-lg ms-2"></i>
+            </a>
+          </p>
+        </div>
+
+
+        <!-- Border spinner -->
+        <section class="card border-0 mb-4" id="spinners-border">
+          <div class="card-body pb-0">
+            <h2 class="h4 mb-n2">Border spinner</h2>
+          </div>
+          <div class="card-header">
+            <ul class="nav nav-tabs card-header-tabs flex-nowrap align-items-center mb-n1" role="tablist">
+              <li class="nav-item me-3">
+                <a class="nav-link px-0 py-2 border-0 rounded-1 active" href="#preview1" data-bs-toggle="tab" role="tab"
+                   aria-controls="preview1" aria-selected="true">
+                  <i class="ai-show fs-lg opacity-90 me-2"></i>
+                  Preview
+                </a>
+              </li>
+              <li class="vr opacity-20 my-3 me-3"></li>
+              <li class="nav-item">
+                <a class="nav-link px-0 py-2 border-0 rounded-1" href="#html1" data-bs-toggle="tab" role="tab"
+                   aria-controls="html1" aria-selected="false">
+                  <i class="ai-code fs-xl opacity-90 me-2"></i>
+                  HTML
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="card-body">
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="preview1" role="tabpanel">
+                <div class="spinner-border m-2" role="status">
+                  <span class="visually-hidden">Loading...</span>
+                </div>
+                <div class="spinner-border text-body-secondary m-2" role="status">
+                  <span class="visually-hidden">Loading...</span>
+                </div>
+                <div class="spinner-border text-primary m-2" role="status">
+                  <span class="visually-hidden">Loading...</span>
+                </div>
+                <div class="spinner-border text-secondary m-2" role="status">
+                  <span class="visually-hidden">Loading...</span>
+                </div>
+                <div class="spinner-border text-success m-2" role="status">
+                  <span class="visually-hidden">Loading...</span>
+                </div>
+                <div class="spinner-border text-danger m-2" role="status">
+                  <span class="visually-hidden">Loading...</span>
+                </div>
+                <div class="spinner-border text-warning m-2" role="status">
+                  <span class="visually-hidden">Loading...</span>
+                </div>
+                <div class="spinner-border text-info m-2" role="status">
+                  <span class="visually-hidden">Loading...</span>
+                </div>
+                <div class="d-inline-block bg-dark mx-2">
+                  <div class="spinner-border text-light my-2 mx-3" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="html1" role="tabpanel">
+                  <pre class="line-numbers"><code class="lang-html">&lt;!-- Dark (default) spinner --&gt;
+&lt;div class=&quot;spinner-border&quot; role=&quot;status&quot;&gt;
+  &lt;span class=&quot;visually-hidden&quot;&gt;Loading...&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;!-- Gray spinner --&gt;
+&lt;div class=&quot;spinner-border text-body-secondary&quot; role=&quot;status&quot;&gt;
+  &lt;span class=&quot;visually-hidden&quot;&gt;Loading...&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;!-- Primary spinner --&gt;
+&lt;div class=&quot;spinner-border text-primary&quot; role=&quot;status&quot;&gt;
+  &lt;span class=&quot;visually-hidden&quot;&gt;Loading...&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;!-- Secondary spinner --&gt;
+&lt;div class=&quot;spinner-border text-secondary&quot; role=&quot;status&quot;&gt;
+  &lt;span class=&quot;visually-hidden&quot;&gt;Loading...&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;!-- Success spinner --&gt;
+&lt;div class=&quot;spinner-border text-success&quot; role=&quot;status&quot;&gt;
+  &lt;span class=&quot;visually-hidden&quot;&gt;Loading...&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;!-- Danger spinner --&gt;
+&lt;div class=&quot;spinner-border text-danger&quot; role=&quot;status&quot;&gt;
+  &lt;span class=&quot;visually-hidden&quot;&gt;Loading...&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;!-- Warning spinner --&gt;
+&lt;div class=&quot;spinner-border text-warning&quot; role=&quot;status&quot;&gt;
+  &lt;span class=&quot;visually-hidden&quot;&gt;Loading...&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;!-- Info spinner --&gt;
+&lt;div class=&quot;spinner-border text-info&quot; role=&quot;status&quot;&gt;
+  &lt;span class=&quot;visually-hidden&quot;&gt;Loading...&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;!-- Light spinner --&gt;
+&lt;div class=&quot;spinner-border text-light&quot; role=&quot;status&quot;&gt;
+  &lt;span class=&quot;visually-hidden&quot;&gt;Loading...&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- Growing spinner -->
+        <section class="card border-0 mb-4" id="spinners-growing">
+          <div class="card-body pb-0">
+            <h2 class="h4 mb-n2">Growing spinner</h2>
+          </div>
+          <div class="card-header">
+            <ul class="nav nav-tabs card-header-tabs flex-nowrap align-items-center mb-n1" role="tablist">
+              <li class="nav-item me-3">
+                <a class="nav-link px-0 py-2 border-0 rounded-1 active" href="#preview2" data-bs-toggle="tab" role="tab"
+                   aria-controls="preview2" aria-selected="true">
+                  <i class="ai-show fs-lg opacity-90 me-2"></i>
+                  Preview
+                </a>
+              </li>
+              <li class="vr opacity-20 my-3 me-3"></li>
+              <li class="nav-item">
+                <a class="nav-link px-0 py-2 border-0 rounded-1" href="#html2" data-bs-toggle="tab" role="tab"
+                   aria-controls="html2" aria-selected="false">
+                  <i class="ai-code fs-xl opacity-90 me-2"></i>
+                  HTML
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="card-body">
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="preview2" role="tabpanel">
+                <div class="spinner-grow m-2" role="status">
+                  <span class="visually-hidden">Loading...</span>
+                </div>
+                <div class="spinner-grow text-body-secondary m-2" role="status">
+                  <span class="visually-hidden">Loading...</span>
+                </div>
+                <div class="spinner-grow text-primary m-2" role="status">
+                  <span class="visually-hidden">Loading...</span>
+                </div>
+                <div class="spinner-grow text-secondary m-2" role="status">
+                  <span class="visually-hidden">Loading...</span>
+                </div>
+                <div class="spinner-grow text-success m-2" role="status">
+                  <span class="visually-hidden">Loading...</span>
+                </div>
+                <div class="spinner-grow text-danger m-2" role="status">
+                  <span class="visually-hidden">Loading...</span>
+                </div>
+                <div class="spinner-grow text-warning m-2" role="status">
+                  <span class="visually-hidden">Loading...</span>
+                </div>
+                <div class="spinner-grow text-info m-2" role="status">
+                  <span class="visually-hidden">Loading...</span>
+                </div>
+                <div class="d-inline-block bg-dark mx-2">
+                  <div class="spinner-grow text-light my-2 mx-3" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="html2" role="tabpanel">
+                  <pre class="line-numbers"><code class="lang-html">&lt;!-- Dark (default) spinner --&gt;
+&lt;div class=&quot;spinner-grow&quot; role=&quot;status&quot;&gt;
+  &lt;span class=&quot;visually-hidden&quot;&gt;Loading...&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;!-- Gray spinner --&gt;
+&lt;div class=&quot;spinner-grow text-body-secondary&quot; role=&quot;status&quot;&gt;
+  &lt;span class=&quot;visually-hidden&quot;&gt;Loading...&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;!-- Primary spinner --&gt;
+&lt;div class=&quot;spinner-grow text-primary&quot; role=&quot;status&quot;&gt;
+  &lt;span class=&quot;visually-hidden&quot;&gt;Loading...&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;!-- Secondary spinner --&gt;
+&lt;div class=&quot;spinner-grow text-secondary&quot; role=&quot;status&quot;&gt;
+  &lt;span class=&quot;visually-hidden&quot;&gt;Loading...&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;!-- Success spinner --&gt;
+&lt;div class=&quot;spinner-grow text-success&quot; role=&quot;status&quot;&gt;
+  &lt;span class=&quot;visually-hidden&quot;&gt;Loading...&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;!-- Danger spinner --&gt;
+&lt;div class=&quot;spinner-grow text-danger&quot; role=&quot;status&quot;&gt;
+  &lt;span class=&quot;visually-hidden&quot;&gt;Loading...&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;!-- Warning spinner --&gt;
+&lt;div class=&quot;spinner-grow text-warning&quot; role=&quot;status&quot;&gt;
+  &lt;span class=&quot;visually-hidden&quot;&gt;Loading...&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;!-- Info spinner --&gt;
+&lt;div class=&quot;spinner-grow text-info&quot; role=&quot;status&quot;&gt;
+  &lt;span class=&quot;visually-hidden&quot;&gt;Loading...&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;!-- Light spinner --&gt;
+&lt;div class=&quot;spinner-grow text-light&quot; role=&quot;status&quot;&gt;
+  &lt;span class=&quot;visually-hidden&quot;&gt;Loading...&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- Size -->
+        <section class="card border-0 mb-4" id="spinners-size">
+          <div class="card-body pb-0">
+            <h2 class="h4 mb-n2">Size</h2>
+          </div>
+          <div class="card-header">
+            <ul class="nav nav-tabs card-header-tabs flex-nowrap align-items-center mb-n1" role="tablist">
+              <li class="nav-item me-3">
+                <a class="nav-link px-0 py-2 border-0 rounded-1 active" href="#preview3" data-bs-toggle="tab" role="tab"
+                   aria-controls="preview3" aria-selected="true">
+                  <i class="ai-show fs-lg opacity-90 me-2"></i>
+                  Preview
+                </a>
+              </li>
+              <li class="vr opacity-20 my-3 me-3"></li>
+              <li class="nav-item">
+                <a class="nav-link px-0 py-2 border-0 rounded-1" href="#html3" data-bs-toggle="tab" role="tab"
+                   aria-controls="html3" aria-selected="false">
+                  <i class="ai-code fs-xl opacity-90 me-2"></i>
+                  HTML
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="card-body">
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="preview3" role="tabpanel">
+                <div class="d-inline-block align-middle me-2">
+                  <div class="spinner-border spinner-border-sm m-2" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                  </div>
+                  <div class="spinner-grow spinner-grow-sm m-2" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                  </div>
+                </div>
+                <div class="d-inline-block align-middle">
+                  <div class="spinner-border m-2" style="width: 3rem; height: 3rem;" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                  </div>
+                  <div class="spinner-grow m-2" style="width: 3rem; height: 3rem;" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="html3" role="tabpanel">
+                  <pre class="line-numbers"><code class="lang-html">&lt;!-- Small border spinner --&gt;
+&lt;div class=&quot;spinner-border spinner-border-sm&quot; role=&quot;status&quot;&gt;
+  &lt;span class=&quot;visually-hidden&quot;&gt;Loading...&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;!-- Small growing spinner --&gt;
+&lt;div class=&quot;spinner-grow spinner-grow-sm&quot; role=&quot;status&quot;&gt;
+  &lt;span class=&quot;visually-hidden&quot;&gt;Loading...&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;!-- Custom size border spinner --&gt;
+&lt;div class=&quot;spinner-border&quot; style=&quot;width: 3rem; height: 3rem;&quot; role=&quot;status&quot;&gt;
+  &lt;span class=&quot;visually-hidden&quot;&gt;Loading...&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;!-- Custom size growing spinner --&gt;
+&lt;div class=&quot;spinner-grow&quot; style=&quot;width: 3rem; height: 3rem;&quot; role=&quot;status&quot;&gt;
+  &lt;span class=&quot;visually-hidden&quot;&gt;Loading...&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- Inside button -->
+        <section class="card border-0 mb-4" id="spinners-button">
+          <div class="card-body pb-0">
+            <h2 class="h4 mb-n2">Inside button</h2>
+          </div>
+          <div class="card-header">
+            <ul class="nav nav-tabs card-header-tabs flex-nowrap align-items-center mb-n1" role="tablist">
+              <li class="nav-item me-3">
+                <a class="nav-link px-0 py-2 border-0 rounded-1 active" href="#preview4" data-bs-toggle="tab" role="tab"
+                   aria-controls="preview4" aria-selected="true">
+                  <i class="ai-show fs-lg opacity-90 me-2"></i>
+                  Preview
+                </a>
+              </li>
+              <li class="vr opacity-20 my-3 me-3"></li>
+              <li class="nav-item">
+                <a class="nav-link px-0 py-2 border-0 rounded-1" href="#html4" data-bs-toggle="tab" role="tab"
+                   aria-controls="html4" aria-selected="false">
+                  <i class="ai-code fs-xl opacity-90 me-2"></i>
+                  HTML
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="card-body">
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="preview4" role="tabpanel">
+                <button class="btn btn-primary btn-icon pe-none me-1 mb-3" type="button">
+                  <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                  <span class="visually-hidden">Loading...</span>
+                </button>
+                <button class="btn btn-primary pe-none me-3 mb-3" type="button">
+                  <span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>
+                  Loading...
+                </button>
+                <button class="btn btn-secondary btn-icon pe-none me-1 mb-3" type="button">
+                  <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+                  <span class="visually-hidden">Loading...</span>
+                </button>
+                <button class="btn btn-secondary pe-none mb-3" type="button">
+                  <span class="spinner-grow spinner-grow-sm me-2" role="status" aria-hidden="true"></span>
+                  Loading...
+                </button>
+              </div>
+              <div class="tab-pane fade" id="html4" role="tabpanel">
+                  <pre class="line-numbers"><code class="lang-html">&lt;!-- Button with border spinner --&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-icon pe-none&quot;&gt;
+  &lt;span class=&quot;spinner-border spinner-border-sm&quot; role=&quot;status&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;visually-hidden&quot;&gt;Loading...&lt;/span&gt;
+&lt;/button&gt;
+
+&lt;!-- Button with border spinner and text --&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-primary pe-none&quot;&gt;
+  &lt;span class=&quot;spinner-border spinner-border-sm me-2&quot; role=&quot;status&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+  Loading...
+&lt;/button&gt;
+
+&lt;!-- Button with growing spinner --&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-secondary btn-icon pe-none&quot;&gt;
+  &lt;span class=&quot;spinner-grow spinner-grow-sm&quot; role=&quot;status&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;visually-hidden&quot;&gt;Loading...&lt;/span&gt;
+&lt;/button&gt;
+
+&lt;!-- Button with growing spinner and text --&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-secondary pe-none&quot;&gt;
+  &lt;span class=&quot;spinner-grow spinner-grow-sm me-2&quot; role=&quot;status&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+  Loading...
+&lt;/button&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </section>
+{% endblock content %}

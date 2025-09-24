@@ -1,0 +1,541 @@
+{% extends 'ui_layout.html' %}
+
+{% load static i18n %}
+
+{% block title %}Around UI Kit | Tabs{% endblock title %}
+
+{% block content %}
+  <section class="container pt-5 pb-4">
+    <div class="row pt-5 pb-2 pb-sm-3">
+      <div class="col-lg-9 offset-lg-3 position-relative z-5">
+        <h1 class="pt-lg-4">Tabs</h1>
+        <div class="d-flex flex-wrap flex-md-nowrap justify-content-between pb-3">
+          <p class="text-body-secondary">Horizontally or vertically stacked list of items. When clicked each item switch
+            content in the tab pane.</p>
+          <p class="fs-sm fw-semibold ps-md-4">
+            <a class="text-decoration-none text-nowrap"
+               href="https://getbootstrap.com/docs/5.3/components/navs-tabs/#tabs" target="_blank" rel="noopener">
+              Bootstrap docs
+              <i class="ai-external-link fs-lg ms-2"></i>
+            </a>
+          </p>
+        </div>
+
+
+        <!-- With icons and dropdown -->
+        <section class="card border-0 mb-4" id="tabs-icon-dropdown">
+          <div class="card-body pb-0">
+            <h2 class="h4 mb-n2">With icons and dropdown</h2>
+          </div>
+          <div class="card-header">
+            <ul class="nav nav-tabs card-header-tabs flex-nowrap align-items-center mb-n1" role="tablist">
+              <li class="nav-item me-3">
+                <a class="nav-link px-0 py-2 border-0 rounded-1 active" href="#preview1" data-bs-toggle="tab" role="tab"
+                   aria-controls="preview1" aria-selected="true">
+                  <i class="ai-show fs-lg opacity-90 me-2"></i>
+                  Preview
+                </a>
+              </li>
+              <li class="vr opacity-20 my-3 me-3"></li>
+              <li class="nav-item">
+                <a class="nav-link px-0 py-2 border-0 rounded-1" href="#html1" data-bs-toggle="tab" role="tab"
+                   aria-controls="html1" aria-selected="false">
+                  <i class="ai-code fs-xl opacity-90 me-2"></i>
+                  HTML
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="card-body">
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="preview1" role="tabpanel">
+                <ul class="nav nav-tabs" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#home" data-bs-toggle="tab" role="tab">
+                      <i class="ai-home me-2"></i>
+                      Home
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#profile" data-bs-toggle="tab" role="tab">
+                      <i class="ai-user me-2"></i>
+                      Profile
+                    </a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" role="button">Dropdown</a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#messages" data-bs-toggle="tab" role="tab">Messages</a>
+                      <a class="dropdown-item" href="#settings" data-bs-toggle="tab" role="tab">Settings</a>
+                    </div>
+                  </li>
+                </ul>
+                <div class="tab-content">
+                  <div class="tab-pane fade show active" id="home" role="tabpanel">
+                    <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua,
+                      retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica.
+                      Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry
+                      richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american
+                      apparel, butcher voluptate nisi qui.</p>
+                  </div>
+                  <div class="tab-pane fade" id="profile" role="tabpanel">
+                    <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid.
+                      Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four
+                      loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk
+                      aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic
+                      magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente.</p>
+                  </div>
+                  <div class="tab-pane fade" id="messages" role="tabpanel">
+                    <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo
+                      retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft
+                      beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy
+                      irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free,
+                      carles pitchfork biodiesel fixie etsy retro mlkshk vice blog. Scenester cred you probably haven't
+                      heard of them, vinyl craft beer blog stumptown. Pitchfork sustainable tofu.</p>
+                  </div>
+                  <div class="tab-pane fade" id="settings" role="tabpanel">
+                    <p>Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out
+                      master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY,
+                      art party locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR,
+                      banh mi before they sold out farm-to-table VHS viral locavore cosby sweater. Lomo wolf viral,
+                      mustache readymade thundercats keffiyeh craft beer marfa ethical.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="html1" role="tabpanel">
+                  <pre class="line-numbers"><code class="lang-html">&lt;!-- Nav tabs --&gt;
+&lt;ul class=&quot;nav nav-tabs&quot; role=&quot;tablist&quot;&gt;
+  &lt;li class=&quot;nav-item&quot;&gt;
+    &lt;a href=&quot;#home&quot; class=&quot;nav-link active&quot; data-bs-toggle=&quot;tab&quot; role=&quot;tab&quot;&gt;
+      &lt;i class=&quot;fi-home me-2&quot;&gt;&lt;/i&gt;
+      Home
+    &lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;nav-item&quot;&gt;
+    &lt;a href=&quot;#profile&quot; class=&quot;nav-link&quot; data-bs-toggle=&quot;tab&quot; role=&quot;tab&quot;&gt;
+      &lt;i class=&quot;fi-user me-2&quot;&gt;&lt;/i&gt;
+      Profile
+    &lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;nav-item dropdown&quot;&gt;
+    &lt;a href=&quot;#&quot; class=&quot;nav-link dropdown-toggle&quot; data-bs-toggle=&quot;dropdown&quot; role=&quot;button&quot;&gt;Dropdown&lt;/a&gt;
+    &lt;div class=&quot;dropdown-menu&quot;&gt;
+      &lt;a href=&quot;#messages&quot; class=&quot;dropdown-item&quot; data-bs-toggle=&quot;tab&quot; role=&quot;tab&quot;&gt;Messages&lt;/a&gt;
+      &lt;a href=&quot;#settings&quot; class=&quot;dropdown-item&quot; data-bs-toggle=&quot;tab&quot; role=&quot;tab&quot;&gt;Settings&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!-- Tabs content --&gt;
+&lt;div class=&quot;tab-content&quot;&gt;
+  &lt;div class=&quot;tab-pane fade show active&quot; id=&quot;home&quot; role=&quot;tabpanel&quot;&gt;
+    &lt;p&gt;Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;tab-pane fade&quot; id=&quot;profile&quot; role=&quot;tabpanel&quot;&gt;
+    &lt;p&gt;Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente.&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;tab-pane fade&quot; id=&quot;messages&quot; role=&quot;tabpanel&quot;&gt;
+    &lt;p&gt;Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk vice blog. Scenester cred you probably haven't heard of them, vinyl craft beer blog stumptown. Pitchfork sustainable tofu.&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;tab-pane fade&quot; id=&quot;settings&quot; role=&quot;tabpanel&quot;&gt;
+    &lt;p&gt;Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before they sold out farm-to-table VHS viral locavore cosby sweater. Lomo wolf viral, mustache readymade thundercats keffiyeh craft beer marfa ethical.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- Pill shape -->
+        <section class="card border-0 mb-4" id="tabs-pill-shape">
+          <div class="card-body pb-0">
+            <h2 class="h4 mb-n2">Pill shape</h2>
+          </div>
+          <div class="card-header">
+            <ul class="nav nav-tabs card-header-tabs flex-nowrap align-items-center mb-n1" role="tablist">
+              <li class="nav-item me-3">
+                <a class="nav-link px-0 py-2 border-0 rounded-1 active" href="#preview2" data-bs-toggle="tab" role="tab"
+                   aria-controls="preview2" aria-selected="true">
+                  <i class="ai-show fs-lg opacity-90 me-2"></i>
+                  Preview
+                </a>
+              </li>
+              <li class="vr opacity-20 my-3 me-3"></li>
+              <li class="nav-item">
+                <a class="nav-link px-0 py-2 border-0 rounded-1" href="#html2" data-bs-toggle="tab" role="tab"
+                   aria-controls="html2" aria-selected="false">
+                  <i class="ai-code fs-xl opacity-90 me-2"></i>
+                  HTML
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="card-body">
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="preview2" role="tabpanel">
+                <ul class="nav nav-tabs" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link rounded-pill active" href="#" data-bs-toggle="tab" role="tab">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link rounded-pill" href="#" data-bs-toggle="tab" role="tab">Profile</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link rounded-pill" href="#" data-bs-toggle="tab" role="tab">Settings</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link rounded-pill disabled" href="#" data-bs-toggle="tab" role="tab">Disabled</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="tab-pane fade" id="html2" role="tabpanel">
+                  <pre class="line-numbers"><code class="lang-html">&lt;!-- Pill shape tabs --&gt;
+&lt;ul class=&quot;nav nav-tabs&quot; role=&quot;tablist&quot;&gt;
+  &lt;li class=&quot;nav-item&quot;&gt;
+    &lt;a href=&quot;#&quot; class=&quot;nav-link rounded-pill active&quot; data-bs-toggle=&quot;tab&quot; role=&quot;tab&quot;&gt;
+      Home
+    &lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;nav-item&quot;&gt;
+    &lt;a href=&quot;#&quot; class=&quot;nav-link rounded-pill&quot; data-bs-toggle=&quot;tab&quot; role=&quot;tab&quot;&gt;
+      Profile
+    &lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;nav-item&quot;&gt;
+    &lt;a href=&quot;#&quot; class=&quot;nav-link rounded-pill&quot; data-bs-toggle=&quot;tab&quot; role=&quot;tab&quot;&gt;
+      Settings
+    &lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;nav-item&quot;&gt;
+    &lt;a href=&quot;#&quot; class=&quot;nav-link rounded-pill disabled&quot; data-bs-toggle=&quot;tab&quot; role=&quot;tab&quot;&gt;
+      Disabled
+    &lt;/a&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- Alignment and fill -->
+        <section class="card border-0 mb-4" id="tabs-alignment">
+          <div class="card-body pb-0">
+            <h2 class="h4 mb-n2">Alignment and fill</h2>
+          </div>
+          <div class="card-header">
+            <ul class="nav nav-tabs card-header-tabs flex-nowrap align-items-center mb-n1" role="tablist">
+              <li class="nav-item me-3">
+                <a class="nav-link px-0 py-2 border-0 rounded-1 active" href="#preview3" data-bs-toggle="tab" role="tab"
+                   aria-controls="preview3" aria-selected="true">
+                  <i class="ai-show fs-lg opacity-90 me-2"></i>
+                  Preview
+                </a>
+              </li>
+              <li class="vr opacity-20 my-3 me-3"></li>
+              <li class="nav-item">
+                <a class="nav-link px-0 py-2 border-0 rounded-1" href="#html3" data-bs-toggle="tab" role="tab"
+                   aria-controls="html3" aria-selected="false">
+                  <i class="ai-code fs-xl opacity-90 me-2"></i>
+                  HTML
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="card-body">
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="preview3" role="tabpanel">
+                <ul class="nav nav-tabs justify-content-center mb-5" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#" data-bs-toggle="tab" role="tab">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" data-bs-toggle="tab" role="tab">Profile</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" data-bs-toggle="tab" role="tab">Settings</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" href="#" data-bs-toggle="tab" role="tab">Disabled</a>
+                  </li>
+                </ul>
+                <ul class="nav nav-tabs justify-content-end mb-5" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#" data-bs-toggle="tab" role="tab">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" data-bs-toggle="tab" role="tab">Profile</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" data-bs-toggle="tab" role="tab">Settings</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" href="#" data-bs-toggle="tab" role="tab">Disabled</a>
+                  </li>
+                </ul>
+                <ul class="nav nav-tabs nav-fill" role="tablist">
+                  <li class="nav-item me-2">
+                    <a class="nav-link active" href="#" data-bs-toggle="tab" role="tab">Home</a>
+                  </li>
+                  <li class="nav-item me-2">
+                    <a class="nav-link" href="#" data-bs-toggle="tab" role="tab">Profile</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" data-bs-toggle="tab" role="tab">Settings</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" href="#" data-bs-toggle="tab" role="tab">Disabled</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="tab-pane fade" id="html3" role="tabpanel">
+                  <pre class="line-numbers"><code class="lang-html">&lt;!-- Center aligned --&gt;
+&lt;ul class=&quot;nav nav-tabs justify-content-center&quot; role=&quot;tablist&quot;&gt;
+  &lt;li class=&quot;nav-item&quot;&gt;
+    &lt;a href=&quot;#&quot; class=&quot;nav-link&quot; data-bs-toggle=&quot;tab&quot; role=&quot;tab&quot;&gt;Home&lt;/a&gt;
+  &lt;/li&gt;
+  ...
+&lt;/ul&gt;
+
+&lt;!-- Right aligned --&gt;
+&lt;ul class=&quot;nav nav-tabs justify-content-end&quot; role=&quot;tablist&quot;&gt;
+  &lt;li class=&quot;nav-item&quot;&gt;
+    &lt;a href=&quot;#&quot; class=&quot;nav-link&quot; data-bs-toggle=&quot;tab&quot; role=&quot;tab&quot;&gt;Home&lt;/a&gt;
+  &lt;/li&gt;
+  ...
+&lt;/ul&gt;
+
+&lt;!-- Fill tabs --&gt;
+&lt;ul class=&quot;nav nav-tabs nav-fill&quot; role=&quot;tablist&quot;&gt;
+  &lt;li class=&quot;nav-item me-2&quot;&gt;
+    &lt;a href=&quot;#&quot; class=&quot;nav-link&quot; data-bs-toggle=&quot;tab&quot; role=&quot;tab&quot;&gt;Home&lt;/a&gt;
+  &lt;/li&gt;
+  ...
+&lt;/ul&gt;
+
+&lt;!-- Justified tabs --&gt;
+&lt;ul class=&quot;nav nav-tabs nav-justified&quot; role=&quot;tablist&quot;&gt;
+  &lt;li class=&quot;nav-item me-2&quot;&gt;
+    &lt;a href=&quot;#&quot; class=&quot;nav-link&quot; data-bs-toggle=&quot;tab&quot; role=&quot;tab&quot;&gt;Home&lt;/a&gt;
+  &lt;/li&gt;
+  ...
+&lt;/ul&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- Vertical tabs -->
+        <section class="card border-0 mb-4" id="tabs-vertical">
+          <div class="card-body pb-0">
+            <h2 class="h4 mb-n2">Vertical tabs</h2>
+          </div>
+          <div class="card-header">
+            <ul class="nav nav-tabs card-header-tabs flex-nowrap align-items-center mb-n1" role="tablist">
+              <li class="nav-item me-3">
+                <a class="nav-link px-0 py-2 border-0 rounded-1 active" href="#preview4" data-bs-toggle="tab" role="tab"
+                   aria-controls="preview4" aria-selected="true">
+                  <i class="ai-show fs-lg opacity-90 me-2"></i>
+                  Preview
+                </a>
+              </li>
+              <li class="vr opacity-20 my-3 me-3"></li>
+              <li class="nav-item">
+                <a class="nav-link px-0 py-2 border-0 rounded-1" href="#html4" data-bs-toggle="tab" role="tab"
+                   aria-controls="html4" aria-selected="false">
+                  <i class="ai-code fs-xl opacity-90 me-2"></i>
+                  HTML
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="card-body">
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="preview4" role="tabpanel">
+                <ul class="nav nav-tabs flex-column" style="max-width: 16rem;" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#" data-bs-toggle="tab" role="tab">
+                      <i class="ai-home me-2"></i>
+                      Home
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" data-bs-toggle="tab" role="tab">
+                      <i class="ai-user me-2"></i>
+                      Profile
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" data-bs-toggle="tab" role="tab">
+                      <i class="ai-messages me-2"></i>
+                      Messages
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" data-bs-toggle="tab" role="tab">
+                      <i class="ai-settings me-2"></i>
+                      Settings
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="tab-pane fade" id="html4" role="tabpanel">
+                  <pre class="line-numbers"><code class="lang-html">&lt;!-- Vertical tabs --&gt;
+&lt;ul class=&quot;nav nav-tabs flex-column&quot; role=&quot;tablist&quot;&gt;
+  &lt;li class=&quot;nav-item&quot;&gt;
+    &lt;a class=&quot;nav-link active&quot; href=&quot;#&quot; data-bs-toggle=&quot;tab&quot; role=&quot;tab&quot;&gt;
+      &lt;i class=&quot;ai-home me-2&quot;&gt;&lt;/i&gt;
+      Home
+    &lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;nav-item&quot;&gt;
+    &lt;a class=&quot;nav-link&quot; href=&quot;#&quot; data-bs-toggle=&quot;tab&quot; role=&quot;tab&quot;&gt;
+      &lt;i class=&quot;ai-user me-2&quot;&gt;&lt;/i&gt;
+      Profile
+    &lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;nav-item&quot;&gt;
+    &lt;a class=&quot;nav-link&quot; href=&quot;#&quot; data-bs-toggle=&quot;tab&quot; role=&quot;tab&quot;&gt;
+      &lt;i class=&quot;ai-message-square me-2&quot;&gt;&lt;/i&gt;
+      Messages
+    &lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;nav-item&quot;&gt;
+    &lt;a class=&quot;nav-link&quot; href=&quot;#&quot; data-bs-toggle=&quot;tab&quot; role=&quot;tab&quot;&gt;
+      &lt;i class=&quot;ai-settings me-2&quot;&gt;&lt;/i&gt;
+      Settings
+    &lt;/a&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- Image tabs -->
+        <section class="card border-0 mb-4" id="tabs-image">
+          <div class="card-body pb-0">
+            <h2 class="h4 mb-n2">Image tabs</h2>
+          </div>
+          <div class="card-header">
+            <ul class="nav nav-tabs card-header-tabs flex-nowrap align-items-center mb-n1" role="tablist">
+              <li class="nav-item me-3">
+                <a class="nav-link px-0 py-2 border-0 rounded-1 active" href="#preview5" data-bs-toggle="tab" role="tab"
+                   aria-controls="preview5" aria-selected="true">
+                  <i class="ai-show fs-lg opacity-90 me-2"></i>
+                  Preview
+                </a>
+              </li>
+              <li class="vr opacity-20 my-3 me-3"></li>
+              <li class="nav-item">
+                <a class="nav-link px-0 py-2 border-0 rounded-1" href="#html5" data-bs-toggle="tab" role="tab"
+                   aria-controls="html5" aria-selected="false">
+                  <i class="ai-code fs-xl opacity-90 me-2"></i>
+                  HTML
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="card-body">
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="preview5" role="tabpanel">
+                <ul class="nav nav-tabs" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#" data-bs-toggle="tab" role="tab">
+                      <div class="swap-image">
+                        <img class="swap-to" src="{% static '/img/landing/saas-1/brands/klinos-color.svg' %}"
+                             width="131"
+                             alt="Klinos">
+                        <div class="swap-from">
+                          <img class="d-dark-mode-none" src="{% static '/img/landing/saas-1/brands/klinos-gray.svg' %}"
+                               width="131" alt="Klinos">
+                          <img class="d-none d-dark-mode-block"
+                               src="{% static '/img/landing/saas-1/brands/klinos-light.svg' %}" width="131"
+                               alt="Klinos">
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" data-bs-toggle="tab" role="tab">
+                      <div class="swap-image">
+                        <img class="swap-to" src="{% static '/img/landing/saas-1/brands/champion-color.svg' %}"
+                             width="162"
+                             alt="Champion">
+                        <div class="swap-from">
+                          <img class="d-dark-mode-none"
+                               src="{% static '/img/landing/saas-1/brands/champion-gray.svg' %}"
+                               width="162" alt="Champion">
+                          <img class="d-none d-dark-mode-block"
+                               src="{% static '/img/landing/saas-1/brands/champion-light.svg' %}" width="162"
+                               alt="Champion">
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" data-bs-toggle="tab" role="tab">
+                      <div class="swap-image">
+                        <img class="swap-to" src="{% static '/img/landing/saas-1/brands/airbnb-color.svg' %}"
+                             width="132"
+                             alt="Airbnb">
+                        <div class="swap-from">
+                          <img class="d-dark-mode-none" src="{% static '/img/landing/saas-1/brands/airbnb-gray.svg' %}"
+                               width="132" alt="Airbnb">
+                          <img class="d-none d-dark-mode-block"
+                               src="{% static '/img/landing/saas-1/brands/airbnb-light.svg' %}" width="132"
+                               alt="Airbnb">
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="tab-pane fade" id="html5" role="tabpanel">
+                  <pre class="line-numbers"><code class="lang-html">&lt;!-- Image based nav tabs --&gt;
+&lt;ul class=&quot;nav nav-tabs&quot; role=&quot;tablist&quot;&gt;
+  &lt;li class=&quot;nav-item&quot;&gt;
+    &lt;a class=&quot;nav-link active&quot; href=&quot;#&quot; data-bs-toggle=&quot;tab&quot; role=&quot;tab&quot;&gt;
+      &lt;div class=&quot;swap-image&quot;&gt;
+        &lt;img src=&quot;/img/landing/saas-1/brands/klinos-color.svg&quot; class=&quot;swap-to&quot; width=&quot;131&quot; alt=&quot;Klinos&quot;&gt;
+        &lt;div class=&quot;swap-from&quot;&gt;
+          &lt;img src=&quot;/img/landing/saas-1/brands/klinos-gray.svg&quot; class=&quot;d-dark-mode-none&quot; width=&quot;131&quot; alt=&quot;Klinos&quot;&gt;
+          &lt;img src=&quot;/img/landing/saas-1/brands/klinos-light.svg&quot; class=&quot;d-none d-dark-mode-block&quot; width=&quot;131&quot; alt=&quot;Klinos&quot;&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;nav-item&quot;&gt;
+    &lt;a class=&quot;nav-link&quot; href=&quot;#&quot; data-bs-toggle=&quot;tab&quot; role=&quot;tab&quot;&gt;
+      &lt;div class=&quot;swap-image&quot;&gt;
+        &lt;img src=&quot;/img/landing/saas-1/brands/champion-color.svg&quot; class=&quot;swap-to&quot; width=&quot;162&quot; alt=&quot;Champion&quot;&gt;
+        &lt;div class=&quot;swap-from&quot;&gt;
+          &lt;img src=&quot;/img/landing/saas-1/brands/champion-gray.svg&quot; class=&quot;d-dark-mode-none&quot; width=&quot;162&quot; alt=&quot;Champion&quot;&gt;
+          &lt;img src=&quot;/img/landing/saas-1/brands/champion-light.svg&quot; class=&quot;d-none d-dark-mode-block&quot; width=&quot;162&quot; alt=&quot;Champion&quot;&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;nav-item&quot;&gt;
+    &lt;a class=&quot;nav-link&quot; href=&quot;#&quot; data-bs-toggle=&quot;tab&quot; role=&quot;tab&quot;&gt;
+      &lt;div class=&quot;swap-image&quot;&gt;
+        &lt;img src=&quot;/img/landing/saas-1/brands/airbnb-color.svg&quot; class=&quot;swap-to&quot; width=&quot;132&quot; alt=&quot;Airbnb&quot;&gt;
+        &lt;div class=&quot;swap-from&quot;&gt;
+          &lt;img src=&quot;/img/landing/saas-1/brands/airbnb-gray.svg&quot; class=&quot;d-dark-mode-none&quot; width=&quot;132&quot; alt=&quot;Airbnb&quot;&gt;
+          &lt;img src=&quot;/img/landing/saas-1/brands/airbnb-light.svg&quot; class=&quot;d-none d-dark-mode-block&quot; width=&quot;132&quot; alt=&quot;Airbnb&quot;&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/a&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </section>
+{% endblock content %}

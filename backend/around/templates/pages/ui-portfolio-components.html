@@ -1,0 +1,474 @@
+{% extends 'ui_layout.html' %}
+
+{% load static i18n %}
+
+{% block title %}Around UI Kit | Portfolio components{% endblock title %}
+
+{% block content %}
+  <section class="container pt-5 pb-4">
+    <div class="row pt-5 pb-2 pb-sm-3">
+      <div class="col-lg-9 offset-lg-3 position-relative z-5">
+        <h1 class="pt-lg-4">Portfolio components</h1>
+        <div class="d-flex flex-wrap flex-md-nowrap justify-content-between pb-3">
+          <p class="text-body-secondary">Components that are related to the portfolio section of the website.</p>
+          <div class="ps-md-4 mb-3">
+            <span class="badge bg-warning fs-sm">Around component</span>
+          </div>
+        </div>
+
+
+        <!-- Info alert-->
+        <div class="alert alert-info d-flex mb-4" role="alert">
+          <i class="ai-circle-info lead me-2 me-sm-3"></i>
+          <div class="text-break">
+            <p class="mb-2"><span class="fw-semibold">Scroll animations</span> are driven by the <span
+              class="fw-semibold">AOS (Animate on Scroll) plugin</span>.</p>
+          </div>
+        </div>
+
+
+        <!-- Grid view style 1 -->
+        <section class="card border-0 mb-4" id="portfolio-grid-1">
+          <div class="card-body pb-0">
+            <h2 class="h4 mb-n2">Grid view style 1</h2>
+          </div>
+          <div class="card-header">
+            <ul class="nav nav-tabs card-header-tabs flex-nowrap align-items-center mb-n1" role="tablist">
+              <li class="nav-item me-3">
+                <a class="nav-link px-0 py-2 border-0 rounded-1 active" href="#preview1" data-bs-toggle="tab" role="tab"
+                   aria-controls="preview1" aria-selected="true">
+                  <i class="ai-show fs-lg opacity-90 me-2"></i>
+                  Preview
+                </a>
+              </li>
+              <li class="vr opacity-20 my-3 me-3"></li>
+              <li class="nav-item">
+                <a class="nav-link px-0 py-2 border-0 rounded-1" href="#html1" data-bs-toggle="tab" role="tab"
+                   aria-controls="html1" aria-selected="false">
+                  <i class="ai-code fs-xl opacity-90 me-2"></i>
+                  HTML
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="card-body">
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="preview1" role="tabpanel">
+                <article class="card-hover zoom-effect" style="max-width: 480px;">
+                  <div class="zoom-effect-wrapper rounded-5">
+                    <div class="zoom-effect-img">
+                      <img src="{% static '/img/portfolio/grid/02.jpg' %}" alt="Image">
+                    </div>
+                  </div>
+                  <div class="pt-4 mt-lg-2">
+                    <h2 class="h5 mb-2">
+                      <a class="stretched-link text-nav" href="#">Design for eco bags and merch</a>
+                    </h2>
+                    <span class="fs-sm text-body-secondary opacity-0 d-none d-sm-block">Product design</span>
+                    <span class="fs-sm text-body-secondary d-sm-none">Product design</span>
+                  </div>
+                </article>
+              </div>
+              <div class="tab-pane fade" id="html1" role="tabpanel">
+                  <pre class="line-numbers"><code class="lang-html">&lt;!-- Portfolio card vertical layout style 1 (Grid view) --&gt;
+&lt;article class=&quot;card-hover zoom-effect&quot; style=&quot;max-width: 480px;&quot;&gt;
+  &lt;div class=&quot;zoom-effect-wrapper rounded-5&quot;&gt;
+    &lt;div class=&quot;zoom-effect-img&quot;&gt;
+      &lt;img src=&quot;/img/portfolio/grid/02.jpg&quot; alt=&quot;Image&quot;&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;pt-4 mt-lg-2&quot;&gt;
+    &lt;h2 class=&quot;h5 mb-2&quot;&gt;
+      &lt;a href=&quot;#&quot; class=&quot;stretched-link text-nav&quot;&gt;Design for eco bags and merch&lt;/a&gt;
+    &lt;/h2&gt;
+    &lt;span class=&quot;fs-sm text-body-secondary opacity-0 d-none d-sm-block&quot;&gt;Product design&lt;/span&gt;
+    &lt;span class=&quot;fs-sm text-body-secondary d-sm-none&quot;&gt;Product design&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/article&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- Grid view style 2 -->
+        <section class="card border-0 mb-4" id="portfolio-grid-2">
+          <div class="card-body pb-0">
+            <h2 class="h4 mb-n2">Grid view style 2</h2>
+          </div>
+          <div class="card-header">
+            <ul class="nav nav-tabs card-header-tabs flex-nowrap align-items-center mb-n1" role="tablist">
+              <li class="nav-item me-3"><a class="nav-link px-0 py-2 border-0 rounded-1 active" href="#preview2"
+                                           data-bs-toggle="tab" role="tab" aria-controls="preview2"
+                                           aria-selected="true"><i class="ai-show fs-lg opacity-90 me-2"></i>Preview</a>
+              </li>
+              <li class="vr opacity-20 my-3 me-3"></li>
+              <li class="nav-item">
+                <a class="nav-link px-0 py-2 border-0 rounded-1" href="#html2" data-bs-toggle="tab" role="tab"
+                   aria-controls="html2" aria-selected="false">
+                  <i class="ai-code fs-xl opacity-90 me-2"></i>
+                  HTML
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="card-body">
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="preview2" role="tabpanel">
+                <article class="zoom-effect position-relative border-bottom pb-3" style="max-width: 480px;">
+                  <div class="zoom-effect-wrapper">
+                    <div class="zoom-effect-img">
+                      <img src="{% static '/img/portfolio/grid/12.jpg' %}" alt="Image">
+                    </div>
+                  </div>
+                  <div class="pt-4 mt-lg-2">
+                    <h2 class="h4 mb-2">
+                      <a class="stretched-link" href="#">The Studio</a>
+                    </h2>
+                    <div class="d-flex justify-content-between fs-lg text-body-secondary">
+                      <span>Web design</span>
+                      <span>2021</span>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="tab-pane fade" id="html2" role="tabpanel">
+                  <pre class="line-numbers"><code class="lang-html">&lt;!-- Portfolio card vertical layout style 2 (Grid view) --&gt;
+&lt;article class=&quot;zoom-effect position-relative border-bottom pb-3&quot; style=&quot;max-width: 480px;&quot;&gt;
+  &lt;div class=&quot;zoom-effect-wrapper&quot;&gt;
+    &lt;div class=&quot;zoom-effect-img&quot;&gt;
+      &lt;img src=&quot;/img/portfolio/grid/12.jpg&quot; alt=&quot;Image&quot;&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;pt-4 mt-lg-2&quot;&gt;
+    &lt;h2 class=&quot;h4 mb-2&quot;&gt;
+      &lt;a href=&quot;#&quot; class=&quot;stretched-link&quot;&gt;The Studio&lt;/a&gt;
+    &lt;/h2&gt;
+    &lt;div class=&quot;d-flex justify-content-between fs-lg text-body-secondary&quot;&gt;
+      &lt;span&gt;Web design&lt;/span&gt;
+      &lt;span&gt;2021&lt;/span&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/article&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- Grid view style 3 -->
+        <section class="card border-0 mb-4" id="portfolio-grid-3">
+          <div class="card-body pb-0">
+            <h2 class="h4 mb-n2">Grid view style 3</h2>
+          </div>
+          <div class="card-header">
+            <ul class="nav nav-tabs card-header-tabs flex-nowrap align-items-center mb-n1" role="tablist">
+              <li class="nav-item me-3">
+                <a class="nav-link px-0 py-2 border-0 rounded-1 active" href="#preview3" data-bs-toggle="tab" role="tab"
+                   aria-controls="preview3" aria-selected="true">
+                  <i class="ai-show fs-lg opacity-90 me-2"></i>
+                  Preview
+                </a>
+              </li>
+              <li class="vr opacity-20 my-3 me-3"></li>
+              <li class="nav-item">
+                <a class="nav-link px-0 py-2 border-0 rounded-1" href="#html3" data-bs-toggle="tab" role="tab"
+                   aria-controls="html3" aria-selected="false">
+                  <i class="ai-code fs-xl opacity-90 me-2"></i>
+                  HTML
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="card-body">
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="preview3" role="tabpanel">
+                <a class="card-flip" href="#" style="max-width: 316px;">
+                  <div class="card-flip-inner">
+                    <div class="card-flip-front"
+                         style="background-image: url(/static/img/landing/creative-agency/services/03.jpg);">
+                      <div class="d-flex flex-column h-100" data-bs-theme="light">
+                        <h2 class="fs-lg fw-normal mb-0 mt-auto">Branding</h2>
+                      </div>
+                    </div>
+                    <div class="card-flip-back bg-secondary">
+                      <div class="d-flex flex-column h-100 px-sm-2 pt-sm-2 px-lg-0 pt-lg-0 px-xl-3 pt-xl-3">
+                        <h3 class="h4">Branding</h3>
+                        <ul class="text-body ps-4 mb-3">
+                          <li class="mb-2">Identity design</li>
+                          <li class="mb-2">Brand book creation</li>
+                          <li class="mb-2">Colors and fonts</li>
+                          <li class="mb-2">Banners and covers</li>
+                          <li class="mb-1">Visual style</li>
+                        </ul>
+                        <div class="text-end pt-3 pt-sm-2 pt-xl-4 mt-auto me-sm-n2 me-lg-0 me-xl-n3">
+                          <div class="btn btn-sm btn-icon btn-outline-primary rounded-circle">
+                            <i class="ai-arrow-right"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="tab-pane fade" id="html3" role="tabpanel">
+                  <pre class="line-numbers"><code class="lang-html">&lt;!-- Portfolio card with flipping effect (Grid view) --&gt;
+&lt;a href=&quot;#&quot; class=&quot;card-flip&quot; style=&quot;max-width: 316px;&quot;&gt;
+  &lt;div class=&quot;card-flip-inner&quot;&gt;
+    &lt;div class=&quot;card-flip-front&quot; style=&quot;background-image: url(/static/img/landing/creative-agency/services/03.jpg);&quot;&gt;
+      &lt;div class=&quot;d-flex flex-column h-100&quot; data-bs-theme=&quot;light&quot;&gt;
+        &lt;h2 class=&quot;fs-lg fw-normal mb-0 mt-auto&quot;&gt;Branding&lt;/h2&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;card-flip-back bg-secondary&quot;&gt;
+      &lt;div class=&quot;d-flex flex-column h-100 px-sm-2 pt-sm-2 px-lg-0 pt-lg-0 px-xl-3 pt-xl-3&quot;&gt;
+        &lt;h3 class=&quot;h4&quot;&gt;Branding&lt;/h3&gt;
+        &lt;ul class=&quot;text-body ps-4 mb-3&quot;&gt;
+          &lt;li class=&quot;mb-2&quot;&gt;Identity design&lt;/li&gt;
+          &lt;li class=&quot;mb-2&quot;&gt;Brand book creation&lt;/li&gt;
+          &lt;li class=&quot;mb-2&quot;&gt;Colors and fonts&lt;/li&gt;
+          &lt;li class=&quot;mb-2&quot;&gt;Banners and covers&lt;/li&gt;
+          &lt;li class=&quot;mb-1&quot;&gt;Visual style&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;div class=&quot;text-end pt-3 pt-sm-2 pt-xl-4 mt-auto me-sm-n2 me-lg-0 me-xl-n3&quot;&gt;
+          &lt;div class=&quot;btn btn-sm btn-icon btn-outline-primary rounded-circle&quot;&gt;
+            &lt;i class=&quot;ai-arrow-right&quot;&gt;&lt;/i&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/a&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- List view style 1 -->
+        <section class="card border-0 mb-4" id="portfolio-list-1">
+          <div class="card-body pb-0">
+            <h2 class="h4 mb-n2">List view style 1</h2>
+          </div>
+          <div class="card-header">
+            <ul class="nav nav-tabs card-header-tabs flex-nowrap align-items-center mb-n1" role="tablist">
+              <li class="nav-item me-3">
+                <a class="nav-link px-0 py-2 border-0 rounded-1 active" href="#preview4" data-bs-toggle="tab" role="tab"
+                   aria-controls="preview4" aria-selected="true">
+                  <i class="ai-show fs-lg opacity-90 me-2"></i>
+                  Preview
+                </a>
+              </li>
+              <li class="vr opacity-20 my-3 me-3"></li>
+              <li class="nav-item">
+                <a class="nav-link px-0 py-2 border-0 rounded-1" href="#html4" data-bs-toggle="tab" role="tab"
+                   aria-controls="html4" aria-selected="false">
+                  <i class="ai-code fs-xl opacity-90 me-2"></i>
+                  HTML
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="card-body">
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="preview4" role="tabpanel">
+                <article class="row align-items-center card-hover pb-5 mb-md-2 mb-lg-3 mb-xl-4" data-aos="fade-up"
+                         data-aos-duration="600" data-aos-offset="280">
+                  <div class="col-md-7 mb-4 mb-md-0">
+                    <a href="#">
+                      <img class="rounded-5" src="{% static '/img/portfolio/list/03.jpg' %}" width="700" alt="Image">
+                    </a>
+                  </div>
+                  <div class="col-md-5" data-aos="fade-up" data-aos-duration="850" data-aos-offset="180"
+                       data-disable-parallax-down="md">
+                    <div class="ms-md-2 ms-xl-4" style="max-width: 330px;">
+                      <div class="text-body-secondary mb-2">Identity, Packaging</div>
+                      <h2 class="mb-lg-4">
+                        <a href="#">Bottle for French perfume brand</a>
+                      </h2>
+                      <p class="mb-0 mb-md-1 mb-lg-3">Egestas ultrices condimentum consectetur massa aliquam volutpat
+                        pulvinar aliquet nisi quam. Nibh commodo tristique nisi, justo, sed maecenas lectus ut nec
+                        eu.</p>
+                      <a class="btn btn-lg btn-link px-0 opacity-0 d-none d-md-inline-flex" href="#">
+                        Read more
+                        <i class="ai-arrow-right ms-2"></i>
+                      </a>
+                    </div>
+                  </div>
+                </article>
+                <article class="row align-items-center card-hover pb-4" data-aos="fade-up" data-aos-duration="600"
+                         data-aos-offset="280">
+                  <div class="col-md-7 order-md-2 mb-4 mb-md-0">
+                    <a href="#">
+                      <img class="rounded-5" src="{% static '/img/portfolio/list/04.jpg' %}" width="700" alt="Image">
+                    </a>
+                  </div>
+                  <div class="col-md-5 order-md-1" data-aos="fade-up" data-aos-duration="850" data-aos-offset="180"
+                       data-disable-parallax-down="md">
+                    <div class="me-md-2 me-xl-4" style="max-width: 330px;">
+                      <div class="text-body-secondary mb-2">E-book, Branding</div>
+                      <h2 class="mb-lg-4">
+                        <a href="#">Book cover design Twin Fish</a>
+                      </h2>
+                      <p class="mb-0 mb-md-1 mb-lg-3">Sed feugiat tristique enim aenean netus cum adipiscing est sem
+                        eget nulla leo vestibulum. Cras urna, proin ut ut dictum risus porttitor nulla consequat et
+                        iaculis.</p>
+                      <a class="btn btn-lg btn-link px-0 opacity-0 d-none d-md-inline-flex" href="#">
+                        Read more
+                        <i class="ai-arrow-right ms-2"></i>
+                      </a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="tab-pane fade" id="html4" role="tabpanel">
+                  <pre class="line-numbers"><code class="lang-html">&lt;!-- Portfolio card horizontal layout style 1 (List view). Ideally should be placed inside .container --&gt;
+
+&lt;!-- Image on the left --&gt;
+&lt;article class=&quot;row align-items-center card-hover pb-5 mb-md-2 mb-lg-3 mb-xl-4&quot; data-aos=&quot;fade-up&quot; data-aos-duration=&quot;600&quot; data-aos-offset=&quot;280&quot;&gt;
+  &lt;div class=&quot;col-md-7 offset-xxl-1 mb-4 mb-md-0&quot;&gt;
+    &lt;a href=&quot;#&quot;&gt;
+      &lt;img src=&quot;/img/portfolio/list/03.jpg&quot; class=&quot;rounded-5&quot; width=&quot;700&quot; alt=&quot;Image&quot;&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;col-md-5 col-xl-4&quot; data-aos=&quot;fade-up&quot; data-aos-duration=&quot;850&quot; data-aos-offset=&quot;180&quot; data-disable-parallax-down=&quot;md&quot;&gt;
+    &lt;div class=&quot;ms-md-4 ms-lg-5 ms-xxl-0&quot; style=&quot;max-width: 330px;&quot;&gt;
+      &lt;div class=&quot;text-body-secondary mb-2&quot;&gt;Identity, Packaging&lt;/div&gt;
+      &lt;h2 class=&quot;mb-lg-4&quot;&gt;
+        &lt;a href=&quot;#&quot;&gt;Bottle for French perfume brand&lt;/a&gt;
+      &lt;/h2&gt;
+      &lt;p class=&quot;mb-0 mb-md-1 mb-lg-3&quot;&gt;Egestas ultrices condimentum consectetur massa aliquam volutpat pulvinar aliquet nisi quam. Nibh commodo tristique nisi, justo, sed maecenas lectus ut nec eu.&lt;/p&gt;
+      &lt;a href=&quot;#&quot; class=&quot;btn btn-lg btn-link px-0 opacity-0 d-none d-md-inline-flex&quot;&gt;
+        Read more
+        &lt;i class=&quot;ai-arrow-right ms-2&quot;&gt;&lt;/i&gt;
+      &lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/article&gt;
+
+&lt;!-- Image on the right --&gt;
+&lt;article class=&quot;row align-items-center card-hover pb-5 mb-md-2 mb-lg-3 mb-xl-4&quot; data-aos=&quot;fade-up&quot; data-aos-duration=&quot;600&quot; data-aos-offset=&quot;280&quot;&gt;
+  &lt;div class=&quot;col-md-7 order-md-2 mb-4 mb-md-0&quot;&gt;
+    &lt;a href=&quot;#&quot;&gt;
+      &lt;img src=&quot;/img/portfolio/list/04.jpg&quot; class=&quot;rounded-5&quot; width=&quot;700&quot; alt=&quot;Image&quot;&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;col-md-5 col-xl-4 offset-xxl-1 order-md-1&quot; data-aos=&quot;fade-up&quot; data-aos-duration=&quot;850&quot; data-aos-offset=&quot;180&quot; data-disable-parallax-down=&quot;md&quot;&gt;
+    &lt;div class=&quot;me-md-4 me-lg-5 me-xxl-0&quot; style=&quot;max-width: 330px;&quot;&gt;
+      &lt;div class=&quot;text-body-secondary mb-2&quot;&gt;E-book, Branding&lt;/div&gt;
+      &lt;h2 class=&quot;mb-lg-4&quot;&gt;
+        &lt;a href=&quot;#&quot;&gt;Book cover design Twin Fish&lt;/a&gt;
+      &lt;/h2&gt;
+      &lt;p class=&quot;mb-0 mb-md-1 mb-lg-3&quot;&gt;Sed feugiat tristique enim aenean netus cum adipiscing est sem eget nulla leo vestibulum. Cras urna, proin ut ut dictum risus porttitor nulla consequat et iaculis.&lt;/p&gt;
+      &lt;a href=&quot;#&quot; class=&quot;btn btn-lg btn-link px-0 opacity-0 d-none d-md-inline-flex&quot;&gt;
+        Read more
+        &lt;i class=&quot;ai-arrow-right ms-2&quot;&gt;&lt;/i&gt;
+      &lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/article&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- List view style 2 -->
+        <section class="card border-0 mb-4" id="portfolio-list-2">
+          <div class="card-body pb-0">
+            <h2 class="h4 mb-n2">List view style 2</h2>
+          </div>
+          <div class="card-header">
+            <ul class="nav nav-tabs card-header-tabs flex-nowrap align-items-center mb-n1" role="tablist">
+              <li class="nav-item me-3">
+                <a class="nav-link px-0 py-2 border-0 rounded-1 active" href="#preview5" data-bs-toggle="tab" role="tab"
+                   aria-controls="preview5" aria-selected="true">
+                  <i class="ai-show fs-lg opacity-90 me-2"></i>
+                  Preview
+                </a>
+              </li>
+              <li class="vr opacity-20 my-3 me-3"></li>
+              <li class="nav-item">
+                <a class="nav-link px-0 py-2 border-0 rounded-1" href="#html5" data-bs-toggle="tab" role="tab"
+                   aria-controls="html5" aria-selected="false">
+                  <i class="ai-code fs-xl opacity-90 me-2"></i>
+                  HTML
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="card-body">
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="preview5" role="tabpanel">
+                <div class="row align-items-center pt-xl-2 pb-4">
+                  <div class="col-md-7 mb-4 mb-md-0">
+                    <a class="d-block position-relative" href="#">
+                      <div class="bg-info rounded-5 position-absolute top-0 start-0 w-100 h-100" data-aos="zoom-in"
+                           data-aos-duration="600" data-aos-offset="250"></div>
+                      <img class="d-block position-relative z-2 mx-auto" src="{% static '/img/portfolio/list/06.png' %}"
+                           width="636" alt="Image" data-aos="fade-in" data-aos-duration="400" data-aos-offset="250">
+                    </a>
+                  </div>
+                  <div class="col-md-5" data-aos="fade-up" data-aos-duration="400" data-aos-offset="170">
+                    <div class="ps-md-3 ps-lg-4">
+                      <img class="d-block d-dark-mode-none mb-2 mb-lg-3"
+                           src="{% static '/img/portfolio/brands/champion-blue-dark.svg' %}" alt="Champion">
+                      <img class="d-none d-dark-mode-block mb-2 mb-lg-3"
+                           src="{% static '/img/portfolio/brands/champion-blue-light.svg' %}" alt="Champion">
+                      <h2 class="h4">Development of a fintech application</h2>
+                      <p class="fs-sm pb-3 pb-lg-4 mb-3">Morbi et massa fames ac scelerisque sit commodo dignissim
+                        faucibus vel quisque proin lectus. Morbi et massa fames ac scelerisque.</p>
+                      <a class="btn btn-sm btn-outline-dark rounded-pill" href="#">Read the full story</a>
+                      <div class="d-flex align-items-center pt-2 pt-lg-3 mt-3">
+                        <h6 class="text-body mb-0 me-3">Awards:</h6>
+                        <img class="d-block d-dark-mode-none me-4"
+                             src="{% static '/img/portfolio/brands/vuejs-dark.svg' %}"
+                             width="90" alt="Vue.js">
+                        <img class="d-none d-dark-mode-block me-4"
+                             src="{% static '/img/portfolio/brands/vuejs-light.svg' %}"
+                             width="90" alt="Vue.js">
+                        <img class="d-block d-dark-mode-none"
+                             src="{% static '/img/portfolio/brands/deloitte-dark.svg' %}"
+                             width="95" alt="Deloitte">
+                        <img class="d-none d-dark-mode-block"
+                             src="{% static '/img/portfolio/brands/deloitte-light.svg' %}"
+                             width="95" alt="Deloitte">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="html5" role="tabpanel">
+                  <pre class="line-numbers"><code class="lang-html">&lt;!-- Portfolio card horizontal layout style 2 (List view). Ideally should be placed inside .container --&gt;
+&lt;div class=&quot;row align-items-center pt-xl-2 pb-5 mb-lg-2 mb-xl-3 mb-xxl-4&quot;&gt;
+  &lt;div class=&quot;col-md-7 col-lg-6 mb-4 mb-md-0&quot;&gt;
+    &lt;a href=&quot;#&quot; class=&quot;d-block position-relative&quot;&gt;
+      &lt;div class=&quot;bg-info rounded-5 position-absolute top-0 start-0 w-100 h-100&quot; data-aos=&quot;zoom-in&quot; data-aos-duration=&quot;600&quot; data-aos-offset=&quot;250&quot;&gt;&lt;/div&gt;
+      &lt;img src=&quot;/img/portfolio/list/06.png&quot; class=&quot;d-block position-relative z-2 mx-auto&quot; width=&quot;636&quot; alt=&quot;Image&quot; data-aos=&quot;fade-in&quot; data-aos-duration=&quot;400&quot; data-aos-offset=&quot;250&quot;&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;col-md-5 col-xl-4 offset-lg-1&quot; data-aos=&quot;fade-up&quot; data-aos-duration=&quot;400&quot; data-aos-offset=&quot;170&quot;&gt;
+    &lt;div class=&quot;ps-md-3 ps-lg-0&quot;&gt;
+      &lt;img src=&quot;/img/portfolio/brands/champion-blue-dark.svg&quot; class=&quot;d-block d-dark-mode-none mb-2 mb-lg-3&quot; alt=&quot;Champion&quot;&gt;
+      &lt;img src=&quot;/img/portfolio/brands/champion-blue-light.svg&quot; class=&quot;d-none d-dark-mode-block mb-2 mb-lg-3&quot; alt=&quot;Champion&quot;&gt;
+      &lt;h2 class=&quot;h4&quot;&gt;Development of a fintech application&lt;/h2&gt;
+      &lt;p class=&quot;fs-sm pb-3 pb-lg-4 mb-3&quot;&gt;Morbi et massa fames ac scelerisque sit commodo dignissim faucibus vel quisque proin lectus. Morbi et massa fames ac scelerisque sit commodo dignissim.&lt;/p&gt;
+      &lt;a href=&quot;#&quot; class=&quot;btn btn-sm btn-outline-dark rounded-pill&quot;&gt;Read the full story&lt;/a&gt;
+      &lt;div class=&quot;d-flex align-items-center pt-2 pt-lg-3 mt-3&quot;&gt;
+        &lt;h6 class=&quot;text-body mb-0 me-3&quot;&gt;Awards:&lt;/h6&gt;
+        &lt;img src=&quot;/img/portfolio/brands/vuejs-dark.svg&quot; class=&quot;d-block d-dark-mode-none me-4&quot; width=&quot;90&quot; alt=&quot;Vue.js&quot;&gt;
+        &lt;img src=&quot;/img/portfolio/brands/vuejs-light.svg&quot; class=&quot;d-none d-dark-mode-block me-4&quot; width=&quot;90&quot; alt=&quot;Vue.js&quot;&gt;
+        &lt;img src=&quot;/img/portfolio/brands/deloitte-dark.svg&quot; class=&quot;d-block d-dark-mode-none&quot; width=&quot;95&quot; alt=&quot;Deloitte&quot;&gt;
+        &lt;img src=&quot;/img/portfolio/brands/deloitte-light.svg&quot; class=&quot;d-none d-dark-mode-block&quot; width=&quot;95&quot; alt=&quot;Deloitte&quot;&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </section>
+{% endblock content %}

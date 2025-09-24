@@ -1,0 +1,237 @@
+{% extends 'ui_layout.html' %}
+
+{% load static i18n %}
+
+{% block title %}Around UI Kit | Maps{% endblock title %}
+
+{% block content %}
+  <section class="container pt-5 pb-4">
+    <div class="row pt-5 pb-2 pb-sm-3">
+      <div class="col-lg-9 offset-lg-3 position-relative z-5">
+        <h1 class="pt-lg-4">Maps</h1>
+        <div class="d-flex flex-wrap flex-md-nowrap justify-content-between pb-3">
+          <p class="text-body-secondary">Mobile-friendly interactive maps powered by Leaflet.js.</p>
+          <div class="ps-md-4 mb-3">
+            <span class="badge bg-warning fs-sm">Around component</span>
+          </div>
+        </div>
+
+
+        <!-- Info alert -->
+        <div class="alert alert-info d-flex mb-4" role="alert">
+          <i class="ai-circle-info lead me-2 me-sm-3"></i>
+          <div class="text-break">
+            <p class="mb-1">To incorporate maps into your webpage, it's essential to integrate <span
+              class="fw-semibold">Leaflet CSS and JavaScript</span> files into your document. For
+              comprehensive instructions, refer to the details provided below or utilize this page as a reference guide.
+            </p>
+          </div>
+        </div>
+
+        <div class="card border-0 card-body mb-4">
+          <h5 class="fs-base">Basic markup</h5>
+          <pre class="example-code"><code class="lang-html">&lt;div class=&quot;interactive-map&quot; style=&quot;height: 300px;&quot; data-map-options='{&lt;!--json options goes here--&gt;}'&gt;&lt;/div&gt;</code></pre>
+          <h5 class="fs-base pt-4">Data API:</h5><code class="fs-sm mb-3">data-map-options = '{}'</code>
+          <ul class="list-unstyled fs-sm mb-0">
+            <li><code>"mapLayer": "https://..." (link to API)</code>&nbsp;- This is a visual style (layer) of your map.
+              We used <strong>Maptiler</strong> in this template to get map skins: <a
+                href="https://cloud.maptiler.com/maps" class="fw-medium" target="_blank" rel="noopener">https://cloud.maptiler.com/maps</a>.
+              Choose the skin you like. Make sure to copy Raster tiles (HiDPI) link and pass it to "mapLayer" property.
+            </li>
+            <li><code>"center": [51.5, -0.09]</code>&nbsp;- An array of 2 values: latitude and longitude.</li>
+            <li><code>"zoom": 1</code>&nbsp;- Sets the zoom (scale) of the map. Default value: 1</li>
+            <li><code>"markers": [{...}, {...}]</code>&nbsp;- Array of objects. Each object is an individual marker. You
+              can set as many markers as you need on a single map.
+            </li>
+            <li class="my-2">
+                <pre class="example-code pb-0"><code class="lang-js">"markers": [
+  {
+    "position": [51.5, -0.09],
+    "iconUrl": "path-to-map-marker-icon.png", // Path should be relative to theme.js file linked to the document
+    "popup": "&lt;div class='p-3'&gt;I'm a popup!&lt;/div&gt;"
+  }
+]</code></pre>
+            </li>
+            <li><code>markers[0].coordinates</code>&nbsp;- Position of the marker on the map. An array of 2 values:
+              latitude and longitude.
+            </li>
+            <li><code>markers[0].iconUrl</code>&nbsp;- Path to custom marker icon. If not provided default icon (pin)
+              will be used. You can find all marker icons inside <code>/img/map</code> folder
+            </li>
+            <li><code>markers[0].shadowUrl</code>&nbsp;- Path to custom marker shadow. If not provided default icon
+              shadow will be used.
+            </li>
+            <li><code>markers[0].popup</code>&nbsp;- Pass HTML markup of the popup linked to this particular marker.
+              Popups are revealed on click on the marker.
+            </li>
+            <li class="fw-medium pt-3"><span class="text-dark">For more options please visit</span><a class="ms-2"
+                                                                                                      href="https://leafletjs.com/"
+                                                                                                      target="_blank"
+                                                                                                      rel="noopener">https://leafletjs.com/</a>
+            </li>
+          </ul>
+        </div>
+
+
+        <!-- Basic example (no options passed) -->
+        <section class="card border-0 mb-4" id="map-basic">
+          <div class="card-body pb-0">
+            <h2 class="h4 mb-n2">Basic example (no options passed)</h2>
+          </div>
+          <div class="card-header">
+            <ul class="nav nav-tabs card-header-tabs flex-nowrap align-items-center mb-n1" role="tablist">
+              <li class="nav-item me-3">
+                <a class="nav-link px-0 py-2 border-0 rounded-1 active" href="#preview1" data-bs-toggle="tab" role="tab"
+                   aria-controls="preview1" aria-selected="true">
+                  <i class="ai-show fs-lg opacity-90 me-2"></i>
+                  Preview
+                </a>
+              </li>
+              <li class="vr opacity-20 my-3 me-3"></li>
+              <li class="nav-item">
+                <a class="nav-link px-0 py-2 border-0 rounded-1" href="#html1" data-bs-toggle="tab" role="tab"
+                   aria-controls="html1" aria-selected="false">
+                  <i class="ai-code fs-xl opacity-90 me-2"></i>
+                  HTML
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="card-body">
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="preview1" role="tabpanel">
+                <div class="interactive-map rounded-4" style="height: 400px;"></div>
+              </div>
+              <div class="tab-pane fade" id="html1" role="tabpanel">
+                  <pre class="line-numbers"><code class="lang-html">&lt;!-- Basic map example (no options passed) --&gt;
+&lt;div class=&quot;interactive-map&quot; style=&quot;height: 400px;&quot;&gt;&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- Custom options -->
+        <section class="card border-0 mb-4" id="map-options">
+          <div class="card-body pb-0">
+            <h2 class="h4 mb-n2">Custom options</h2>
+          </div>
+          <div class="card-header">
+            <ul class="nav nav-tabs card-header-tabs flex-nowrap align-items-center mb-n1" role="tablist">
+              <li class="nav-item me-3">
+                <a class="nav-link px-0 py-2 border-0 rounded-1 active" href="#preview2" data-bs-toggle="tab" role="tab"
+                   aria-controls="preview2" aria-selected="true">
+                  <i class="ai-show fs-lg opacity-90 me-2"></i>
+                  Preview
+                </a>
+              </li>
+              <li class="vr opacity-20 my-3 me-3"></li>
+              <li class="nav-item">
+                <a class="nav-link px-0 py-2 border-0 rounded-1" href="#html2" data-bs-toggle="tab" role="tab"
+                   aria-controls="html2" aria-selected="false">
+                  <i class="ai-code fs-xl opacity-90 me-2"></i>
+                  HTML
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="card-body">
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="preview2" role="tabpanel">
+                <div class="interactive-map rounded-4" data-map-options='{
+                    "center": [51.5074, -0.1278],
+                    "zoom": 10,
+                    "scrollWheelZoom": false,
+                    "markers": [
+                      {
+                        "position": [51.5074, -0.1278],
+                        "iconUrl": "/static/img/map/marker-icon.png",
+                        "shadowUrl": "/static/img/map/marker-shadow.png",
+                        "popup": "&lt;div class=&#39;p-3&#39;&gt;&lt;h6&gt;Hi, I&apos;m in London&lt;/h6&gt;&lt;p class=&#39;fs-sm pt-1 mt-n3 mb-0&#39;&gt;Lorem ipsum dolor sit amet elit.&lt;/p&gt;&lt;/div&gt;"
+                      }
+                    ]
+                  }' style="height: 400px;"></div>
+              </div>
+              <div class="tab-pane fade" id="html2" role="tabpanel">
+                  <pre class="line-numbers"><code class="lang-html">&lt;!-- Custom map options --&gt;
+&lt;div class=&quot;interactive-map rounded-4&quot; data-map-options='{
+  &quot;center&quot;: [51.5074, -0.1278],
+  &quot;zoom&quot;: 10,
+  &quot;scrollWheelZoom&quot;: false,
+  &quot;markers&quot;: [
+    {
+      &quot;position&quot;: [51.5074, -0.1278],
+      &quot;popup&quot;: &quot;&lt;div class=&amp;#39;p-3&amp;#39;&gt;&lt;h6&gt;Hi, I&amp;apos;m in London&lt;/h6&gt;&lt;p class=&amp;#39;fs-sm pt-1 mt-n3 mb-0&amp;#39;&gt;Lorem ipsum dolor sit amet elit.&lt;/p&gt;&lt;/div&gt;&quot;
+    }
+  ]
+}' style=&quot;height: 400px;&quot;&gt;&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- Alternative map style -->
+        <section class="card border-0 mb-4" id="map-style">
+          <div class="card-body pb-0">
+            <h2 class="h4 mb-n2">Alternative map style</h2>
+          </div>
+          <div class="card-header">
+            <ul class="nav nav-tabs card-header-tabs flex-nowrap align-items-center mb-n1" role="tablist">
+              <li class="nav-item me-3">
+                <a class="nav-link px-0 py-2 border-0 rounded-1 active" href="#preview3" data-bs-toggle="tab" role="tab"
+                   aria-controls="preview3" aria-selected="true">
+                  <i class="ai-show fs-lg opacity-90 me-2"></i>
+                  Preview
+                </a>
+              </li>
+              <li class="vr opacity-20 my-3 me-3"></li>
+              <li class="nav-item">
+                <a class="nav-link px-0 py-2 border-0 rounded-1" href="#html3" data-bs-toggle="tab" role="tab"
+                   aria-controls="html3" aria-selected="false">
+                  <i class="ai-code fs-xl opacity-90 me-2"></i>
+                  HTML
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="card-body">
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="preview3" role="tabpanel">
+                <div class="interactive-map rounded-4" data-map-options='{
+                    "mapLayer": "https://api.maptiler.com/maps/voyager/{z}/{x}/{y}.png?key=5vRQzd34MMsINEyeKPIs",
+                    "center": [51.5074, -0.1278],
+                    "zoom": 10,
+                    "scrollWheelZoom": false,
+                    "markers": [
+                      {
+                        "position": [51.5074, -0.1278],
+                        "iconUrl": "/static/img/map/marker-icon.png",
+                        "shadowUrl": "/static/img/map/marker-shadow.png",
+                        "popup": "&lt;div class=&#39;p-3&#39;&gt;&lt;h6&gt;Hi, I&apos;m in London&lt;/h6&gt;&lt;p class=&#39;fs-sm pt-1 mt-n3 mb-0&#39;&gt;Lorem ipsum dolor sit amet elit.&lt;/p&gt;&lt;/div&gt;"
+                      }
+                    ]
+                  }' style="height: 400px;"></div>
+              </div>
+              <div class="tab-pane fade" id="html3" role="tabpanel">
+                  <pre class="line-numbers"><code class="lang-html">&lt;!-- Custom map options --&gt;
+&lt;div class=&quot;interactive-map rounded-4&quot; data-map-options='{
+  &quot;mapLayer&quot;: &quot;https://api.maptiler.com/maps/voyager/{z}/{x}/{y}.png?key=5vRQzd34MMsINEyeKPIs&quot;,
+  &quot;center&quot;: [51.5074, -0.1278],
+  &quot;zoom&quot;: 10,
+  &quot;scrollWheelZoom&quot;: false,
+  &quot;markers&quot;: [
+    {
+      &quot;position&quot;: [51.5074, -0.1278],
+      &quot;popup&quot;: &quot;&lt;div class=&amp;#39;p-3&amp;#39;&gt;&lt;h6&gt;Hi, I&amp;apos;m in London&lt;/h6&gt;&lt;p class=&amp;#39;fs-sm pt-1 mt-n3 mb-0&amp;#39;&gt;Lorem ipsum dolor sit amet elit.&lt;/p&gt;&lt;/div&gt;&quot;
+    }
+  ]
+}' style=&quot;height: 400px;&quot;&gt;&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </section>
+{% endblock content %}

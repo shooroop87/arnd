@@ -1,0 +1,56 @@
+{% load static i18n %}
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light" {% block html_attribute %}{% endblock html_attribute %}>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover">
+  <title> {% block title %}{% endblock title %}</title>
+  <meta name="description" content="Around - Multipurpose Bootstrap HTML Template">
+  <meta name="keywords"
+        content="bootstrap, business, corporate, coworking space, services, creative agency, dashboard, e-commerce, mobile app showcase, saas, multipurpose, product landing, shop, software, ui kit, web studio, landing, light and dark mode, html5, css3, javascript, gallery, slider, touch, creative">
+  <meta name="author" content="stackbros">
+
+  <!-- Webmanifest + Favicon / App icons -->
+  <link rel="manifest" href="{% static '/json/manifest.json' %}">
+  <link rel="icon" type="image/png" href="{% static '/app-icons/icon-32x32.png' %}" sizes="32x32">
+  <link rel="apple-touch-icon" href="{% static '/app-icons/icon-180x180.png' %}">
+
+  {% block extra_css %} {% endblock extra_css %}
+
+  {% include 'partials/head-css.html' %}
+
+</head>
+
+<body {% block body_attribute %}{% endblock body_attribute %}>
+
+<!-- Page loading spinner -->
+<div class="page-loading active">
+  <div class="page-loading-inner">
+    <div class="page-spinner"></div>
+    <span>Loading...</span>
+  </div>
+</div>
+
+{% block modal %}{% endblock modal %}
+
+{% block page_content %}{% endblock page_content %}
+
+<!-- Back to top button -->
+<a class="btn-scroll-top" href="#top" data-scroll aria-label="Scroll back to top">
+  <svg viewBox="0 0 40 40" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="20" cy="20" r="19" fill="none" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"></circle>
+  </svg>
+  <i class="ai-arrow-up"></i>
+</a>
+
+{% include 'partials/customizer.html' %}
+
+<script src="{% static 'js/vendors.min.js' %}"></script>
+{% include 'partials/footer-scripts.html' %}
+<script src="{% static 'js/customizer.min.js' %}"></script>
+
+{% block extra_javascript %} {% endblock extra_javascript %}
+
+</body>
+</html>

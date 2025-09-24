@@ -1,0 +1,268 @@
+{% extends 'ui_layout.html' %}
+
+{% load static i18n %}
+
+{% block title %}Around UI Kit | Images &amp; figures{% endblock title %}
+
+{% block content %}
+  <section class="container pt-5 pb-4">
+    <div class="row pt-5 pb-2 pb-sm-3">
+      <div class="col-lg-9 offset-lg-3 position-relative z-5">
+        <h1 class="pt-lg-4">Images &amp; figures</h1>
+        <div class="d-flex flex-wrap flex-md-nowrap justify-content-between pb-3">
+          <p class="text-body-secondary">Image styles and figure component for displaying images and text.</p>
+          <p class="fs-sm fw-semibold ps-md-4">
+            <a class="text-decoration-none text-nowrap" href="https://getbootstrap.com/docs/5.3/content/images/"
+               target="_blank" rel="noopener">
+              Bootstrap docs
+              <i class="ai-external-link fs-lg ms-2"></i>
+            </a>
+          </p>
+        </div>
+
+
+        <!-- Image shapes -->
+        <section class="card border-0 mb-4" id="image-shapes">
+          <div class="card-body pb-0">
+            <h2 class="h4 mb-n2">Image shapes</h2>
+          </div>
+          <div class="card-header">
+            <ul class="nav nav-tabs card-header-tabs flex-nowrap align-items-center mb-n1" role="tablist">
+              <li class="nav-item me-3">
+                <a class="nav-link px-0 py-2 border-0 rounded-1 active" href="#preview1" data-bs-toggle="tab" role="tab"
+                   aria-controls="preview1" aria-selected="true">
+                  <i class="ai-show fs-lg opacity-90 me-2"></i>
+                  Preview
+                </a>
+              </li>
+              <li class="vr opacity-20 my-3 me-3"></li>
+              <li class="nav-item">
+                <a class="nav-link px-0 py-2 border-0 rounded-1" href="#html1" data-bs-toggle="tab" role="tab"
+                   aria-controls="html1" aria-selected="false">
+                  <i class="ai-code fs-xl opacity-90 me-2"></i>
+                  HTML
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="card-body">
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="preview1" role="tabpanel">
+                <div class="row">
+                  <div class="col-sm-4 mb-4 mb-sm-2">
+                    <img class="d-block mx-auto" src="{% static 'img/portfolio/list/04.jpg' %}" width="280"
+                         alt="Square image">
+                  </div>
+                  <div class="col-sm-4 mb-4 mb-sm-2">
+                    <img class="d-block rounded-5 mx-auto" src="{% static 'img/portfolio/list/03.jpg' %}" width="280"
+                         alt="Rounded image">
+                  </div>
+                  <div class="col-sm-4 mb-4 mb-sm-2">
+                    <img class="d-block rounded-circle mx-auto" src="{% static 'img/portfolio/list/01.jpg' %}"
+                         width="280"
+                         alt="Circle image">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="html1" role="tabpanel">
+                  <pre class="line-numbers"><code class="lang-html">&lt;!-- Square image (default) --&gt;
+&lt;img src=&quot;/img/portfolio/list/04.jpg&quot; alt=&quot;Square image&quot;&gt;
+
+&lt;!-- Rounded image --&gt;
+&lt;img src=&quot;/img/portfolio/list/03.jpg&quot; class=&quot;rounded-5&quot; alt=&quot;Rounded image&quot;&gt;
+
+&lt;!-- Circle image --&gt;
+&lt;img src=&quot;/img/portfolio/list/01.jpg&quot; class=&quot;rounded-circle&quot; alt=&quot;Circle image&quot;&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- Thumbnails -->
+        <section class="card border-0 mb-4" id="image-thumbnails">
+          <div class="card-body pb-0">
+            <h2 class="h4 mb-n2">Thumbnails</h2>
+          </div>
+          <div class="card-header">
+            <ul class="nav nav-tabs card-header-tabs flex-nowrap align-items-center mb-n1" role="tablist">
+              <li class="nav-item me-3">
+                <a class="nav-link px-0 py-2 border-0 rounded-1 active" href="#preview2" data-bs-toggle="tab" role="tab"
+                   aria-controls="preview2" aria-selected="true">
+                  <i class="ai-show fs-lg opacity-90 me-2"></i>
+                  Preview
+                </a>
+              </li>
+              <li class="vr opacity-20 my-3 me-3"></li>
+              <li class="nav-item">
+                <a class="nav-link px-0 py-2 border-0 rounded-1" href="#html2" data-bs-toggle="tab" role="tab"
+                   aria-controls="html2" aria-selected="false">
+                  <i class="ai-code fs-xl opacity-90 me-2"></i>
+                  HTML
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="card-body">
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="preview2" role="tabpanel">
+                <div class="row">
+                  <div class="col-sm-4 mb-4 mb-sm-2">
+                    <img class="img-thumbnail rounded-0 d-block mx-auto" src="{% static 'img/portfolio/list/04.jpg' %}"
+                         width="280" alt="Square image">
+                  </div>
+                  <div class="col-sm-4 mb-4 mb-sm-2">
+                    <img class="img-thumbnail d-block mx-auto" src="{% static 'img/portfolio/list/03.jpg' %}"
+                         width="280"
+                         alt="Rounded image">
+                  </div>
+                  <div class="col-sm-4 mb-4 mb-sm-2">
+                    <img class="img-thumbnail d-block rounded-circle mx-auto"
+                         src="{% static 'img/portfolio/list/01.jpg' %}"
+                         width="280" alt="Circle image">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="html2" role="tabpanel">
+                  <pre class="line-numbers"><code class="lang-html">&lt;!-- Square thumbnail --&gt;
+&lt;img src=&quot;/img/portfolio/list/04.jpg&quot; class=&quot;img-thumbnail rounded-0&quot; alt=&quot;Square thumbnail&quot;&gt;
+
+&lt;!-- Rounded thumbnail (default) --&gt;
+&lt;img src=&quot;/img/portfolio/list/03.jpg&quot; class=&quot;img-thumbnail&quot; alt=&quot;Rounded thumbnail&quot;&gt;
+
+&lt;!-- Circle thumbnail --&gt;
+&lt;img src=&quot;/img/portfolio/list/01.jpg&quot; class=&quot;img-thumbnail rounded-circle&quot; alt=&quot;Circle thumbnail&quot;&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- Figures with caption -->
+        <section class="card border-0 mb-4" id="image-figures">
+          <div class="card-body pb-0">
+            <h2 class="h4 mb-n2">Figures with caption</h2>
+          </div>
+          <div class="card-header">
+            <ul class="nav nav-tabs card-header-tabs flex-nowrap align-items-center mb-n1" role="tablist">
+              <li class="nav-item me-3">
+                <a class="nav-link px-0 py-2 border-0 rounded-1 active" href="#preview3" data-bs-toggle="tab" role="tab"
+                   aria-controls="preview3" aria-selected="true">
+                  <i class="ai-show fs-lg opacity-90 me-2"></i>
+                  Preview
+                </a>
+              </li>
+              <li class="vr opacity-20 my-3 me-3"></li>
+              <li class="nav-item">
+                <a class="nav-link px-0 py-2 border-0 rounded-1" href="#html3" data-bs-toggle="tab" role="tab"
+                   aria-controls="html3" aria-selected="false">
+                  <i class="ai-code fs-xl opacity-90 me-2"></i>
+                  HTML
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="card-body">
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="preview3" role="tabpanel">
+                <div class="row">
+                  <div class="col-sm-4 mb-4 mb-sm-2">
+                    <figure class="figure">
+                      <img class="figure-img" src="{% static '/img/portfolio/list/01.jpg' %}" alt="Figure with caption">
+                      <figcaption class="figure-caption">Caption on the left</figcaption>
+                    </figure>
+                  </div>
+                  <div class="col-sm-4 mb-2">
+                    <figure class="figure">
+                      <img class="figure-img" src="{% static '/img/portfolio/list/02.jpg' %}" alt="Figure with caption">
+                      <figcaption class="figure-caption text-center">Caption in the center</figcaption>
+                    </figure>
+                  </div>
+                  <div class="col-sm-4 mb-2">
+                    <figure class="figure">
+                      <img class="figure-img" src="{% static '/img/portfolio/list/04.jpg' %}" alt="Figure with caption">
+                      <figcaption class="figure-caption text-end">Caption on the right</figcaption>
+                    </figure>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="html3" role="tabpanel">
+                  <pre class="line-numbers"><code class="lang-html">&lt;!-- Caption on the left --&gt;
+&lt;figure class=&quot;figure&quot;&gt;
+  &lt;img src=&quot;/img/portfolio/list/01.jpg&quot; class=&quot;figure-img&quot; alt=&quot;...&quot;&gt;
+  &lt;figcaption class=&quot;figure-caption&quot;&gt;Caption on the left&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;!-- Caption in the center --&gt;
+&lt;figure class=&quot;figure&quot;&gt;
+  &lt;img src=&quot;/img/portfolio/list/02.jpg&quot; class=&quot;figure-img&quot; alt=&quot;...&quot;&gt;
+  &lt;figcaption class=&quot;figure-caption text-center&quot;&gt;Caption in the center&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;!-- Caption on the right --&gt;
+&lt;figure class=&quot;figure&quot;&gt;
+  &lt;img src=&quot;/img/portfolio/list/04.jpg&quot; class=&quot;figure-img&quot; alt=&quot;...&quot;&gt;
+  &lt;figcaption class=&quot;figure-caption text-end&quot;&gt;Caption on the right&lt;/figcaption&gt;
+&lt;/figure&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- Image swap on hover -->
+        <section class="card border-0 mb-4" id="image-swap">
+          <div class="card-body pb-0">
+            <h2 class="h4 mb-n2">Image swap on hover</h2>
+          </div>
+          <div class="card-header">
+            <ul class="nav nav-tabs card-header-tabs flex-nowrap align-items-center mb-n1" role="tablist">
+              <li class="nav-item me-3">
+                <a class="nav-link px-0 py-2 border-0 rounded-1 active" href="#preview4" data-bs-toggle="tab" role="tab"
+                   aria-controls="preview4" aria-selected="true">
+                  <i class="ai-show fs-lg opacity-90 me-2"></i>
+                  Preview
+                </a>
+              </li>
+              <li class="vr opacity-20 my-3 me-3"></li>
+              <li class="nav-item">
+                <a class="nav-link px-0 py-2 border-0 rounded-1" href="#html4" data-bs-toggle="tab" role="tab"
+                   aria-controls="html4" aria-selected="false">
+                  <i class="ai-code fs-xl opacity-90 me-2"></i>
+                  HTML
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="card-body">
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="preview4" role="tabpanel">
+                <a class="swap-image" href="#">
+                  <img class="swap-to" src="{% static '/img/landing/saas-1/brands/champion-color.svg' %}" width="180"
+                       alt="Champion">
+                  <div class="swap-from">
+                    <img class="d-dark-mode-none" src="{% static '/img/landing/saas-1/brands/champion-gray.svg' %}"
+                         width="180" alt="Champion">
+                    <img class="d-none d-dark-mode-block"
+                         src="{% static '/img/landing/saas-1/brands/champion-light.svg' %}"
+                         width="180" alt="Champion">
+                  </div>
+                </a>
+              </div>
+              <div class="tab-pane fade" id="html4" role="tabpanel">
+                  <pre class="line-numbers"><code class="lang-html">&lt;!-- Image swap on hover --&gt;
+&lt;a href=&quot;#&quot; class=&quot;swap-image&quot;&gt;
+  &lt;img src=&quot;/img/landing/saas-1/brands/champion-color.svg&quot; class=&quot;swap-to&quot; width=&quot;180&quot; alt=&quot;Champion&quot;&gt;
+  &lt;div class=&quot;swap-from&quot;&gt;
+    &lt;img src=&quot;/img/landing/saas-1/brands/champion-gray.svg&quot; class=&quot;d-dark-mode-none&quot; width=&quot;180&quot; alt=&quot;Champion&quot;&gt;
+    &lt;img src=&quot;/img/landing/saas-1/brands/champion-light.svg&quot; class=&quot;d-none d-dark-mode-block&quot; width=&quot;180&quot; alt=&quot;Champion&quot;&gt;
+  &lt;/div&gt;
+&lt;/a&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </section>
+{% endblock content %}

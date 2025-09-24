@@ -1,0 +1,745 @@
+{% extends 'ui_layout.html' %}
+
+{% load static i18n %}
+
+{% block title %}Around UI Kit | Steps{% endblock title %}
+
+{% block content %}
+  <section class="container pt-5 pb-4">
+    <div class="row pt-5 pb-2 pb-sm-3">
+      <div class="col-lg-9 offset-lg-3 position-relative z-5">
+        <h1 class="pt-lg-4">Steps</h1>
+        <div class="d-flex flex-wrap flex-md-nowrap justify-content-between pb-3">
+          <p class="text-body-secondary">Component is designed to showcase numbered steps of the process or
+            timeline.</p>
+          <div class="ps-md-4 mb-3">
+            <span class="badge bg-warning fs-sm">Around component</span>
+          </div>
+        </div>
+
+
+        <!-- Horizontal layout -->
+        <section class="card border-0 mb-4" id="steps-horizontal">
+          <div class="card-body pb-0">
+            <h2 class="h4 mb-n2">Horizontal layout</h2>
+          </div>
+          <div class="card-header">
+            <ul class="nav nav-tabs card-header-tabs flex-nowrap align-items-center mb-n1" role="tablist">
+              <li class="nav-item me-3">
+                <a class="nav-link px-0 py-2 border-0 rounded-1 active" href="#preview1" data-bs-toggle="tab" role="tab"
+                   aria-controls="preview1" aria-selected="true">
+                  <i class="ai-show fs-lg opacity-90 me-2"></i>
+                  Preview
+                </a>
+              </li>
+              <li class="vr opacity-20 my-3 me-3"></li>
+              <li class="nav-item">
+                <a class="nav-link px-0 py-2 border-0 rounded-1" href="#html1" data-bs-toggle="tab" role="tab"
+                   aria-controls="html1" aria-selected="false">
+                  <i class="ai-code fs-xl opacity-90 me-2"></i>
+                  HTML
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="card-body">
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="preview1" role="tabpanel">
+                <div class="steps steps-horizontal-md">
+                  <div class="step active">
+                    <div class="step-number">
+                      <div class="step-number-inner">01</div>
+                    </div>
+                    <div class="step-body">
+                      <h5 class="pb-1 mb-2">Choose your course</h5>
+                      <p class="mb-0">Nulla faucibus mauris pellentesque blandit faucibus non. Sit ut et at suspendisse
+                        gravida hendrerit.</p>
+                    </div>
+                  </div>
+                  <div class="step">
+                    <div class="step-number">
+                      <div class="step-number-inner">02</div>
+                    </div>
+                    <div class="step-body">
+                      <h5 class="pb-1 mb-2">Learn by doing</h5>
+                      <p class="mb-0">Tristique sed pharetra feugiat tempor sagittis. Ultricies eu bibendum adipiscing
+                        lacinia.</p>
+                    </div>
+                  </div>
+                  <div class="step">
+                    <div class="step-number">
+                      <div class="step-number-inner">03</div>
+                    </div>
+                    <div class="step-body">
+                      <h5 class="pb-1 mb-2">Get instant feedback</h5>
+                      <p class="mb-0">Duis euismod enim, facilisis risus tellus pharetra lectus diam neque. Nec ultrices
+                        mi faucibus est.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="html1" role="tabpanel">
+                  <pre class="line-numbers"><code class="lang-html">&lt;!-- Horizontal steps --&gt;
+&lt;!-- Convert steps to horizontal layout on certain breakpoint by adding steps-horizontal-sm, steps-horizontal-md, steps-horizontal-lg, steps-horizontal-xl, steps-horizontal-xxl --&gt;
+&lt;div class=&quot;steps steps-horizontal-md&quot;&gt;
+
+  &lt;!-- Active step --&gt;
+  &lt;div class=&quot;step active&quot;&gt;
+    &lt;div class=&quot;step-number&quot;&gt;
+      &lt;div class=&quot;step-number-inner&quot;&gt;01&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;step-body&quot;&gt;
+      &lt;h5 class=&quot;pb-1 mb-2&quot;&gt;Choose your course&lt;/h5&gt;
+      &lt;p class=&quot;mb-0&quot;&gt;Nulla faucibus mauris pellentesque blandit faucibus non. Sit ut et at suspendisse gravida hendrerit.&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;!-- Step --&gt;
+  &lt;div class=&quot;step active&quot;&gt;
+    &lt;div class=&quot;step-number&quot;&gt;
+      &lt;div class=&quot;step-number-inner&quot;&gt;02&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;step-body&quot;&gt;
+      &lt;h5 class=&quot;pb-1 mb-2&quot;&gt;Learn by doing&lt;/h5&gt;
+      &lt;p class=&quot;mb-0&quot;&gt;Tristique sed pharetra feugiat tempor sagittis. Ultricies eu bibendum adipiscing lacinia.&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;!-- Step --&gt;
+  &lt;div class=&quot;step active&quot;&gt;
+    &lt;div class=&quot;step-number&quot;&gt;
+      &lt;div class=&quot;step-number-inner&quot;&gt;03&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;step-body&quot;&gt;
+      &lt;h5 class=&quot;pb-1 mb-2&quot;&gt;Get instant feedback&lt;/h5&gt;
+      &lt;p class=&quot;mb-0&quot;&gt;Duis euismod enim, facilisis risus tellus pharetra lectus diam neque. Nec ultrices mi faucibus est.&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- Animate on hover -->
+        <section class="card border-0 mb-4" id="steps-hover">
+          <div class="card-body pb-0">
+            <h2 class="h4 mb-n2">Animate on hover</h2>
+          </div>
+          <div class="card-header">
+            <ul class="nav nav-tabs card-header-tabs flex-nowrap align-items-center mb-n1" role="tablist">
+              <li class="nav-item me-3">
+                <a class="nav-link px-0 py-2 border-0 rounded-1 active" href="#preview2" data-bs-toggle="tab" role="tab"
+                   aria-controls="preview2" aria-selected="true">
+                  <i class="ai-show fs-lg opacity-90 me-2"></i>
+                  Preview
+                </a>
+              </li>
+              <li class="vr opacity-20 my-3 me-3"></li>
+              <li class="nav-item">
+                <a class="nav-link px-0 py-2 border-0 rounded-1" href="#html2" data-bs-toggle="tab" role="tab"
+                   aria-controls="html2" aria-selected="false">
+                  <i class="ai-code fs-xl opacity-90 me-2"></i>
+                  HTML
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="card-body">
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="preview2" role="tabpanel">
+                <div class="steps steps-horizontal-md steps-hoverable">
+                  <div class="step">
+                    <div class="step-number">
+                      <div class="step-number-inner">01</div>
+                    </div>
+                    <div class="step-body">
+                      <h5 class="pb-1 mb-2">Choose your course</h5>
+                      <p class="mb-0">Nulla faucibus mauris pellentesque blandit faucibus non. Sit ut et at suspendisse
+                        gravida hendrerit.</p>
+                    </div>
+                  </div>
+                  <div class="step">
+                    <div class="step-number">
+                      <div class="step-number-inner">02</div>
+                    </div>
+                    <div class="step-body">
+                      <h5 class="pb-1 mb-2">Learn by doing</h5>
+                      <p class="mb-0">Tristique sed pharetra feugiat tempor sagittis. Ultricies eu bibendum adipiscing
+                        lacinia.</p>
+                    </div>
+                  </div>
+                  <div class="step">
+                    <div class="step-number">
+                      <div class="step-number-inner">03</div>
+                    </div>
+                    <div class="step-body">
+                      <h5 class="pb-1 mb-2">Get instant feedback</h5>
+                      <p class="mb-0">Duis euismod enim, facilisis risus tellus pharetra lectus diam neque. Nec ultrices
+                        mi faucibus est.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="html2" role="tabpanel">
+                  <pre class="line-numbers"><code class="lang-html">&lt;!-- Animate steps on hover --&gt;
+&lt;!-- Create hoverable steps by adding "steps-hoverable" class --&gt;
+&lt;div class=&quot;steps steps-horizontal-md steps-hoverable&quot;&gt;
+
+  &lt;!-- Step --&gt;
+  &lt;div class=&quot;step&quot;&gt;
+    &lt;div class=&quot;step-number&quot;&gt;
+      &lt;div class=&quot;step-number-inner&quot;&gt;01&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;step-body&quot;&gt;
+      &lt;h5 class=&quot;pb-1 mb-2&quot;&gt;Choose your course&lt;/h5&gt;
+      &lt;p class=&quot;mb-0&quot;&gt;Nulla faucibus mauris pellentesque blandit faucibus non. Sit ut et at suspendisse gravida hendrerit.&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;!-- Step --&gt;
+  &lt;div class=&quot;step active&quot;&gt;
+    &lt;div class=&quot;step-number&quot;&gt;
+      &lt;div class=&quot;step-number-inner&quot;&gt;02&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;step-body&quot;&gt;
+      &lt;h5 class=&quot;pb-1 mb-2&quot;&gt;Learn by doing&lt;/h5&gt;
+      &lt;p class=&quot;mb-0&quot;&gt;Tristique sed pharetra feugiat tempor sagittis. Ultricies eu bibendum adipiscing lacinia.&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;!-- Step --&gt;
+  &lt;div class=&quot;step active&quot;&gt;
+    &lt;div class=&quot;step-number&quot;&gt;
+      &lt;div class=&quot;step-number-inner&quot;&gt;03&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;step-body&quot;&gt;
+      &lt;h5 class=&quot;pb-1 mb-2&quot;&gt;Get instant feedback&lt;/h5&gt;
+      &lt;p class=&quot;mb-0&quot;&gt;Duis euismod enim, facilisis risus tellus pharetra lectus diam neque. Nec ultrices mi faucibus est.&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- Alignment -->
+        <section class="card border-0 mb-4" id="steps-alignment">
+          <div class="card-body pb-0">
+            <h2 class="h4 mb-n2">Alignment</h2>
+          </div>
+          <div class="card-header">
+            <ul class="nav nav-tabs card-header-tabs flex-nowrap align-items-center mb-n1" role="tablist">
+              <li class="nav-item me-3">
+                <a class="nav-link px-0 py-2 border-0 rounded-1 active" href="#preview3" data-bs-toggle="tab" role="tab"
+                   aria-controls="preview3" aria-selected="true">
+                  <i class="ai-show fs-lg opacity-90 me-2"></i>
+                  Preview
+                </a>
+              </li>
+              <li class="vr opacity-20 my-3 me-3"></li>
+              <li class="nav-item">
+                <a class="nav-link px-0 py-2 border-0 rounded-1" href="#html3" data-bs-toggle="tab" role="tab"
+                   aria-controls="html3" aria-selected="false">
+                  <i class="ai-code fs-xl opacity-90 me-2"></i>
+                  HTML
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="card-body">
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="preview3" role="tabpanel">
+                <div class="steps steps-horizontal-md steps-center pb-md-2 pb-lg-3 mb-5">
+                  <div class="step active">
+                    <div class="step-number">
+                      <div class="step-number-inner">01</div>
+                    </div>
+                    <div class="step-body">
+                      <h5 class="pb-1 mb-2">Choose your course</h5>
+                      <p class="mb-0">Nulla faucibus mauris pellentesque blandit faucibus non. Sit ut et at suspendisse
+                        gravida hendrerit.</p>
+                    </div>
+                  </div>
+                  <div class="step">
+                    <div class="step-number">
+                      <div class="step-number-inner">02</div>
+                    </div>
+                    <div class="step-body">
+                      <h5 class="pb-1 mb-2">Learn by doing</h5>
+                      <p class="mb-0">Tristique sed pharetra feugiat tempor sagittis. Ultricies eu bibendum adipiscing
+                        lacinia.</p>
+                    </div>
+                  </div>
+                  <div class="step">
+                    <div class="step-number">
+                      <div class="step-number-inner">03</div>
+                    </div>
+                    <div class="step-body">
+                      <h5 class="pb-1 mb-2">Get instant feedback</h5>
+                      <p class="mb-0">Duis euismod enim, facilisis risus tellus pharetra lectus diam neque. Nec ultrices
+                        mi faucibus est.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="steps steps-horizontal-md steps-end">
+                  <div class="step active">
+                    <div class="step-number">
+                      <div class="step-number-inner">01</div>
+                    </div>
+                    <div class="step-body">
+                      <h5 class="pb-1 mb-2">Choose your course</h5>
+                      <p class="mb-0">Nulla faucibus mauris pellentesque blandit faucibus non. Sit ut et at suspendisse
+                        gravida hendrerit.</p>
+                    </div>
+                  </div>
+                  <div class="step">
+                    <div class="step-number">
+                      <div class="step-number-inner">02</div>
+                    </div>
+                    <div class="step-body">
+                      <h5 class="pb-1 mb-2">Learn by doing</h5>
+                      <p class="mb-0">Tristique sed pharetra feugiat tempor sagittis. Ultricies eu bibendum adipiscing
+                        lacinia.</p>
+                    </div>
+                  </div>
+                  <div class="step">
+                    <div class="step-number">
+                      <div class="step-number-inner">03</div>
+                    </div>
+                    <div class="step-body">
+                      <h5 class="pb-1 mb-2">Get instant feedback</h5>
+                      <p class="mb-0">Duis euismod enim, facilisis risus tellus pharetra lectus diam neque. Nec ultrices
+                        mi faucibus est.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="html3" role="tabpanel">
+                  <pre class="line-numbers"><code class="lang-html">&lt;!-- Center aligned steps --&gt;
+&lt;div class=&quot;steps steps-horizontal-md steps-center&quot;&gt;
+  ...
+&lt;/div&gt;
+
+&lt;!-- Right aligned steps --&gt;
+&lt;div class=&quot;steps steps-horizontal-md steps-end&quot;&gt;
+  ...
+&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- Vertical layout -->
+        <section class="card border-0 mb-4" id="steps-vertical">
+          <div class="card-body pb-0">
+            <h2 class="h4 mb-n2">Vertical layout</h2>
+          </div>
+          <div class="card-header">
+            <ul class="nav nav-tabs card-header-tabs flex-nowrap align-items-center mb-n1" role="tablist">
+              <li class="nav-item me-3">
+                <a class="nav-link px-0 py-2 border-0 rounded-1 active" href="#preview4" data-bs-toggle="tab" role="tab"
+                   aria-controls="preview4" aria-selected="true">
+                  <i class="ai-show fs-lg opacity-90 me-2"></i>
+                  Preview
+                </a>
+              </li>
+              <li class="vr opacity-20 my-3 me-3"></li>
+              <li class="nav-item">
+                <a class="nav-link px-0 py-2 border-0 rounded-1" href="#html4" data-bs-toggle="tab" role="tab"
+                   aria-controls="html4" aria-selected="false">
+                  <i class="ai-code fs-xl opacity-90 me-2"></i>
+                  HTML
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="card-body">
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="preview4" role="tabpanel">
+                <div class="steps" style="max-width: 500px;">
+                  <div class="step active">
+                    <div class="step-number">
+                      <div class="step-number-inner">01</div>
+                    </div>
+                    <div class="step-body">
+                      <h5 class="pb-1 mb-2">Choose your course</h5>
+                      <p class="mb-0">Nulla faucibus mauris pellentesque blandit faucibus non. Sit ut et at suspendisse
+                        gravida hendrerit.</p>
+                    </div>
+                  </div>
+                  <div class="step">
+                    <div class="step-number">
+                      <div class="step-number-inner">02</div>
+                    </div>
+                    <div class="step-body">
+                      <h5 class="pb-1 mb-2">Learn by doing</h5>
+                      <p class="mb-0">Tristique sed pharetra feugiat tempor sagittis. Ultricies eu bibendum adipiscing
+                        lacinia.</p>
+                    </div>
+                  </div>
+                  <div class="step">
+                    <div class="step-number">
+                      <div class="step-number-inner">03</div>
+                    </div>
+                    <div class="step-body">
+                      <h5 class="pb-1 mb-2">Get instant feedback</h5>
+                      <p class="mb-0">Duis euismod enim, facilisis risus tellus pharetra lectus diam neque. Nec ultrices
+                        mi faucibus est.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="html4" role="tabpanel">
+                  <pre class="line-numbers"><code class="lang-html">&lt;!-- Vertical steps (default) --&gt;
+&lt;div class=&quot;steps&quot;&gt;
+
+  &lt;!-- Active step --&gt;
+  &lt;div class=&quot;step active&quot;&gt;
+    &lt;div class=&quot;step-number&quot;&gt;
+      &lt;div class=&quot;step-number-inner&quot;&gt;01&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;step-body&quot;&gt;
+      &lt;h5 class=&quot;pb-1 mb-2&quot;&gt;Choose your course&lt;/h5&gt;
+      &lt;p class=&quot;mb-0&quot;&gt;Nulla faucibus mauris pellentesque blandit faucibus non. Sit ut et at suspendisse gravida hendrerit.&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;!-- Step --&gt;
+  &lt;div class=&quot;step active&quot;&gt;
+    &lt;div class=&quot;step-number&quot;&gt;
+      &lt;div class=&quot;step-number-inner&quot;&gt;02&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;step-body&quot;&gt;
+      &lt;h5 class=&quot;pb-1 mb-2&quot;&gt;Learn by doing&lt;/h5&gt;
+      &lt;p class=&quot;mb-0&quot;&gt;Tristique sed pharetra feugiat tempor sagittis. Ultricies eu bibendum adipiscing lacinia.&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;!-- Step --&gt;
+  &lt;div class=&quot;step active&quot;&gt;
+    &lt;div class=&quot;step-number&quot;&gt;
+      &lt;div class=&quot;step-number-inner&quot;&gt;03&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;step-body&quot;&gt;
+      &lt;h5 class=&quot;pb-1 mb-2&quot;&gt;Get instant feedback&lt;/h5&gt;
+      &lt;p class=&quot;mb-0&quot;&gt;Duis euismod enim, facilisis risus tellus pharetra lectus diam neque. Nec ultrices mi faucibus est.&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- No connector -->
+        <section class="card border-0 mb-4" id="steps-no-connector">
+          <div class="card-body pb-0">
+            <h2 class="h4 mb-n2">No connector</h2>
+          </div>
+          <div class="card-header">
+            <ul class="nav nav-tabs card-header-tabs flex-nowrap align-items-center mb-n1" role="tablist">
+              <li class="nav-item me-3">
+                <a class="nav-link px-0 py-2 border-0 rounded-1 active" href="#preview5" data-bs-toggle="tab" role="tab"
+                   aria-controls="preview5" aria-selected="true">
+                  <i class="ai-show fs-lg opacity-90 me-2"></i>
+                  Preview
+                </a>
+              </li>
+              <li class="vr opacity-20 my-3 me-3"></li>
+              <li class="nav-item">
+                <a class="nav-link px-0 py-2 border-0 rounded-1" href="#html5" data-bs-toggle="tab" role="tab"
+                   aria-controls="html5" aria-selected="false">
+                  <i class="ai-code fs-xl opacity-90 me-2"></i>
+                  HTML
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="card-body">
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="preview5" role="tabpanel">
+                <div class="steps steps-no-connector" style="max-width: 500px;">
+                  <div class="step active">
+                    <div class="step-number">
+                      <div class="step-number-inner">01</div>
+                    </div>
+                    <div class="step-body">
+                      <h5 class="pb-1 mb-2">Choose your course</h5>
+                      <p class="mb-0">Nulla faucibus mauris pellentesque blandit faucibus non. Sit ut et at suspendisse
+                        gravida hendrerit.</p>
+                    </div>
+                  </div>
+                  <div class="step">
+                    <div class="step-number">
+                      <div class="step-number-inner">02</div>
+                    </div>
+                    <div class="step-body">
+                      <h5 class="pb-1 mb-2">Learn by doing</h5>
+                      <p class="mb-0">Tristique sed pharetra feugiat tempor sagittis. Ultricies eu bibendum adipiscing
+                        lacinia.</p>
+                    </div>
+                  </div>
+                  <div class="step">
+                    <div class="step-number">
+                      <div class="step-number-inner">03</div>
+                    </div>
+                    <div class="step-body">
+                      <h5 class="pb-1 mb-2">Get instant feedback</h5>
+                      <p class="mb-0">Duis euismod enim, facilisis risus tellus pharetra lectus diam neque. Nec ultrices
+                        mi faucibus est.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="html5" role="tabpanel">
+                  <pre class="line-numbers"><code class="lang-html">&lt;!-- Steps without connector --&gt;
+&lt;!-- Remove the connector between steps by adding "steps-no-connector" class --&gt;
+&lt;div class=&quot;steps steps-no-connector&quot;&gt;
+
+  &lt;!-- Active step --&gt;
+  &lt;div class=&quot;step active&quot;&gt;
+    &lt;div class=&quot;step-number&quot;&gt;
+      &lt;div class=&quot;step-number-inner&quot;&gt;01&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;step-body&quot;&gt;
+      &lt;h5 class=&quot;pb-1 mb-2&quot;&gt;Choose your course&lt;/h5&gt;
+      &lt;p class=&quot;mb-0&quot;&gt;Nulla faucibus mauris pellentesque blandit faucibus non. Sit ut et at suspendisse gravida hendrerit.&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;!-- Step --&gt;
+  &lt;div class=&quot;step&quot;&gt;
+    &lt;div class=&quot;step-number&quot;&gt;
+      &lt;div class=&quot;step-number-inner&quot;&gt;02&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;step-body&quot;&gt;
+      &lt;h5 class=&quot;pb-1 mb-2&quot;&gt;Learn by doing&lt;/h5&gt;
+      &lt;p class=&quot;mb-0&quot;&gt;Tristique sed pharetra feugiat tempor sagittis. Ultricies eu bibendum adipiscing lacinia.&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;!-- Step --&gt;
+  &lt;div class=&quot;step&quot;&gt;
+    &lt;div class=&quot;step-number&quot;&gt;
+      &lt;div class=&quot;step-number-inner&quot;&gt;03&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;step-body&quot;&gt;
+      &lt;h5 class=&quot;pb-1 mb-2&quot;&gt;Get instant feedback&lt;/h5&gt;
+      &lt;p class=&quot;mb-0&quot;&gt;Duis euismod enim, facilisis risus tellus pharetra lectus diam neque. Nec ultrices mi faucibus est.&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- Card style -->
+        <section class="card border-0 mb-4" id="steps-cards">
+          <div class="card-body pb-0">
+            <h2 class="h4 mb-n2">Card style</h2>
+          </div>
+          <div class="card-header">
+            <ul class="nav nav-tabs card-header-tabs flex-nowrap align-items-center mb-n1" role="tablist">
+              <li class="nav-item me-3">
+                <a class="nav-link px-0 py-2 border-0 rounded-1 active" href="#preview6" data-bs-toggle="tab" role="tab"
+                   aria-controls="preview6" aria-selected="true">
+                  <i class="ai-show fs-lg opacity-90 me-2"></i>
+                  Preview
+                </a>
+              </li>
+              <li class="vr opacity-20 my-3 me-3"></li>
+              <li class="nav-item">
+                <a class="nav-link px-0 py-2 border-0 rounded-1" href="#html6" data-bs-toggle="tab" role="tab"
+                   aria-controls="html6" aria-selected="false">
+                  <i class="ai-code fs-xl opacity-90 me-2"></i>
+                  HTML
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="card-body">
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="preview6" role="tabpanel">
+                <div style="max-width: 500px;">
+                  <div class="position-relative d-flex justify-content-end mb-3 py-1">
+                    <div
+                      class="btn btn-lg btn-icon btn-primary fs-xl fw-bold rounded-circle position-absolute top-50 start-0 translate-middle-y z-2 pe-none">
+                      01
+                    </div>
+                    <div class="card ps-3" style="width: calc(100% - 1.75rem);">
+                      <div class="card-body ps-4">
+                        <h3 class="h5 card-title pb-2 mb-1">Formulation of the problem</h3>
+                        <p class="card-text">Find aute irure dolor in reprehenderi voluptate velit esse cillum dolore eu
+                          fugiat nulla pariatur luctus.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="position-relative d-flex justify-content-end mt-3 py-1">
+                    <div
+                      class="btn btn-lg btn-icon btn-primary fs-xl fw-bold rounded-circle position-absolute top-50 start-0 translate-middle-y z-2 pe-none">
+                      02
+                    </div>
+                    <div class="card border-0 bg-secondary ps-3" style="width: calc(100% - 1.75rem);">
+                      <div class="card-body ps-4">
+                        <h3 class="h5 card-title pb-2 mb-1">Assessment of the current state</h3>
+                        <p class="card-text">Risus quam quis at euismod vitae dui elementu eu in diam malesuada mattis
+                          ut urna integer erat nibh.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="html6" role="tabpanel">
+                  <pre class="line-numbers"><code class="lang-html">&lt;!-- Card like steps --&gt;
+&lt;!-- Card with border (default) example --&gt;
+&lt;div class=&quot;position-relative d-flex justify-content-end my-3 py-1&quot;&gt;
+  &lt;div class=&quot;btn btn-lg btn-icon btn-primary fs-xl fw-bold rounded-circle position-absolute top-50 start-0 translate-middle-y z-2 pe-none&quot;&gt;01&lt;/div&gt;
+  &lt;div class=&quot;card ps-3&quot; style=&quot;width: calc(100% - 1.75rem);&quot;&gt;
+    &lt;div class=&quot;card-body ps-4&quot;&gt;
+      &lt;h3 class=&quot;h5 card-title pb-2 mb-1&quot;&gt;Formulation of the problem&lt;/h3&gt;
+      &lt;p class=&quot;card-text&quot;&gt;Find aute irure dolor in reprehenderi voluptate velit esse cillum dolore eu fugiat nulla pariatur luctus.&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Card with gray background example --&gt;
+&lt;div class=&quot;position-relative d-flex justify-content-end my-3 py-1&quot;&gt;
+  &lt;div class=&quot;btn btn-lg btn-icon btn-primary fs-xl fw-bold rounded-circle position-absolute top-50 start-0 translate-middle-y z-2 pe-none&quot;&gt;02&lt;/div&gt;
+  &lt;div class=&quot;card border-0 bg-secondary ps-3&quot; style=&quot;width: calc(100% - 1.75rem);&quot;&gt;
+    &lt;div class=&quot;card-body ps-4&quot;&gt;
+      &lt;h3 class=&quot;h5 card-title pb-2 mb-1&quot;&gt;Assessment of the current state&lt;/h3&gt;
+      &lt;p class=&quot;card-text&quot;&gt;Risus quam quis at euismod vitae dui elementu eu in diam malesuada mattis ut urna integer erat nibh.&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- Icons instead of numbers -->
+        <section class="card border-0 mb-4" id="steps-icons">
+          <div class="card-body pb-0">
+            <h2 class="h4 mb-n2">Icons instead of numbers</h2>
+          </div>
+          <div class="card-header">
+            <ul class="nav nav-tabs card-header-tabs flex-nowrap align-items-center mb-n1" role="tablist">
+              <li class="nav-item me-3">
+                <a class="nav-link px-0 py-2 border-0 rounded-1 active" href="#preview7" data-bs-toggle="tab" role="tab"
+                   aria-controls="preview7" aria-selected="true">
+                  <i class="ai-show fs-lg opacity-90 me-2"></i>
+                  Preview
+                </a>
+              </li>
+              <li class="vr opacity-20 my-3 me-3"></li>
+              <li class="nav-item">
+                <a class="nav-link px-0 py-2 border-0 rounded-1" href="#html7" data-bs-toggle="tab" role="tab"
+                   aria-controls="html7" aria-selected="false">
+                  <i class="ai-code fs-xl opacity-90 me-2"></i>
+                  HTML
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="card-body">
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="preview7" role="tabpanel">
+                <div class="steps" style="max-width: 500px;">
+                  <div class="step active">
+                    <div class="step-number">
+                      <div class="step-number-inner fs-4">
+                        <i class="ai-search"></i>
+                      </div>
+                    </div>
+                    <div class="step-body">
+                      <h5 class="pb-1 mb-2">Research &amp; Analysis</h5>
+                      <p class="mb-0">Nulla faucibus mauris pellentesque blandit faucibus non. Sit ut et at suspendisse
+                        gravida hendrerit.</p>
+                    </div>
+                  </div>
+                  <div class="step">
+                    <div class="step-number">
+                      <div class="step-number-inner fs-4">
+                        <i class="ai-layout-side"></i>
+                      </div>
+                    </div>
+                    <div class="step-body">
+                      <h5 class="pb-1 mb-2">Prototyping</h5>
+                      <p class="mb-0">Tristique sed pharetra feugiat tempor sagittis. Ultricies eu bibendum adipiscing
+                        lacinia.</p>
+                    </div>
+                  </div>
+                  <div class="step">
+                    <div class="step-number">
+                      <div class="step-number-inner fs-4">
+                        <i class="ai-monitor"></i>
+                      </div>
+                    </div>
+                    <div class="step-body">
+                      <h5 class="pb-1 mb-2">Pixel-perfect UI Design</h5>
+                      <p class="mb-0">Duis euismod enim, facilisis risus tellus pharetra lectus diam neque. Nec ultrices
+                        mi faucibus est.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="html7" role="tabpanel">
+                  <pre class="line-numbers"><code class="lang-html">&lt;!-- Steps with icons instead of numbers --&gt;
+&lt;div class=&quot;steps&quot;&gt;
+
+  &lt;!-- Active step --&gt;
+  &lt;div class=&quot;step active&quot;&gt;
+    &lt;div class=&quot;step-number&quot;&gt;
+      &lt;div class=&quot;step-number-inner fs-4&quot;&gt;
+        &lt;i class=&quot;ai-search&quot;&gt;&lt;/i&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;step-body&quot;&gt;
+      &lt;h5 class=&quot;pb-1 mb-2&quot;&gt;Research &amp;amp; Analysis&lt;/h5&gt;
+      &lt;p class=&quot;mb-0&quot;&gt;Nulla faucibus mauris pellentesque blandit faucibus non. Sit ut et at suspendisse gravida hendrerit.&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;!-- Step --&gt;
+  &lt;div class=&quot;step active&quot;&gt;
+    &lt;div class=&quot;step-number&quot;&gt;
+      &lt;div class=&quot;step-number-inner fs-4&quot;&gt;
+        &lt;i class=&quot;ai-layout-side&quot;&gt;&lt;/i&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;step-body&quot;&gt;
+      &lt;h5 class=&quot;pb-1 mb-2&quot;&gt;Prototyping&lt;/h5&gt;
+      &lt;p class=&quot;mb-0&quot;&gt;Tristique sed pharetra feugiat tempor sagittis. Ultricies eu bibendum adipiscing lacinia.&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;!-- Step --&gt;
+  &lt;div class=&quot;step active&quot;&gt;
+    &lt;div class=&quot;step-number&quot;&gt;
+      &lt;div class=&quot;step-number-inner fs-4&quot;&gt;
+        &lt;i class=&quot;ai-monitor&quot;&gt;&lt;/i&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;step-body&quot;&gt;
+      &lt;h5 class=&quot;pb-1 mb-2&quot;&gt;Pixel-perfect UI Design&lt;/h5&gt;
+      &lt;p class=&quot;mb-0&quot;&gt;Duis euismod enim, facilisis risus tellus pharetra lectus diam neque. Nec ultrices mi faucibus est.&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </section>
+{% endblock content %}

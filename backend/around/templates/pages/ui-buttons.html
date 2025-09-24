@@ -1,0 +1,522 @@
+{% extends 'ui_layout.html' %}
+
+{% load static i18n %}
+
+{% block title %}Around UI Kit | Buttons{% endblock title %}
+
+{% block content %}
+  <section class="container pt-5 pb-4">
+    <div class="row pt-5 pb-2 pb-sm-3">
+      <div class="col-lg-9 offset-lg-3 position-relative z-5">
+        <h1 class="pt-lg-4">Buttons</h1>
+        <div class="d-flex flex-wrap flex-md-nowrap justify-content-between pb-3">
+          <p class="text-body-secondary">Custom button styles for actions in forms, dialogs, etc.</p>
+          <p class="fs-sm fw-semibold ps-md-4">
+            <a class="text-decoration-none text-nowrap" href="https://getbootstrap.com/docs/5.3/components/buttons/"
+               target="_blank" rel="noopener">
+              Bootstrap docs
+              <i class="ai-external-link fs-lg ms-2"></i>
+            </a>
+          </p>
+        </div>
+
+
+        <!-- Solid (default) -->
+        <section class="card border-0 mb-4" id="buttons-solid">
+          <div class="card-body pb-0">
+            <h2 class="h4 mb-n2">Solid (default)</h2>
+          </div>
+          <div class="card-header">
+            <ul class="nav nav-tabs card-header-tabs flex-nowrap align-items-center mb-n1" role="tablist">
+              <li class="nav-item me-3">
+                <a class="nav-link px-0 py-2 border-0 rounded-1 active" href="#preview1" data-bs-toggle="tab" role="tab"
+                   aria-controls="preview1" aria-selected="true">
+                  <i class="ai-show fs-lg opacity-90 me-2"></i>
+                  Preview
+                </a>
+              </li>
+              <li class="vr opacity-20 my-3 me-3"></li>
+              <li class="nav-item">
+                <a class="nav-link px-0 py-2 border-0 rounded-1" href="#html1" data-bs-toggle="tab" role="tab"
+                   aria-controls="html1" aria-selected="false">
+                  <i class="ai-code fs-xl opacity-90 me-2"></i>
+                  HTML
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="card-body">
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="preview1" role="tabpanel">
+                <button class="btn btn-primary mb-2 me-1" type="button">Primary</button>
+                <button class="btn btn-secondary mb-2 me-1" type="button">Secondary</button>
+                <button class="btn btn-success mb-2 me-1" type="button">Success</button>
+                <button class="btn btn-danger mb-2 me-1" type="button">Danger</button>
+                <button class="btn btn-warning mb-2 me-1" type="button">Warning</button>
+                <button class="btn btn-info mb-2 me-1" type="button">Info</button>
+                <div class="d-inline-block mb-2 me-1 p-2 bg-dark">
+                  <button class="btn btn-light" type="button">Light</button>
+                </div>
+                <button class="btn btn-dark mb-2" type="button">Dark</button>
+                <button class="btn btn-link mb-2" type="button">Link</button>
+              </div>
+              <div class="tab-pane fade" id="html1" role="tabpanel">
+                  <pre class="line-numbers"><code class="lang-html">&lt;!-- Primary solid button --&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Primary&lt;/button&gt;
+
+&lt;!-- Secondary solid button --&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot;&gt;Secondary&lt;/button&gt;
+
+&lt;!-- Success solid button --&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-success&quot;&gt;Success&lt;/button&gt;
+
+&lt;!-- Danger solid button --&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-danger&quot;&gt;Danger&lt;/button&gt;
+
+&lt;!-- Warning solid button --&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-warning&quot;&gt;Warning&lt;/button&gt;
+
+&lt;!-- Info solid button --&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-info&quot;&gt;Info&lt;/button&gt;
+
+&lt;!-- Light solid button --&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-light&quot;&gt;Info&lt;/button&gt;
+
+&lt;!-- Dark solid button --&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-dark&quot;&gt;Dark&lt;/button&gt;
+
+&lt;!-- Link button --&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-link&quot;&gt;Link&lt;/button&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- Outline -->
+        <section class="card border-0 mb-4" id="buttons-outline">
+          <div class="card-body pb-0">
+            <h2 class="h4 mb-n2">Outline</h2>
+          </div>
+          <div class="card-header">
+            <ul class="nav nav-tabs card-header-tabs flex-nowrap align-items-center mb-n1" role="tablist">
+              <li class="nav-item me-3">
+                <a class="nav-link px-0 py-2 border-0 rounded-1 active" href="#preview2" data-bs-toggle="tab" role="tab"
+                   aria-controls="preview2" aria-selected="true">
+                  <i class="ai-show fs-lg opacity-90 me-2"></i>
+                  Preview
+                </a>
+              </li>
+              <li class="vr opacity-20 my-3 me-3"></li>
+              <li class="nav-item">
+                <a class="nav-link px-0 py-2 border-0 rounded-1" href="#html2" data-bs-toggle="tab" role="tab"
+                   aria-controls="html2" aria-selected="false">
+                  <i class="ai-code fs-xl opacity-90 me-2"></i>
+                  HTML
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="card-body">
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="preview2" role="tabpanel">
+                <button class="btn btn-outline-primary mb-2 me-1" type="button">Primary</button>
+                <button class="btn btn-outline-secondary mb-2 me-1" type="button">Secondary</button>
+                <button class="btn btn-outline-success mb-2 me-1" type="button">Success</button>
+                <button class="btn btn-outline-danger mb-2 me-1" type="button">Danger</button>
+                <button class="btn btn-outline-warning mb-2 me-1" type="button">Warning</button>
+                <button class="btn btn-outline-info mb-2 me-1" type="button">Info</button>
+                <div class="d-inline-block mb-2 me-1 p-2 bg-dark">
+                  <button class="btn btn-outline-light" type="button">Light</button>
+                </div>
+                <button class="btn btn-outline-dark mb-2" type="button">Dark</button>
+              </div>
+              <div class="tab-pane fade" id="html2" role="tabpanel">
+                  <pre class="line-numbers"><code class="lang-html">&lt;!-- Primary outline button --&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-outline-primary&quot;&gt;Primary&lt;/button&gt;
+
+&lt;!-- Secondary outline button --&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-outline-secondary&quot;&gt;Secondary&lt;/button&gt;
+
+&lt;!-- Success outline button --&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-outline-success&quot;&gt;Success&lt;/button&gt;
+
+&lt;!-- Danger outline button --&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-outline-danger&quot;&gt;Danger&lt;/button&gt;
+
+&lt;!-- Warning outline button --&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-outline-warning&quot;&gt;Warning&lt;/button&gt;
+
+&lt;!-- Info outline button --&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-outline-info&quot;&gt;Info&lt;/button&gt;
+
+&lt;!-- Light outline button --&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-outline-light&quot;&gt;Info&lt;/button&gt;
+
+&lt;!-- Dark outline button --&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-outline-dark&quot;&gt;Dark&lt;/button&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- Icons -->
+        <section class="card border-0 mb-4" id="buttons-icons">
+          <div class="card-body pb-0">
+            <h2 class="h4 mb-n2">Icons</h2>
+          </div>
+          <div class="card-header">
+            <ul class="nav nav-tabs card-header-tabs flex-nowrap align-items-center mb-n1" role="tablist">
+              <li class="nav-item me-3">
+                <a class="nav-link px-0 py-2 border-0 rounded-1 active" href="#preview3" data-bs-toggle="tab" role="tab"
+                   aria-controls="preview3" aria-selected="true">
+                  <i class="ai-show fs-lg opacity-90 me-2"></i>
+                  Preview
+                </a>
+              </li>
+              <li class="vr opacity-20 my-3 me-3"></li>
+              <li class="nav-item me-3">
+                <a class="nav-link px-0 py-2 border-0 rounded-1" href="#html3" data-bs-toggle="tab" role="tab"
+                   aria-controls="html3" aria-selected="false">
+                  <i class="ai-code fs-xl opacity-90 me-2"></i>
+                  HTML
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="card-body">
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="preview3" role="tabpanel">
+                <button class="btn btn-primary mb-2 me-2" type="button">
+                  <i class="ai-user me-2"></i>
+                  Profile
+                </button>
+                <button class="btn btn-secondary btn-icon mb-2 me-2" type="button" aria-label="Edit">
+                  <i class="ai-edit-alt"></i>
+                </button>
+                <button class="btn btn-outline-danger btn-icon mb-2 me-2" type="button" aria-label="Delete">
+                  <i class="ai-trash"></i>
+                </button>
+                <button class="btn btn-success btn-icon mb-2 me-2" type="button" aria-label="Confirm">
+                  <i class="ai-check"></i>
+                </button>
+                <button class="btn btn-warning btn-icon rounded-pill mb-2 me-2" type="button" aria-label="Rate">
+                  <i class="ai-star-filled"></i>
+                </button>
+                <button class="btn btn-outline-info btn-icon rounded-pill mb-2 me-2" type="button"
+                        aria-label="Bookmark">
+                  <i class="ai-bookmark"></i>
+                </button>
+              </div>
+              <div class="tab-pane fade" id="html3" role="tabpanel">
+                  <pre class="line-numbers"><code class="lang-html">&lt;!-- Primary button with text and icon --&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;
+  &lt;i class=&quot;ai-user me-2&quot;&gt;&lt;/i&gt;
+  Profile
+&lt;/button&gt;
+
+&lt;!-- Secondary solid icon button --&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-secondary btn-icon&quot; aria-label=&quot;Edit&quot;&gt;
+  &lt;i class=&quot;ai-edit-alt&quot;&gt;&lt;/i&gt;
+&lt;/button&gt;
+
+&lt;!-- Danger outline icon button --&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-outline-danger btn-icon&quot; aria-label=&quot;Delete&quot;&gt;
+  &lt;i class=&quot;ai-trash&quot;&gt;&lt;/i&gt;
+&lt;/button&gt;
+
+&lt;!-- Success solid icon button --&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-success btn-icon&quot; aria-label=&quot;Confirm&quot;&gt;
+  &lt;i class=&quot;ai-check&quot;&gt;&lt;/i&gt;
+&lt;/button&gt;
+
+&lt;!-- Warning pill solid icon button --&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-warning btn-icon rounded-pill&quot; aria-label=&quot;Rate&quot;&gt;
+  &lt;i class=&quot;ai-star-filled&quot;&gt;&lt;/i&gt;
+&lt;/button&gt;
+
+&lt;!-- Info pill outline icon button --&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-outline-info btn-icon rounded-pill&quot; aria-label=&quot;Bookmark&quot;&gt;
+  &lt;i class=&quot;ai-bookmark&quot;&gt;&lt;/i&gt;
+&lt;/button&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- Market buttons -->
+        <section class="card border-0 mb-4" id="buttons-market">
+          <div class="card-body pb-0">
+            <h2 class="h4 mb-n2">Market buttons</h2>
+          </div>
+          <div class="card-header">
+            <ul class="nav nav-tabs card-header-tabs flex-nowrap align-items-center mb-n1" role="tablist">
+              <li class="nav-item me-3">
+                <a class="nav-link px-0 py-2 border-0 rounded-1 active" href="#preview4" data-bs-toggle="tab" role="tab"
+                   aria-controls="preview4" aria-selected="true">
+                  <i class="ai-show fs-lg opacity-90 me-2"></i>
+                  Preview
+                </a>
+              </li>
+              <li class="vr opacity-20 my-3 me-3"></li>
+              <li class="nav-item">
+                <a class="nav-link px-0 py-2 border-0 rounded-1" href="#html4" data-bs-toggle="tab" role="tab"
+                   aria-controls="html4" aria-selected="false">
+                  <i class="ai-code fs-xl opacity-90 me-2"></i>
+                  HTML
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="card-body">
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="preview4" role="tabpanel">
+                <a class="btn btn-dark btn-lg px-3 py-2 me-3 mb-3" href="#" aria-label="App Store">
+                  <img class="d-dark-mode-none mx-1" src="{% static '/img/market/appstore-light.svg' %}" width="136"
+                       alt="App Store">
+                  <img class="d-none d-dark-mode-block mx-1" src="{% static '/img/market/appstore-dark.svg' %}"
+                       width="136"
+                       alt="App Store">
+                </a>
+                <a class="btn btn-dark btn-lg px-3 py-2 mb-3" href="#" aria-label="Google Play">
+                  <img class="d-dark-mode-none mx-1" src="{% static '/img/market/googleplay-light.svg' %}" width="135"
+                       alt="Google Play">
+                  <img class="d-none d-dark-mode-block mx-1" src="{% static '/img/market/googleplay-dark.svg' %}"
+                       width="135"
+                       alt="Google Play">
+                </a>
+                <br>
+                <a class="btn btn-primary btn-lg px-3 py-2 me-3 mb-3" href="#" aria-label="App Store">
+                  <img class="mx-1" src="{% static '/img/market/appstore-light.svg' %}" width="136" alt="App Store">
+                </a>
+                <a class="btn btn-primary btn-lg px-3 py-2 mb-3" href="#" aria-label="Google Play">
+                  <img class="mx-1" src="{% static '/img/market/googleplay-light.svg' %}" width="135" alt="Google Play">
+                </a>
+              </div>
+              <div class="tab-pane fade" id="html4" role="tabpanel">
+                  <pre class="line-numbers"><code class="lang-html">&lt;!-- App Store button (Dark) --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-dark btn-lg px-3 py-2&quot; aria-label=&quot;App Store&quot;&gt;
+  &lt;img src="/img/market/appstore-light.svg&quot; class=&quot;d-dark-mode-none mx-1&quot; width=&quot;136&quot; alt=&quot;App Store&quot;&gt;
+  &lt;img src="/img/market/appstore-dark.svg&quot; class=&quot;d-none d-dark-mode-block mx-1&quot; width=&quot;136&quot; alt=&quot;App Store&quot;&gt;
+&lt;/a&gt;
+
+&lt;!-- Google Play button (Dark) --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-dark btn-lg px-3 py-2&quot; aria-label=&quot;Google Play&quot;&gt;
+  &lt;img src="/img/market/googleplay-light.svg&quot; class=&quot;d-dark-mode-none mx-1&quot; width=&quot;135&quot; alt=&quot;Google Play&quot;&gt;
+  &lt;img src="/img/market/googleplay-dark.svg&quot; class=&quot;d-none d-dark-mode-block mx-1&quot; width=&quot;135&quot; alt=&quot;Google Play&quot;&gt;
+&lt;/a&gt;
+
+&lt;!-- App Store button (Primary) --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-primary btn-lg px-3 py-2&quot; aria-label=&quot;App Store&quot;&gt;
+  &lt;img src="/img/market/appstore-light.svg&quot; class=&quot;mx-1&quot; width=&quot;136&quot; alt=&quot;App Store&quot;&gt;
+&lt;/a&gt;
+
+&lt;!-- Google Play button (Primary) --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-primary btn-lg px-3 py-2&quot; aria-label=&quot;Google Play&quot;&gt;
+  &lt;img src="/img/market/googleplay-light.svg&quot; class=&quot;mx-1&quot; width=&quot;135&quot; alt=&quot;Google Play&quot;&gt;
+&lt;/a&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- Shapes -->
+        <section class="card border-0 mb-4" id="buttons-shapes">
+          <div class="card-body pb-0">
+            <h2 class="h4 mb-n2">Shapes</h2>
+          </div>
+          <div class="card-header">
+            <ul class="nav nav-tabs card-header-tabs flex-nowrap align-items-center mb-n1" role="tablist">
+              <li class="nav-item me-3">
+                <a class="nav-link px-0 py-2 border-0 rounded-1 active" href="#preview5" data-bs-toggle="tab" role="tab"
+                   aria-controls="preview5" aria-selected="true">
+                  <i class="ai-show fs-lg opacity-90 me-2"></i>
+                  Preview
+                </a>
+              </li>
+              <li class="vr opacity-20 my-3 me-3"></li>
+              <li class="nav-item">
+                <a class="nav-link px-0 py-2 border-0 rounded-1" href="#html5" data-bs-toggle="tab" role="tab"
+                   aria-controls="html5" aria-selected="false">
+                  <i class="ai-code fs-xl opacity-90 me-2"></i>
+                  HTML
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="card-body">
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="preview5" role="tabpanel">
+                <button class="btn btn-primary mb-2 me-1" type="button">Rounded</button>
+                <button class="btn btn-primary rounded-pill mb-2 me-1" type="button">Pill button</button>
+                <button class="btn btn-primary rounded-0 mb-2" type="button">Square</button>
+                <div class="pt-2"></div>
+                <button class="btn btn-outline-primary mb-2 me-1" type="button">Rounded</button>
+                <button class="btn btn-outline-primary rounded-pill mb-2 me-1" type="button">Pill button</button>
+                <button class="btn btn-outline-primary rounded-0 mb-2" type="button">Square</button>
+              </div>
+              <div class="tab-pane fade" id="html5" role="tabpanel">
+                  <pre class="line-numbers"><code class="lang-html">&lt;!-- Rounded solid button --&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Rounded&lt;/button&gt;
+
+&lt;!-- Pill solid button --&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-primary rounded-pill&quot;&gt;Pill button&lt;/button&gt;
+
+&lt;!-- Square solid button --&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-primary rounded-0&quot;&gt;Square&lt;/button&gt;
+
+&lt;!-- Rounded outline button --&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-outline-primary&quot;&gt;Rounded&lt;/button&gt;
+
+&lt;!-- Pill outline button --&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-outline-primary rounded-pill&quot;&gt;Pill button&lt;/button&gt;
+
+&lt;!-- Square outline button --&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-outline-primary rounded-0&quot;&gt;Square&lt;/button&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- Sizes -->
+        <section class="card border-0 mb-4" id="buttons-sizes">
+          <div class="card-body pb-0">
+            <h2 class="h4 mb-n2">Sizes</h2>
+          </div>
+          <div class="card-header">
+            <ul class="nav nav-tabs card-header-tabs flex-nowrap align-items-center mb-n1" role="tablist">
+              <li class="nav-item me-3">
+                <a class="nav-link px-0 py-2 border-0 rounded-1 active" href="#preview6" data-bs-toggle="tab" role="tab"
+                   aria-controls="preview6" aria-selected="true">
+                  <i class="ai-show fs-lg opacity-90 me-2"></i>
+                  Preview
+                </a>
+              </li>
+              <li class="vr opacity-20 my-3 me-3"></li>
+              <li class="nav-item">
+                <a class="nav-link px-0 py-2 border-0 rounded-1" href="#html6" data-bs-toggle="tab" role="tab"
+                   aria-controls="html6" aria-selected="false">
+                  <i class="ai-code fs-xl opacity-90 me-2"></i>
+                  HTML
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="card-body">
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="preview6" role="tabpanel">
+                <button class="btn btn-primary btn-lg mb-2 me-1" type="button">Large button</button>
+                <button class="btn btn-primary mb-2 me-1" type="button">Normal button</button>
+                <button class="btn btn-primary btn-sm mb-2" type="button">Small button</button>
+                <div class="pt-2"></div>
+                <button class="btn btn-outline-primary btn-lg mb-2 me-1" type="button">Large button</button>
+                <button class="btn btn-outline-primary mb-2 me-1" type="button">Normal button</button>
+                <button class="btn btn-outline-primary btn-sm mb-2" type="button">Small button</button>
+                <div class="row pt-2">
+                  <div class="col-sm-6">
+                    <button class="btn btn-primary w-100 mb-3" type="button">Block level button</button>
+                  </div>
+                  <div class="col-sm-6">
+                    <button class="btn btn-outline-primary w-100 mb-3" type="button">Block level button</button>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="html6" role="tabpanel">
+                  <pre class="line-numbers"><code class="lang-html">&lt;!-- Large solid button --&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-lg&quot;&gt;Large button&lt;/button&gt;
+
+&lt;!-- Normal solid button --&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Normal button&lt;/button&gt;
+
+&lt;!-- Small solid button --&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-sm&quot;&gt;Small button&lt;/button&gt;
+
+&lt;!-- Large outline button --&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-outline-primary btn-lg&quot;&gt;Large button&lt;/button&gt;
+
+&lt;!-- Normal outline button --&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-outline-primary&quot;&gt;Normal button&lt;/button&gt;
+
+&lt;!-- Small outline button --&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-outline-primary btn-sm&quot;&gt;Small button&lt;/button&gt;
+
+&lt;!-- Block solid button --&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-primary w-100&quot;&gt;Block level button&lt;/button&gt;
+
+&lt;!-- Block outline button --&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-outline-primary w-100&quot;&gt;Block level button&lt;/button&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- States -->
+        <section class="card border-0 mb-4" id="buttons-states">
+          <div class="card-body pb-0">
+            <h2 class="h4 mb-n2">States</h2>
+          </div>
+          <div class="card-header">
+            <ul class="nav nav-tabs card-header-tabs flex-nowrap align-items-center mb-n1" role="tablist">
+              <li class="nav-item me-3">
+                <a class="nav-link px-0 py-2 border-0 rounded-1 active" href="#preview7" data-bs-toggle="tab" role="tab"
+                   aria-controls="preview7" aria-selected="true">
+                  <i class="ai-show fs-lg opacity-90 me-2"></i>
+                  Preview
+                </a>
+              </li>
+              <li class="vr opacity-20 my-3 me-3"></li>
+              <li class="nav-item">
+                <a class="nav-link px-0 py-2 border-0 rounded-1" href="#html7" data-bs-toggle="tab" role="tab"
+                   aria-controls="html7" aria-selected="false">
+                  <i class="ai-code fs-xl opacity-90 me-2"></i>
+                  HTML
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="card-body">
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="preview7" role="tabpanel">
+                <button class="btn btn-primary active mb-2 me-1" type="button">Active</button>
+                <button class="btn btn-secondary active mb-2 me-1" type="button">Active</button>
+                <button class="btn btn-primary mb-2 me-1" type="button" disabled>Disabled</button>
+                <button class="btn btn-secondary mb-2 me-1" type="button" disabled>Disabled</button>
+                <button class="btn btn-primary mb-2 me-1" type="button" data-bs-toggle="button">Button toggle</button>
+                <button class="btn btn-primary pe-none mb-2 me-1" type="button">
+                  <span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>
+                  Loading...
+                </button>
+                <button class="btn btn-secondary pe-none mb-2" type="button">
+                  <span class="spinner-grow spinner-grow-sm me-2" role="status" aria-hidden="true"></span>
+                  Loading...
+                </button>
+              </div>
+              <div class="tab-pane fade" id="html7" role="tabpanel">
+                  <pre class="line-numbers"><code class="lang-html">&lt;!-- Button states --&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-primary active&quot;&gt;Active&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-secondary active&quot;&gt;Active&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot; disabled&gt;Disabled&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot; disabled&gt;Disabled&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot; data-bs-toggle=&quot;button&quot;&gt;Button toggle&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-primary pe-none&quot;&gt;
+  &lt;span class=&quot;spinner-border spinner-border-sm me-2&quot; role=&quot;status&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+  Loading...
+&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-secondary pe-none&quot;&gt;
+  &lt;span class=&quot;spinner-grow spinner-grow-sm me-2&quot; role=&quot;status&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+  Loading...
+&lt;/button&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </section>
+
+{% endblock content %}

@@ -1,0 +1,417 @@
+{% extends 'ui_layout.html' %}
+
+{% load static i18n %}
+
+{% block title %}Around UI Kit | Offcanvas{% endblock title %}
+
+{% block modal %}
+
+  <!-- Left offcanvas example -->
+  <div class="offcanvas offcanvas-start" id="offcanvasLeft" tabindex="-1">
+    <div class="offcanvas-header border-bottom">
+      <h5 class="offcanvas-title">Left offcanvas</h5>
+      <button class="btn-close" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <p>Content for the offcanvas goes here. You can place just about any Bootstrap component or custom elements
+        here.</p>
+    </div>
+  </div>
+
+  <!-- Top offcanvas example -->
+  <div class="offcanvas offcanvas-top" id="offcanvasTop" tabindex="-1">
+    <div class="offcanvas-header border-bottom">
+      <h5 class="offcanvas-title">Top offcanvas</h5>
+      <button class="btn-close" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <p>Content for the offcanvas goes here. You can place just about any Bootstrap component or custom elements
+        here.</p>
+    </div>
+  </div>
+
+  <!-- Right offcanvas example -->
+  <div class="offcanvas offcanvas-end" id="offcanvasRight" tabindex="-1">
+    <div class="offcanvas-header border-bottom">
+      <h5 class="offcanvas-title">Right offcanvas</h5>
+      <button class="btn-close" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <p>Content for the offcanvas goes here. You can place just about any Bootstrap component or custom elements
+        here.</p>
+    </div>
+  </div>
+
+  <!-- Bottom offcanvas example -->
+  <div class="offcanvas offcanvas-bottom" id="offcanvasBottom" tabindex="-1">
+    <div class="offcanvas-header border-bottom">
+      <h5 class="offcanvas-title">Bottom offcanvas</h5>
+      <button class="btn-close" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <p>Content for the offcanvas goes here. You can place just about any Bootstrap component or custom elements
+        here.</p>
+    </div>
+  </div>
+
+{% endblock modal %}
+
+{% block content %}
+  <section class="container pt-5 pb-4">
+    <div class="row pt-5 pb-2 pb-sm-3">
+      <div class="col-lg-9 offset-lg-3 position-relative z-5">
+        <h1 class="pt-lg-4">Offcanvas</h1>
+        <div class="d-flex flex-wrap flex-md-nowrap justify-content-between pb-3">
+          <p class="text-body-secondary">Build hidden sidebars into your project for navigation, shopping carts, widgets
+            etc.</p>
+          <p class="fs-sm fw-semibold ps-md-4">
+            <a class="text-decoration-none text-nowrap" href="https://getbootstrap.com/docs/5.3/components/offcanvas/"
+               target="_blank" rel="noopener">
+              Bootstrap docs
+              <i class="ai-external-link fs-lg ms-2"></i>
+            </a>
+          </p>
+        </div>
+
+
+        <!-- Offcanvas components -->
+        <section class="card border-0 mb-4" id="offcanvas-components">
+          <div class="card-body pb-0">
+            <h2 class="h4 mb-n2">Offcanvas components</h2>
+          </div>
+          <div class="card-header">
+            <ul class="nav nav-tabs card-header-tabs flex-nowrap align-items-center mb-n1" role="tablist">
+              <li class="nav-item me-3">
+                <a class="nav-link px-0 py-2 border-0 rounded-1 active" href="#preview1" data-bs-toggle="tab" role="tab"
+                   aria-controls="preview1" aria-selected="true">
+                  <i class="ai-show fs-lg opacity-90 me-2"></i>
+                  Preview
+                </a>
+              </li>
+              <li class="vr opacity-20 my-3 me-3"></li>
+              <li class="nav-item">
+                <a class="nav-link px-0 py-2 border-0 rounded-1" href="#html1" data-bs-toggle="tab" role="tab"
+                   aria-controls="html1" aria-selected="false">
+                  <i class="ai-code fs-xl opacity-90 me-2"></i>
+                  HTML
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="card-body">
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="preview1" role="tabpanel">
+                <div class="offcanvas offcanvas-start shadow dark-mode-shadow-none rounded-3 my-2"
+                     data-offcanvas-show="true" tabindex="-1"
+                     style="position: static; transform: none; visibility: visible;">
+                  <div class="offcanvas-header border-bottom">
+                    <h5 class="offcanvas-title">Menu</h5>
+                    <button class="btn-close" type="button" aria-label="Close"></button>
+                  </div>
+                  <div class="offcanvas-body" style="max-height: 16.5rem;">
+                    <ul class="nav flex-column mt-n2">
+                      <li class="nav-item">
+                        <a class="nav-link px-0 py-2 active" href="#">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link px-0 py-2" href="#">User Profile</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link px-0 py-2" href="#">Services</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link px-0 py-2" href="#">Our Works</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link px-0 py-2" href="#">About</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link px-0 py-2" href="#">Our Team</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link px-0 py-2" href="#">Dashboard</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link px-0 py-2" href="#">Contacts</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link px-0 py-2" href="#">Help Center</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link px-0 py-2" href="#">Support</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="offcanvas-header d-flex border-top">
+                    <button class="btn btn-outline-primary w-100 me-2" type="button"><i class="ai-login me-1"></i>Sign
+                      In
+                    </button>
+                    <button class="btn btn-primary w-100" type="button"><i class="ai-user me-1"></i>Sign Up</button>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="html1" role="tabpanel">
+                  <pre class="line-numbers"><code class="lang-html">&lt;!-- Offcanvas --&gt;
+&lt;div class=&quot;offcanvas offcanvas-start&quot; id=&quot;offcanvas&quot; tabindex=&quot;-1&quot;&gt;
+
+  &lt;!-- Header --&gt;
+  &lt;div class=&quot;offcanvas-header border-bottom&quot;&gt;
+    &lt;h5 class=&quot;offcanvas-title&quot;&gt;Menu&lt;/h5&gt;
+    &lt;button class=&quot;btn-close&quot; type=&quot;button&quot; data-bs-dismiss=&quot;offcanvas&quot; aria-label=&quot;Close&quot;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+
+  &lt;!-- Body --&gt;
+  &lt;div class=&quot;offcanvas-body&quot;&gt;
+    &lt;ul class=&quot;nav flex-column mt-n2&quot;&gt;
+      &lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a href=&quot;#&quot; class=&quot;nav-link px-0 py-2 active&quot;&gt;Home&lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a href=&quot;#&quot; class=&quot;nav-link px-0 py-2 active&quot;&gt;User Profile&lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a href=&quot;#&quot; class=&quot;nav-link px-0 py-2 active&quot;&gt;Services&lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a href=&quot;#&quot; class=&quot;nav-link px-0 py-2 active&quot;&gt;Our Works&lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a href=&quot;#&quot; class=&quot;nav-link px-0 py-2 active&quot;&gt;About&lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a href=&quot;#&quot; class=&quot;nav-link px-0 py-2 active&quot;&gt;Our Team&lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a href=&quot;#&quot; class=&quot;nav-link px-0 py-2 active&quot;&gt;Dashboard&lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a href=&quot;#&quot; class=&quot;nav-link px-0 py-2 active&quot;&gt;Contacts&lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a href=&quot;#&quot; class=&quot;nav-link px-0 py-2 active&quot;&gt;Help Center&lt;/a&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+
+  &lt;!-- Footer --&gt;
+  &lt;div class=&quot;offcanvas-header d-flex border-top&quot;&gt;
+    &lt;button class=&quot;btn btn-outline-primary w-100 me-2&quot; type=&quot;button&quot;&gt;
+      &lt;i class=&quot;ai-login me-1&quot;&gt;&lt;/i&gt;
+      Sign In
+    &lt;/button&gt;
+    &lt;button class=&quot;btn btn-primary w-100&quot; type=&quot;button&quot;&gt;
+      &lt;i class=&quot;ai-user me-1&quot;&gt;&lt;/i&gt;
+      Sign Up
+    &lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- Placement -->
+        <section class="card border-0 mb-4" id="offcanvas-placement">
+          <div class="card-body pb-0">
+            <h2 class="h4 mb-n2">Placement</h2>
+          </div>
+          <div class="card-header">
+            <ul class="nav nav-tabs card-header-tabs flex-nowrap align-items-center mb-n1" role="tablist">
+              <li class="nav-item me-3">
+                <a class="nav-link px-0 py-2 border-0 rounded-1 active" href="#preview2" data-bs-toggle="tab" role="tab"
+                   aria-controls="preview2" aria-selected="true">
+                  <i class="ai-show fs-lg opacity-90 me-2"></i>
+                  Preview
+                </a>
+              </li>
+              <li class="vr opacity-20 my-3 me-3"></li>
+              <li class="nav-item">
+                <a class="nav-link px-0 py-2 border-0 rounded-1" href="#html2" data-bs-toggle="tab" role="tab"
+                   aria-controls="html2" aria-selected="false">
+                  <i class="ai-code fs-xl opacity-90 me-2"></i>
+                  HTML
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="card-body">
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="preview2" role="tabpanel">
+                <button class="btn btn-outline-secondary me-2 my-2" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasLeft">Toggle left offcanvas
+                </button>
+                <button class="btn btn-outline-secondary me-2 my-2" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasTop">Toggle top offcanvas
+                </button>
+                <button class="btn btn-outline-secondary me-2 my-2" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasRight">Toggle right offcanvas
+                </button>
+                <button class="btn btn-outline-secondary my-2" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasBottom">Toggle bottom offcanvas
+                </button>
+              </div>
+              <div class="tab-pane fade" id="html2" role="tabpanel">
+                  <pre class="line-numbers"><code class="lang-html">&lt;!-- Offcanvas position: Left --&gt;
+
+&lt;!-- Toogle button --&gt;
+&lt;button class=&quot;btn btn-outline-secondary&quot; type=&quot;button&quot; data-bs-toggle=&quot;offcanvas&quot; data-bs-target=&quot;#offcanvasLeft&quot;&gt;Toggle left offcanvas&lt;/button&gt;
+
+&lt;!-- Offcanvas --&gt;
+&lt;div class=&quot;offcanvas offcanvas-start&quot; id=&quot;offcanvasLeft&quot; tabindex=&quot;-1&quot;&gt;
+  &lt;div class=&quot;offcanvas-header border-bottom&quot;&gt;
+    &lt;h5 class=&quot;offcanvas-title&quot;&gt;Left offcanvas&lt;/h5&gt;
+    &lt;button class=&quot;btn-close&quot; type=&quot;button&quot; data-bs-dismiss=&quot;offcanvas&quot; aria-label=&quot;Close&quot;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;offcanvas-body&quot;&gt;
+    &lt;p&gt;Content for the offcanvas goes here. You can place just about any Bootstrap component or custom elements here.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;!-- Offcanvas position: Top --&gt;
+
+&lt;!-- Toogle button --&gt;
+&lt;button class=&quot;btn btn-outline-secondary&quot; type=&quot;button&quot; data-bs-toggle=&quot;offcanvas&quot; data-bs-target=&quot;#offcanvasTop&quot;&gt;Toggle top offcanvas&lt;/button&gt;
+
+&lt;!-- Offcanvas --&gt;
+&lt;div class=&quot;offcanvas offcanvas-top&quot; id=&quot;offcanvasTop&quot; tabindex=&quot;-1&quot;&gt;
+  &lt;div class=&quot;offcanvas-header border-bottom&quot;&gt;
+    &lt;h5 class=&quot;offcanvas-title&quot;&gt;Top offcanvas&lt;/h5&gt;
+    &lt;button class=&quot;btn-close&quot; type=&quot;button&quot; data-bs-dismiss=&quot;offcanvas&quot; aria-label=&quot;Close&quot;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;offcanvas-body&quot;&gt;
+    &lt;p&gt;Content for the offcanvas goes here. You can place just about any Bootstrap component or custom elements here.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;!-- Offcanvas position: Right --&gt;
+
+&lt;!-- Toogle button --&gt;
+&lt;button class=&quot;btn btn-outline-secondary&quot; type=&quot;button&quot; data-bs-toggle=&quot;offcanvas&quot; data-bs-target=&quot;#offcanvasRight&quot;&gt;Toggle right offcanvas&lt;/button&gt;
+
+&lt;!-- Offcanvas --&gt;
+&lt;div class=&quot;offcanvas offcanvas-end&quot; id=&quot;offcanvasRight&quot; tabindex=&quot;-1&quot;&gt;
+  &lt;div class=&quot;offcanvas-header border-bottom&quot;&gt;
+    &lt;h5 class=&quot;offcanvas-title&quot;&gt;Right offcanvas&lt;/h5&gt;
+    &lt;button class=&quot;btn-close&quot; type=&quot;button&quot; data-bs-dismiss=&quot;offcanvas&quot; aria-label=&quot;Close&quot;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;offcanvas-body&quot;&gt;
+    &lt;p&gt;Content for the offcanvas goes here. You can place just about any Bootstrap component or custom elements here.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;!-- Offcanvas position: Bottom --&gt;
+
+&lt;!-- Toogle button --&gt;
+&lt;button class=&quot;btn btn-outline-secondary&quot; type=&quot;button&quot; data-bs-toggle=&quot;offcanvas&quot; data-bs-target=&quot;#offcanvasBottom&quot;&gt;Toggle bottom offcanvas&lt;/button&gt;
+
+&lt;!-- Offcanvas --&gt;
+&lt;div class=&quot;offcanvas offcanvas-bottom&quot; id=&quot;offcanvasBottom&quot; tabindex=&quot;-1&quot;&gt;
+  &lt;div class=&quot;offcanvas-header border-bottom&quot;&gt;
+    &lt;h5 class=&quot;offcanvas-title&quot;&gt;Bottom offcanvas&lt;/h5&gt;
+    &lt;button class=&quot;btn-close&quot; type=&quot;button&quot; data-bs-dismiss=&quot;offcanvas&quot; aria-label=&quot;Close&quot;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;offcanvas-body&quot;&gt;
+    &lt;p&gt;Content for the offcanvas goes here. You can place just about any Bootstrap component or custom elements here.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- Mobile menu offcanvas (responsive) -->
+        <section class="card border-0 mb-4" id="offcanvas-mobile">
+          <div class="card-body pb-0">
+            <h2 class="h4 mb-n2">Mobile menu offcanvas (responsive)</h2>
+          </div>
+          <div class="card-header">
+            <ul class="nav nav-tabs card-header-tabs flex-nowrap align-items-center mb-n1" role="tablist">
+              <li class="nav-item me-3">
+                <a class="nav-link px-0 py-2 border-0 rounded-1 active" href="#preview3" data-bs-toggle="tab" role="tab"
+                   aria-controls="preview3" aria-selected="true"><i
+                  class="ai-show fs-lg opacity-90 me-2"></i>Preview</a>
+              </li>
+              <li class="vr opacity-20 my-3 me-3"></li>
+              <li class="nav-item">
+                <a class="nav-link px-0 py-2 border-0 rounded-1" href="#html3" data-bs-toggle="tab" role="tab"
+                   aria-controls="html3" aria-selected="false">
+                  <i class="ai-code fs-xl opacity-90 me-2"></i>
+                  HTML
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="card-body">
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="preview3" role="tabpanel">
+                <iframe class="w-100 shadow rounded-3"
+                        src="{% url 'pages:dynamic_pages' template_name='ui-navbar-offcanvas' %}" height="512"
+                        style="max-width: 375px;" title="Navar with offcanvas menu"></iframe>
+              </div>
+              <div class="tab-pane fade" id="html3" role="tabpanel">
+                  <pre class="line-numbers"><code class="lang-html">&lt;!-- Navbar with offcanvas menu on mobile --&gt;
+&lt;header class=&quot;header navbar navbar-expand-lg fixed-top bg-light&quot;&gt;
+  &lt;div class=&quot;container&quot;&gt;
+    &lt;a href=&quot;#&quot; class=&quot;navbar-brand pe-xl-2 me-4&quot;&gt;
+      &lt;span class=&quot;text-primary flex-shrink-0 me-2&quot;&gt;
+        &lt;svg version=&quot;1.1&quot; width=&quot;35&quot; height=&quot;32&quot; viewBox=&quot;0 0 36 33&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+          &lt;path fill=&quot;currentColor&quot; d=&quot;M35.6,29c-1.1,3.4-5.4,4.4-7.9,1.9c-2.3-2.2-6.1-3.7-9.4-3.7c-3.1,0-7.5,1.8-10,4.1c-2.2,2-5.8,1.5-7.3-1.1c-1-1.8-1.2-4.1,0-6.2l0.6-1.1l0,0c0.6-0.7,4.4-5.2,12.5-5.7c0.5,1.8,2,3.1,3.9,3.1c2.2,0,4.1-1.9,4.1-4.2s-1.8-4.2-4.1-4.2c-2,0-3.6,1.4-4,3.3H7.7c-0.8,0-1.3-0.9-0.9-1.6l5.6-9.8c2.5-4.5,8.8-4.5,11.3,0L35.1,24C36,25.7,36.1,27.5,35.6,29z&quot;&gt;
+        &lt;/svg&gt;
+      &lt;/span&gt;
+      Around
+    &lt;/a&gt;
+    &lt;button type=&quot;button&quot; class=&quot;navbar-toggler me-2&quot; data-bs-toggle=&quot;offcanvas&quot; data-bs-target=&quot;#primaryMenu&quot; aria-label=&quot;Toggle navigation&quot;&gt;
+      &lt;span class=&quot;navbar-toggler-icon&quot;&gt;&lt;/span&gt;
+    &lt;/button&gt;
+    &lt;div class=&quot;offcanvas offcanvas-end&quot; id=&quot;primaryMenu&quot;&gt;
+      &lt;div class=&quot;offcanvas-header&quot;&gt;
+        &lt;h5 class=&quot;mt-1 mb-0&quot;&gt;Menu&lt;/h5&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn-close&quot; data-bs-dismiss=&quot;offcanvas&quot; aria-label=&quot;Close&quot;&gt;&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;offcanvas-body pt-0&quot;&gt;
+        &lt;ul class=&quot;navbar-nav p-0&quot;&gt;
+          &lt;li class=&quot;nav-item active&quot;&gt;
+            &lt;a href=&quot;#&quot; class=&quot;nav-link&quot;&gt;Home&lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li class=&quot;nav-item&quot;&gt;
+            &lt;a href=&quot;#&quot; class=&quot;nav-link&quot;&gt;Link&lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li class=&quot;nav-item dropdown&quot;&gt;
+            &lt;a href=&quot;#&quot; class=&quot;nav-link dropdown-toggle&quot; data-bs-toggle=&quot;dropdown&quot; data-bs-auto-close=&quot;outside&quot;&gt;Dropdown&lt;/a&gt;
+            &lt;ul class=&quot;dropdown-menu&quot;&gt;
+              &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;dropdown-item&quot;&gt;Action link&lt;/a&gt;&lt;/li&gt;
+              &lt;li class=&quot;dropdown&quot;&gt;
+                &lt;a href=&quot;#&quot; class=&quot;dropdown-item dropdown-toggle&quot; data-bs-toggle=&quot;dropdown&quot;&gt;Dropdown&lt;/a&gt;
+                &lt;ul class=&quot;dropdown-menu&quot;&gt;
+                  &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;dropdown-item&quot;&gt;Action link&lt;/a&gt;&lt;/li&gt;
+                  &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;dropdown-item&quot;&gt;Another action&lt;/a&gt;&lt;/li&gt;
+                  &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;dropdown-item&quot;&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+                  &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;dropdown-item&quot;&gt;Yet another link&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;dropdown-item&quot;&gt;Another action&lt;/a&gt;&lt;/li&gt;
+              &lt;li class=&quot;dropdown-divider&quot;&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;dropdown-item&quot;&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li class=&quot;nav-item&quot;&gt;
+            &lt;a href=&quot;#&quot; class=&quot;nav-link disabled&quot; tabindex=&quot;-1&quot; aria-disabled=&quot;true&quot;&gt;Disabled&lt;/a&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/header&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </section>
+{% endblock content %}

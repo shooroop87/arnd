@@ -1,0 +1,154 @@
+{% extends 'ui_layout.html' %}
+
+{% load static i18n %}
+
+{% block title %}Around UI Kit | Popovers{% endblock title %}
+
+{% block content %}
+  <section class="container pt-5 pb-4">
+    <div class="row pt-5 pb-2 pb-sm-3">
+      <div class="col-lg-9 offset-lg-3 position-relative z-5">
+        <h1 class="pt-lg-4">Popovers</h1>
+        <div class="d-flex flex-wrap flex-md-nowrap justify-content-between pb-3">
+          <p class="text-body-secondary">A pop-up box that appears when the user clicks/hovers on an element.</p>
+          <p class="fs-sm fw-semibold ps-md-4">
+            <a class="text-decoration-none text-nowrap" href="https://getbootstrap.com/docs/5.3/components/popovers/"
+               target="_blank" rel="noopener">
+              Bootstrap docs
+              <i class="ai-external-link fs-lg ms-2"></i>
+            </a>
+          </p>
+        </div>
+
+
+        <!-- Live demo -->
+        <section class="card border-0 mb-4" id="popovers-demo">
+          <div class="card-body pb-0">
+            <h2 class="h4 mb-n2">Live demo</h2>
+          </div>
+          <div class="card-header">
+            <ul class="nav nav-tabs card-header-tabs flex-nowrap align-items-center mb-n1" role="tablist">
+              <li class="nav-item me-3">
+                <a class="nav-link px-0 py-2 border-0 rounded-1 active" href="#preview1" data-bs-toggle="tab" role="tab"
+                   aria-controls="preview1" aria-selected="true">
+                  <i class="ai-show fs-lg opacity-90 me-2"></i>
+                  Preview
+                </a>
+              </li>
+              <li class="vr opacity-20 my-3 me-3"></li>
+              <li class="nav-item">
+                <a class="nav-link px-0 py-2 border-0 rounded-1" href="#html1" data-bs-toggle="tab" role="tab"
+                   aria-controls="html1" aria-selected="false">
+                  <i class="ai-code fs-xl opacity-90 me-2"></i>
+                  HTML
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="card-body">
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="preview1" role="tabpanel">
+                <button class="btn btn-outline-secondary me-2 mb-3" type="button" data-bs-container="body"
+                        data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover" title="Popover on top"
+                        data-bs-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus ornare.">Popover on
+                  top
+                </button>
+                <button class="btn btn-outline-secondary me-2 mb-3" type="button" data-bs-container="body"
+                        data-bs-toggle="popover" data-bs-placement="right" data-bs-trigger="hover"
+                        title="Popover on right"
+                        data-bs-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus ornare.">Popover on
+                  right
+                </button>
+                <button class="btn btn-outline-secondary me-2 mb-3" type="button" data-bs-container="body"
+                        data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="hover"
+                        title="Popover on bottom"
+                        data-bs-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus ornare.">Popover on
+                  bottom
+                </button>
+                <button class="btn btn-outline-secondary mb-3" type="button" data-bs-container="body"
+                        data-bs-toggle="popover" data-bs-placement="left" data-bs-trigger="hover"
+                        title="Popover on left"
+                        data-bs-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus ornare.">Popover on
+                  left
+                </button>
+              </div>
+              <div class="tab-pane fade" id="html1" role="tabpanel">
+                  <pre class="line-numbers"><code class="lang-html">&lt;!-- Popover on top --&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-outline-secondary&quot; data-bs-container=&quot;body&quot; data-bs-toggle=&quot;popover&quot; data-bs-placement=&quot;top&quot; data-bs-trigger=&quot;hover&quot; title=&quot;Popover on top&quot; data-bs-content=&quot;Vivamus sagittis lacus vel augue laoreet rutrum faucibus ornare.&quot;&gt;Popover on top&lt;/button&gt;
+
+&lt;!-- Popover on right --&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-outline-secondary&quot; data-bs-container=&quot;body&quot; data-bs-toggle=&quot;popover&quot; data-bs-placement=&quot;right&quot; data-bs-trigger=&quot;hover&quot; title=&quot;Popover on right&quot; data-bs-content=&quot;Vivamus sagittis lacus vel augue laoreet rutrum faucibus ornare.&quot;&gt;Popover on right&lt;/button&gt;
+
+&lt;!-- Popover on bottom --&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-outline-secondary&quot; data-bs-container=&quot;body&quot; data-bs-toggle=&quot;popover&quot; data-bs-placement=&quot;bottom&quot; data-bs-trigger=&quot;hover&quot; title=&quot;Popover on bottom&quot; data-bs-content=&quot;Vivamus sagittis lacus vel augue laoreet rutrum faucibus ornare.&quot;&gt;Popover on right&lt;/button&gt;
+
+&lt;!-- Popover on left --&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-outline-secondary&quot; data-bs-container=&quot;body&quot; data-bs-toggle=&quot;popover&quot; data-bs-placement=&quot;left&quot; data-bs-trigger=&quot;hover&quot; title=&quot;Popover on left&quot; data-bs-content=&quot;Vivamus sagittis lacus vel augue laoreet rutrum faucibus ornare.&quot;&gt;Popover on right&lt;/button&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- Toggle on click / hover -->
+        <section class="card border-0 mb-4" id="popovers-toggle">
+          <div class="card-body pb-0">
+            <h2 class="h4 mb-n2">Toggle on click / hover</h2>
+          </div>
+          <div class="card-header">
+            <ul class="nav nav-tabs card-header-tabs flex-nowrap align-items-center mb-n1" role="tablist">
+              <li class="nav-item me-3">
+                <a class="nav-link px-0 py-2 border-0 rounded-1 active" href="#preview2" data-bs-toggle="tab" role="tab"
+                   aria-controls="preview2" aria-selected="true">
+                  <i class="ai-show fs-lg opacity-90 me-2"></i>
+                  Preview
+                </a>
+              </li>
+              <li class="vr opacity-20 my-3 me-3"></li>
+              <li class="nav-item">
+                <a class="nav-link px-0 py-2 border-0 rounded-1" href="#html2" data-bs-toggle="tab" role="tab"
+                   aria-controls="html2" aria-selected="false">
+                  <i class="ai-code fs-xl opacity-90 me-2"></i>
+                  HTML
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="card-body">
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="preview2" role="tabpanel">
+                <button class="btn btn-primary me-2 mb-3" type="button" data-bs-container="body"
+                        data-bs-toggle="popover" data-bs-placement="top" title="Popover on click"
+                        data-bs-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus ornare.">Toggle
+                  popover on click
+                </button>
+                <button class="btn btn-outline-primary me-2 mb-3" type="button" data-bs-container="body"
+                        data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover"
+                        title="Popover on hover"
+                        data-bs-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus ornare.">Toggle
+                  popover on hover
+                </button>
+              </div>
+              <div class="tab-pane fade" id="html2" role="tabpanel">
+                  <pre class="line-numbers"><code class="lang-html">&lt;!-- Toggle popover on click (click is default trigger) --&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot; data-bs-container=&quot;body&quot; data-bs-toggle=&quot;popover&quot; data-bs-placement=&quot;top&quot; title=&quot;Popover on click&quot; data-bs-content=&quot;Vivamus sagittis lacus vel augue laoreet rutrum faucibus ornare.&quot;&gt;Toggle popover on click&lt;/button&gt;
+
+&lt;!-- Toggle popover on hover --&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-outline-primary&quot; data-bs-container=&quot;body&quot; data-bs-toggle=&quot;popover&quot; data-bs-placement=&quot;top&quot; data-bs-trigger=&quot;hover&quot; title=&quot;Popover on hover&quot; data-bs-content=&quot;Vivamus sagittis lacus vel augue laoreet rutrum faucibus ornare.&quot;&gt;Toggle popover on hover&lt;/button&gt;</code></pre>
+              </div>
+              <div class="tab-pane fade" id="pug2" role="tabpanel">
+                  <pre class="line-numbers"><code class="lang-pug">// Toggle popover on click (click is default trigger)
+button(type=&quot;button&quot;, class=&quot;btn btn-primary&quot;, data-bs-container=&quot;body&quot;, data-bs-toggle=&quot;popover&quot;, data-bs-placement=&quot;top&quot;, title=&quot;Popover on click&quot;, data-bs-content=&quot;Vivamus sagittis lacus vel augue laoreet rutrum faucibus ornare.&quot;)
+  | Toggle popover on click
+
+// Toggle popover on hover
+button(type=&quot;button&quot;, class=&quot;btn btn-outline-primary&quot;, data-bs-container=&quot;body&quot;, data-bs-toggle=&quot;popover&quot;, data-bs-placement=&quot;right&quot;, data-bs-trigger=&quot;hover&quot;, title=&quot;Popover on hover&quot;, data-bs-content=&quot;Vivamus sagittis lacus vel augue laoreet rutrum faucibus ornare.&quot;)
+  | Toggle popover on hover</code></pre>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </section>
+{% endblock content %}

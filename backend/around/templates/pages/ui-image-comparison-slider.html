@@ -1,0 +1,121 @@
+{% extends 'ui_layout.html' %}
+
+{% load static i18n %}
+
+{% block title %}Around UI Kit | Image comparison slider{% endblock title %}
+
+{% block content %}
+  <section class="container pt-5 pb-4">
+    <div class="row pt-5 pb-2 pb-sm-3">
+      <div class="col-lg-9 offset-lg-3 position-relative z-5">
+        <h1 class="pt-lg-4">Image comparison slider</h1>
+        <div class="d-flex flex-wrap flex-md-nowrap justify-content-between pb-3">
+          <p class="text-body-secondary">JavaScript based slider component that can be used to demonstrate the
+            difference between two images.</p>
+          <div class="ps-md-4 mb-3">
+            <span class="badge bg-warning fs-sm">Around component</span>
+          </div>
+        </div>
+
+
+        <!-- Info alert -->
+        <div class="alert alert-info d-flex mb-4" role="alert">
+          <i class="ai-circle-info lead me-2 me-sm-3"></i>
+          <div class="text-break">
+            <p class="mb-2">The image comparison slider functionality depends on a third-party plugin.</p>
+            <p class="mb-2">For additional guidance, you can refer to this page as an example.</p>
+          </div>
+        </div>
+
+
+        <!-- Example -->
+        <section class="card border-0 mb-4">
+          <div class="card-body pb-0">
+            <h2 class="h4 mb-n2">Example</h2>
+          </div>
+          <div class="card-header">
+            <ul class="nav nav-tabs card-header-tabs flex-nowrap align-items-center mb-n1" role="tablist">
+              <li class="nav-item me-3">
+                <a class="nav-link px-0 py-2 border-0 rounded-1 active" href="#preview1" data-bs-toggle="tab" role="tab"
+                   aria-controls="preview1" aria-selected="true">
+                  <i class="ai-show fs-lg opacity-90 me-2"></i>
+                  Preview
+                </a>
+              </li>
+              <li class="vr opacity-20 my-3 me-3"></li>
+              <li class="nav-item">
+                <a class="nav-link px-0 py-2 border-0 rounded-1" href="#html1" data-bs-toggle="tab" role="tab"
+                   aria-controls="html1" aria-selected="false">
+                  <i class="ai-code fs-xl opacity-90 me-2"></i>
+                  HTML
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="card-body">
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="preview1" role="tabpanel">
+                <div class="overflow-hidden rounded-4">
+                  <img-comparison-slider class="m-n1">
+                    <figure slot="first">
+                      <img src="{% static '/img/landing/coworking-space/parallax-image.jpg' %}" alt="Image before">
+                      <figcaption
+                        class="badge position-absolute top-50 start-0 translate-middle-y bg-light rounded text-dark fs-sm fw-semibold lh-1 px-3 py-2 ms-3 ms-sm-4">
+                        Before
+                      </figcaption>
+                    </figure>
+                    <figure slot="second">
+                      <img src="{% static '/img/landing/coworking-space/parallax-image-grayscale.jpg' %}"
+                           alt="Image after">
+                      <figcaption
+                        class="badge position-absolute top-50 end-0 translate-middle-y bg-light rounded text-dark fs-sm fw-semibold lh-1 px-3 py-2 me-3 me-sm-4">
+                        After
+                      </figcaption>
+                    </figure>
+                    <div slot="handle" style="width: 42px;">
+                      <svg class="text-primary rounded-circle" width="42" height="42" viewBox="0 0 42 42"
+                           xmlns="http://www.w3.org/2000/svg">
+                        <g>
+                          <circle fill="currentColor" cx="21" cy="21" r="21"></circle>
+                        </g>
+                        <path fill="white"
+                              d="M25.5019 19.7494H15.9147V15.9146L11.1211 20.7081L15.9147 25.5017V21.6669H25.5019V25.5017L30.2955 20.7081L25.5019 15.9146V19.7494Z"></path>
+                      </svg>
+                    </div>
+                  </img-comparison-slider>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="html1" role="tabpanel">
+                  <pre class="line-numbers"><code class="lang-html">&lt;!-- Image comparison slider example --&gt;
+&lt;div class=&quot;overflow-hidden rounded-4&quot;&gt;
+  &lt;img-comparison-slider class=&quot;m-n1&quot;&gt;
+    &lt;figure slot=&quot;first&quot;&gt;
+      &lt;img src=&quot;/img/landing/coworking-space/parallax-image.jpg&quot; alt=&quot;Image before&quot;&gt;
+      &lt;figcaption class=&quot;badge position-absolute top-50 start-0 translate-middle-y bg-light rounded text-dark fs-sm fw-semibold lh-1 px-3 py-2 ms-3 ms-sm-4&quot;&gt;
+        Before
+      &lt;/figcaption&gt;
+    &lt;/figure&gt;
+    &lt;figure slot=&quot;second&quot;&gt;
+      &lt;img src=&quot;/img/landing/coworking-space/parallax-image-grayscale.jpg&quot; alt=&quot;Image after&quot;&gt;
+      &lt;figcaption class=&quot;badge position-absolute top-50 end-0 translate-middle-y bg-light rounded text-dark fs-sm fw-semibold lh-1 px-3 py-2 me-3 me-sm-4&quot;&gt;
+        After
+      &lt;/figcaption&gt;
+    &lt;/figure&gt;
+    &lt;div slot=&quot;handle&quot; style=&quot;width: 42px;&quot;&gt;
+      &lt;svg class=&quot;text-primary rounded-circle&quot; width=&quot;42&quot; height=&quot;42&quot; viewBox=&quot;0 0 42 42&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+        &lt;g&gt;
+          &lt;circle fill=&quot;currentColor&quot; cx=&quot;21&quot; cy=&quot;21&quot; r=&quot;21&quot;/&gt;
+        &lt;/g&gt;
+        &lt;path fill=&quot;white&quot; d=&quot;M25.5019 19.7494H15.9147V15.9146L11.1211 20.7081L15.9147 25.5017V21.6669H25.5019V25.5017L30.2955 20.7081L25.5019 15.9146V19.7494Z&quot;/&gt;
+      &lt;/svg&gt;
+    &lt;/div&gt;
+  &lt;/img-comparison-slider&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </section>
+{% endblock content %}

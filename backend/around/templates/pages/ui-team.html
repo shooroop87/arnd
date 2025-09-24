@@ -1,0 +1,335 @@
+{% extends 'ui_layout.html' %}
+
+{% load static i18n %}
+
+{% block title %}Around UI Kit | Team{% endblock title %}
+
+{% block content %}
+  <section class="container pt-5 pb-4">
+    <div class="row pt-5 pb-2 pb-sm-3">
+      <div class="col-lg-9 offset-lg-3 position-relative z-5">
+        <h1 class="pt-lg-4">Team</h1>
+        <div class="d-flex flex-wrap flex-md-nowrap justify-content-between pb-3">
+          <p class="text-body-secondary">Component designed to showcase team members. Comes in different styles.</p>
+          <div class="ps-md-4 mb-3">
+            <span class="badge bg-warning fs-sm">Around component</span>
+          </div>
+        </div>
+
+
+        <!-- Style 1 -->
+        <section class="card border-0 mb-4" id="team-1">
+          <div class="card-body pb-0">
+            <h2 class="h4 mb-n2">Style 1</h2>
+          </div>
+          <div class="card-header">
+            <ul class="nav nav-tabs card-header-tabs flex-nowrap align-items-center mb-n1" role="tablist">
+              <li class="nav-item me-3">
+                <a class="nav-link px-0 py-2 border-0 rounded-1 active" href="#preview1" data-bs-toggle="tab" role="tab"
+                   aria-controls="preview1" aria-selected="true">
+                  <i class="ai-show fs-lg opacity-90 me-2"></i>
+                  Preview
+                </a>
+              </li>
+              <li class="vr opacity-20 my-3 me-3"></li>
+              <li class="nav-item">
+                <a class="nav-link px-0 py-2 border-0 rounded-1" href="#html1" data-bs-toggle="tab" role="tab"
+                   aria-controls="html1" aria-selected="false">
+                  <i class="ai-code fs-xl opacity-90 me-2"></i>
+                  HTML
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="card-body">
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="preview1" role="tabpanel">
+                <div class="card-hover text-center" style="max-width: 306px;">
+                  <img class="d-block rounded-5 mb-4" src="{% static '/img/landing/creative-agency/team/02.jpg' %}"
+                       alt="Image">
+                  <h3 class="h5 mb-1">Alisa Black</h3>
+                  <p class="text-body-secondary mb-2">Head of marketing</p>
+                  <div class="d-none d-lg-flex nav justify-content-center opacity-0">
+                    <a class="nav-link btn btn-icon btn-sm fs-sm fw-normal me-1" href="#" aria-label="Instagram">
+                      <i class="ai-instagram"></i>
+                    </a>
+                    <a class="nav-link btn btn-icon btn-sm fs-sm fw-normal me-1" href="#" aria-label="Facebook">
+                      <i class="ai-facebook"></i>
+                    </a>
+                    <a class="nav-link btn btn-icon btn-sm fs-sm fw-normal" href="#" aria-label="LinkedIn">
+                      <i class="ai-linkedin"></i>
+                    </a>
+                  </div>
+                  <div class="d-lg-none nav justify-content-center">
+                    <a class="nav-link btn btn-icon btn-sm fs-sm fw-normal me-1" href="#" aria-label="Instagram">
+                      <i class="ai-instagram"></i>
+                    </a>
+                    <a class="nav-link btn btn-icon btn-sm fs-sm fw-normal me-1" href="#" aria-label="Facebook">
+                      <i class="ai-facebook"></i>
+                    </a>
+                    <a class="nav-link btn btn-icon btn-sm fs-sm fw-normal" href="#" aria-label="LinkedIn">
+                      <i class="ai-linkedin"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="html1" role="tabpanel">
+                  <pre class="line-numbers"><code class="lang-html">&lt;!-- Team Style 1 --&gt;
+&lt;div class=&quot;card-hover text-center&quot; style=&quot;max-width: 306px;&quot;&gt;
+  &lt;img src=&quot;/img/landing/creative-agency/team/02.jpg&quot; class=&quot;d-block rounded-5 mb-4&quot; alt=&quot;Image&quot;&gt;
+  &lt;h3 class=&quot;h5 mb-1&quot;&gt;Alisa Black&lt;/h3&gt;
+  &lt;p class=&quot;text-body-secondary mb-2&quot;&gt;Head of marketing&lt;/p&gt;
+
+  &lt;!-- Visible on hover on screens &gt; 991px --&gt;
+  &lt;div class=&quot;d-none d-lg-flex nav justify-content-center opacity-0&quot;&gt;
+    &lt;a href=&quot;#&quot; class=&quot;nav-link btn btn-icon btn-sm fs-sm fw-normal me-1&quot; aria-label=&quot;Instagram&quot;&gt;
+      &lt;i class=&quot;ai-instagram&quot;&gt;&lt;/i&gt;
+    &lt;/a&gt;
+    &lt;a href=&quot;#&quot; class=&quot;nav-link btn btn-icon btn-sm fs-sm fw-normal me-1&quot; aria-label=&quot;Facebook&quot;&gt;
+      &lt;i class=&quot;ai-facebook&quot;&gt;&lt;/i&gt;
+    &lt;/a&gt;
+    &lt;a href=&quot;#&quot; class=&quot;nav-link btn btn-icon btn-sm fs-sm fw-normal&quot; aria-label=&quot;LinkedIn&quot;&gt;
+      &lt;i class=&quot;ai-linkedin&quot;&gt;&lt;/i&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;
+
+  &lt;!-- Always visible on screens &lt; 992px --&gt;
+  &lt;div class=&quot;d-lg-none nav justify-content-center&quot;&gt;
+    &lt;a href=&quot;#&quot; class=&quot;nav-link btn btn-icon btn-sm fs-sm fw-normal me-1&quot; aria-label=&quot;Instagram&quot;&gt;
+      &lt;i class=&quot;ai-instagram&quot;&gt;&lt;/i&gt;
+    &lt;/a&gt;
+    &lt;a href=&quot;#&quot; class=&quot;nav-link btn btn-icon btn-sm fs-sm fw-normal me-1&quot; aria-label=&quot;Facebook&quot;&gt;
+      &lt;i class=&quot;ai-facebook&quot;&gt;&lt;/i&gt;
+    &lt;/a&gt;
+    &lt;a href=&quot;#&quot; class=&quot;nav-link btn btn-icon btn-sm fs-sm fw-normal&quot; aria-label=&quot;LinkedIn&quot;&gt;
+      &lt;i class=&quot;ai-linkedin&quot;&gt;&lt;/i&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- Style 2 -->
+        <section class="card border-0 mb-4" id="team-2">
+          <div class="card-body pb-0">
+            <h2 class="h4 mb-n2">Style 2</h2>
+          </div>
+          <div class="card-header">
+            <ul class="nav nav-tabs card-header-tabs flex-nowrap align-items-center mb-n1" role="tablist">
+              <li class="nav-item me-3">
+                <a class="nav-link px-0 py-2 border-0 rounded-1 active" href="#preview2" data-bs-toggle="tab" role="tab"
+                   aria-controls="preview2" aria-selected="true">
+                  <i class="ai-show fs-lg opacity-90 me-2"></i>
+                  Preview
+                </a>
+              </li>
+              <li class="vr opacity-20 my-3 me-3"></li>
+              <li class="nav-item">
+                <a class="nav-link px-0 py-2 border-0 rounded-1" href="#html2" data-bs-toggle="tab" role="tab"
+                   aria-controls="html2" aria-selected="false">
+                  <i class="ai-code fs-xl opacity-90 me-2"></i>
+                  HTML
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="card-body">
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="preview2" role="tabpanel">
+                <div class="card card-hover border-0 rounded-5 overflow-hidden" style="max-width: 416px;">
+                  <img src="{% static '/img/landing/corporate/team/01.jpg' %}" alt="Image">
+                  <div class="position-absolute top-0 start-0 w-100 h-100 opacity-0">
+                    <div class="bg-dark position-absolute top-0 start-0 w-100 h-100 opacity-50"></div>
+                    <div
+                      class="card-body d-flex flex-column justify-content-end h-100 position-relative z-2 text-center"
+                      data-bs-theme="dark">
+                      <h3 class="h5 mb-1">Guy Hawkins</h3>
+                      <p class="text-body mb-3">Head of marketing</p>
+                      <div class="d-flex justify-content-center">
+                        <a class="btn btn-icon btn-sm btn-light btn-facebook rounded-circle mx-2" href="#"
+                           aria-label="Facebook">
+                          <i class="ai-facebook"></i>
+                        </a>
+                        <a class="btn btn-icon btn-sm btn-light btn-x rounded-circle mx-2" href="#" aria-label="X">
+                          <i class="ai-x"></i>
+                        </a>
+                        <a class="btn btn-icon btn-sm btn-light btn-linkedin rounded-circle mx-2" href="#"
+                           aria-label="LinkedIn">
+                          <i class="ai-linkedin"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="html2" role="tabpanel">
+                  <pre class="line-numbers"><code class="lang-html">&lt;!-- Team Style 2 --&gt;
+&lt;div class=&quot;card card-hover border-0 rounded-5 overflow-hidden&quot; style=&quot;max-width: 416px;&quot;&gt;
+  &lt;img src=&quot;/img/landing/corporate/team/01.jpg&quot; alt=&quot;Image&quot;&gt;
+  &lt;div class=&quot;position-absolute top-0 start-0 w-100 h-100 opacity-0&quot;&gt;
+    &lt;div class=&quot;bg-dark position-absolute top-0 start-0 w-100 h-100 opacity-50&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;card-body d-flex flex-column justify-content-end h-100 position-relative z-2 text-center&quot; data-bs-theme=&quot;dark&quot;&gt;
+      &lt;h3 class=&quot;h5 mb-1&quot;&gt;Guy Hawkins&lt;/h3&gt;
+      &lt;p class=&quot;text-body mb-3&quot;&gt;Head of marketing&lt;/p&gt;
+      &lt;div class=&quot;d-flex justify-content-center&quot;&gt;
+        &lt;a href=&quot;#&quot; class=&quot;btn btn-icon btn-sm btn-light btn-facebook rounded-circle mx-2&quot; aria-label=&quot;Facebook&quot;&gt;
+          &lt;i class=&quot;ai-facebook&quot;&gt;&lt;/i&gt;
+        &lt;/a&gt;
+        &lt;a href=&quot;#&quot; class=&quot;btn btn-icon btn-sm btn-light btn-x rounded-circle mx-2&quot; aria-label=&quot;X&quot;&gt;
+          &lt;i class=&quot;ai-x&quot;&gt;&lt;/i&gt;
+        &lt;/a&gt;
+        &lt;a href=&quot;#&quot; class=&quot;btn btn-icon btn-sm btn-light btn-linkedin rounded-circle mx-2&quot; aria-label=&quot;LinkedIn&quot;&gt;
+          &lt;i class=&quot;ai-linkedin&quot;&gt;&lt;/i&gt;
+        &lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- Style 3 -->
+        <section class="card border-0 mb-4" id="team-3">
+          <div class="card-body pb-0">
+            <h2 class="h4 mb-n2">Style 3</h2>
+          </div>
+          <div class="card-header">
+            <ul class="nav nav-tabs card-header-tabs flex-nowrap align-items-center mb-n1" role="tablist">
+              <li class="nav-item me-3">
+                <a class="nav-link px-0 py-2 border-0 rounded-1 active" href="#preview3" data-bs-toggle="tab" role="tab"
+                   aria-controls="preview3" aria-selected="true">
+                  <i class="ai-show fs-lg opacity-90 me-2"></i>
+                  Preview
+                </a>
+              </li>
+              <li class="vr opacity-20 my-3 me-3"></li>
+              <li class="nav-item">
+                <a class="nav-link px-0 py-2 border-0 rounded-1" href="#html3" data-bs-toggle="tab" role="tab"
+                   aria-controls="html3" aria-selected="false">
+                  <i class="ai-code fs-xl opacity-90 me-2"></i>
+                  HTML
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="card-body">
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="preview3" role="tabpanel">
+                <div class="card-hover pb-3" style="max-width: 396px;">
+                  <div class="position-relative">
+                    <img src="{% static '/img/landing/creative-agency/team/06.jpg' %}" alt="Image">
+                    <div
+                      class="d-flex justify-content-center position-absolute start-0 bottom-0 w-100 px-3 mb-4 opacity-0">
+                      <a class="btn btn-light btn-icon btn-sm btn-facebook rounded-circle mx-2" href="#"
+                         aria-label="Facebook">
+                        <i class="ai-facebook"></i>
+                      </a>
+                      <a class="btn btn-light btn-icon btn-sm btn-x rounded-circle mx-2" href="#" aria-label="X">
+                        <i class="ai-x"></i>
+                      </a>
+                      <a class="btn btn-light btn-icon btn-sm btn-behance rounded-circle mx-2" href="#"
+                         aria-label="Behance">
+                        <i class="ai-behance"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="border-bottom pt-4 pb-3">
+                    <h3 class="h4 mb-2">Edward Jones</h3>
+                    <span class="fs-lg text-body-secondary">Branding Designer</span>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="html3" role="tabpanel">
+                  <pre class="line-numbers"><code class="lang-html">&lt;!-- Team Style 3 --&gt;
+&lt;div class=&quot;card-hover pb-3&quot; style=&quot;max-width: 396px;&quot;&gt;
+  &lt;div class=&quot;position-relative&quot;&gt;
+    &lt;img src=&quot;/img/landing/creative-agency/team/06.jpg&quot; alt=&quot;Image&quot;&gt;
+    &lt;div class=&quot;d-flex justify-content-center position-absolute start-0 bottom-0 w-100 px-3 mb-4 opacity-0&quot;&gt;
+      &lt;a href=&quot;#&quot; class=&quot;btn btn-icon btn-sm btn-light btn-facebook rounded-circle mx-2&quot; aria-label=&quot;Facebook&quot;&gt;
+        &lt;i class=&quot;ai-facebook&quot;&gt;&lt;/i&gt;
+      &lt;/a&gt;
+      &lt;a href=&quot;#&quot; class=&quot;btn btn-icon btn-sm btn-light btn-x rounded-circle mx-2&quot; aria-label=&quot;X&quot;&gt;
+        &lt;i class=&quot;ai-x&quot;&gt;&lt;/i&gt;
+      &lt;/a&gt;
+      &lt;a href=&quot;#&quot; class=&quot;btn btn-icon btn-sm btn-light btn-behance rounded-circle mx-2&quot; aria-label=&quot;Behance&quot;&gt;
+        &lt;i class=&quot;ai-behance&quot;&gt;&lt;/i&gt;
+      &lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;border-bottom pt-4 pb-3&quot;&gt;
+    &lt;h3 class=&quot;h4 mb-2&quot;&gt;Edward Jones&lt;/h3&gt;
+    &lt;span class=&quot;fs-lg text-body-secondary&quot;&gt;Branding Designer&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- Style 4 -->
+        <section class="card border-0 mb-4" id="team-4">
+          <div class="card-body pb-0">
+            <h2 class="h4 mb-n2">Style 4</h2>
+          </div>
+          <div class="card-header">
+            <ul class="nav nav-tabs card-header-tabs flex-nowrap align-items-center mb-n1" role="tablist">
+              <li class="nav-item me-3">
+                <a class="nav-link px-0 py-2 border-0 rounded-1 active" href="#preview4" data-bs-toggle="tab" role="tab"
+                   aria-controls="preview4" aria-selected="true">
+                  <i class="ai-show fs-lg opacity-90 me-2"></i>
+                  Preview
+                </a>
+              </li>
+              <li class="vr opacity-20 my-3 me-3"></li>
+              <li class="nav-item">
+                <a class="nav-link px-0 py-2 border-0 rounded-1" href="#html4" data-bs-toggle="tab" role="tab"
+                   aria-controls="html4" aria-selected="false">
+                  <i class="ai-code fs-xl opacity-90 me-2"></i>
+                  HTML
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="card-body">
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="preview4" role="tabpanel">
+                <a class="d-block card-hover text-decoration-none" href="#" style="max-width: 416px;">
+                  <div class="bg-secondary rounded-5 position-relative overflow-hidden">
+                    <div class="position-absolute top-0 start-0 w-100 h-100 bg-size-cover bg-position-center opacity-0"
+                         style="background-image: url(/static/img/landing/blog/authors/hover.svg);"></div>
+                    <img class="position-relative z-2" src="{% static '/img/landing/blog/authors/01.png' %}"
+                         alt="Author picture">
+                  </div>
+                  <div class="border-bottom pt-4 pb-3">
+                    <h3 class="h4 mb-1">Jane Cooper</h3>
+                    <p class="text-body-secondary mb-0">Chief editor</p>
+                  </div>
+                </a>
+              </div>
+              <div class="tab-pane fade" id="html4" role="tabpanel">
+                  <pre class="line-numbers"><code class="lang-html">&lt;!-- Team Style 4 --&gt;
+&lt;a href=&quot;#&quot; class=&quot;d-block card-hover text-decoration-none&quot; style=&quot;max-width: 416px;&quot;&gt;
+  &lt;div class=&quot;bg-secondary rounded-5 position-relative overflow-hidden&quot;&gt;
+    &lt;div class=&quot;position-absolute top-0 start-0 w-100 h-100 bg-size-cover bg-position-center opacity-0&quot; style=&quot;background-image: url(/static/img/landing/blog/authors/hover.svg);&quot;&gt;&lt;/div&gt;
+    &lt;img src=&quot;/img/landing/blog/authors/01.png&quot; class=&quot;position-relative z-2&quot; alt=&quot;Author picture&quot;&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;border-bottom pt-4 pb-3&quot;&gt;
+    &lt;h3 class=&quot;h4 mb-1&quot;&gt;Jane Cooper&lt;/h3&gt;
+    &lt;p class=&quot;text-body-secondary mb-0&quot;&gt;Chief editor&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/a&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </section>
+{% endblock content %}
