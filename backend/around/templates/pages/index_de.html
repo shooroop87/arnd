@@ -2,7 +2,7 @@
 
 {% load static i18n %}
 
-{% block title %}MEDPAC | Individual Blister Packs for Your Medications{% endblock title %}
+{% block title %}MEDPAC | Individuelle Blister für Ihre Medikamente{% endblock title %}
 
 {% block page_content %}
 
@@ -27,7 +27,7 @@
                style="margin-top: -115px;">
             <div class="position-sticky z-3 top-0" style="padding-top: 115px;">
               <div class="px-5 px-md-0 ps-xl-5 ms-lg-3">
-                <img class="d-block mx-auto mx-md-0" src="https://andreyegorov.com/wp-content/uploads/2025/10/istockphoto-175682197-2048x2048-Photoroom.png" width="465"
+                <img class="d-block mx-auto mx-md-0" src="{% static 'img/medpac/blister-box-hero.png' %}" width="465"
                      alt="MEDPAC Blister Box">
               </div>
             </div>
@@ -35,18 +35,18 @@
 
           <!-- Text -->
           <div class="col-md-7 col-lg-6 col-xxl-5 order-md-1 position-relative z-3 text-center text-md-start pb-sm-3 pb-md-5 pt-4 mb-md-5 mt-2">
-            <h1 class="display-3 mb-sm-4">
-              <span class="fw-medium">Individual </span>
-              <span class="text-primary fw-bold">Blister Packs</span>
-              <span class="fw-medium"> for Your Medications</span>
+            <h1 class="display-3 text-uppercase mb-sm-4">
+              <span class="fw-medium">Individuelle </span>
+              <span class="text-primary fw-bold">Blister</span>
+              <span class="fw-medium"> für Ihre Medikamente</span>
             </h1>
             <div class="mx-auto mx-md-0" style="max-width: 500px;">
-              <p class="pb-2 pb-lg-0 mb-4 mb-lg-5">Your medications precisely sorted by time of intake and dosage. Delivered directly to your home every 14 days.</p>
+              <p class="pb-2 pb-lg-0 mb-4 mb-lg-5">Ihre Medikamente präzise sortiert nach Einnahmezeitpunkt und Dosierung. Alle 14 Tage direkt nach Hause geliefert.</p>
               
               <div class="d-flex flex-column flex-sm-row gap-3 mb-4">
-                <a class="btn btn-primary btn-lg" href="#contact">Order Now</a>
+                <a class="btn btn-primary btn-lg" href="#kontakt">Jetzt bestellen</a>
                 <button class="btn btn-outline-primary btn-lg" id="uploadBtn">
-                  <i class="ai-upload me-2"></i>Upload Prescription
+                  <i class="ai-upload me-2"></i>Rezept hochladen
                 </button>
                 <input type="file" id="fileInput" hidden accept=".pdf,.jpg,.jpeg,.png">
               </div>
@@ -55,16 +55,16 @@
 
               <div class="d-flex justify-content-center justify-content-md-between pt-4 pt-sm-5 mt-2 mt-sm-0 mt-lg-4 mt-xl-5 ms-md-n3">
                 <div class="px-3">
-                  <div class="h4 mb-1">€5.95</div>
-                  <div class="fs-sm">per delivery</div>
+                  <div class="h4 mb-1">5,95€</div>
+                  <div class="fs-sm">pro Lieferung</div>
                 </div>
                 <div class="px-3">
-                  <div class="h4 mb-1">14 Days</div>
-                  <div class="fs-sm">delivery cycle</div>
+                  <div class="h4 mb-1">14 Tage</div>
+                  <div class="fs-sm">Lieferrhythmus</div>
                 </div>
                 <div class="px-3">
-                  <div class="h4 mb-1">25,000+</div>
-                  <div class="fs-sm">satisfied customers</div>
+                  <div class="h4 mb-1">25.000+</div>
+                  <div class="fs-sm">zufriedene Kunden</div>
                 </div>
               </div>
 
@@ -73,10 +73,10 @@
               <div class="d-md-none" style="height: 50px;"></div>
 
               <div data-aos="fade-up" data-aos-duration="800" data-aos-offset="250" data-disable-parallax-down="md">
-                <h2 class="h1 pb-sm-2 pb-md-3">Safety and Time Savings for Your Medication Management</h2>
-                <p class="mb-4">With state-of-the-art blister packaging technology according to pharmaceutical standards, we sort your tablets precisely by time of intake. No mix-ups, no forgotten medications.</p>
-                <a class="btn btn-link text-primary px-0" href="#how-it-works">
-                  Learn More
+                <h2 class="h1 pb-sm-2 pb-md-3">Sicherheit und Zeitersparnis für Ihre Medikamenteneinnahme</h2>
+                <p class="mb-4">Mit modernster Verblisterungstechnologie nach pharmazeutischen Standards sortieren wir Ihre Tabletten präzise nach Einnahmezeitpunkt. Keine Verwechslungen, keine vergessenen Medikamente.</p>
+                <a class="btn btn-link text-primary px-0" href="#wie-funktioniert">
+                  Mehr erfahren
                   <i class="ai-arrow-right ms-2"></i>
                 </a>
               </div>
@@ -118,8 +118,8 @@
                   <path d="M37.7794 10.6909L20.2794 1.94092C20.1926 1.89757 20.097 1.875 20 1.875C19.903 1.875 19.8074 1.89757 19.7206 1.94092L2.22063 10.6909C2.11674 10.7428 2.02936 10.8227 1.96832 10.9215C1.90727 11.0203 1.87496 11.1341 1.87501 11.2503V28.7503C1.87437 28.867 1.90641 28.9815 1.96749 29.0809C2.02857 29.1803 2.11626 29.2606 2.22063 29.3128L19.7206 38.0628C19.8074 38.1061 19.903 38.1287 20 38.1287C20.097 38.1287 20.1926 38.1061 20.2794 38.0628L37.7794 29.3128C37.8838 29.2606 37.9714 29.1803 38.0325 29.0809C38.0936 28.9815 38.1256 28.867 38.125 28.7503V11.2503C38.1251 11.1341 38.0928 11.0203 38.0317 10.9215C37.9706 10.8227 37.8833 10.7428 37.7794 10.6909Z" fill="currentColor"/>
                 </svg>
               </div>
-              <h3 class="h5 mb-2 mb-sm-3">Free Shipping</h3>
-              <p class="fs-sm mb-0">Free shipping within Germany and Austria</p>
+              <h3 class="h5 mb-2 mb-sm-3">Kostenloser Versand</h3>
+              <p class="fs-sm mb-0">Versandkostenfrei innerhalb Deutschlands und Österreich</p>
             </div>
           </div>
 
@@ -131,8 +131,8 @@
                   <path d="M35.1422 8.0989L20.1085 0.0881401C19.8855 -0.0308936 19.6182 -0.0292231 19.3968 0.0923166L4.77905 8.10308C4.53931 8.23464 4.39062 8.48607 4.39062 8.75964V19.2237C4.3994 27.8255 9.49571 35.6074 17.377 39.0535L19.406 39.9377C19.5956 40.0204 19.8115 40.0208 20.0016 39.9385L22.2879 38.9512C30.3153 35.5798 35.5378 27.7228 35.5386 19.0162V8.75964C35.5386 8.48315 35.3862 8.22879 35.1422 8.0989Z" fill="currentColor"/>
                 </svg>
               </div>
-              <h3 class="h5 mb-2 mb-sm-3">Secure Processing</h3>
-              <p class="fs-sm mb-0">Packaged according to the highest pharmaceutical standards</p>
+              <h3 class="h5 mb-2 mb-sm-3">Sichere Verarbeitung</h3>
+              <p class="fs-sm mb-0">Nach höchsten pharmazeutischen Standards verpackt</p>
             </div>
           </div>
 
@@ -144,8 +144,8 @@
                   <path d="M11.9986 0C5.38318 0 0 5.38318 0 11.9986C0 18.6141 5.38041 24 11.9986 24C18.6168 24 23.9972 18.6168 23.9972 12.0014C23.9972 5.38595 18.6141 0 11.9986 0Z" fill="currentColor"/>
                 </svg>
               </div>
-              <h3 class="h5 mb-2 mb-sm-3">Every 14 Days</h3>
-              <p class="fs-sm mb-0">Regular delivery in a 2-week cycle</p>
+              <h3 class="h5 mb-2 mb-sm-3">Alle 14 Tage</h3>
+              <p class="fs-sm mb-0">Regelmäßige Belieferung im 2-Wochen-Rhythmus</p>
             </div>
           </div>
 
@@ -157,8 +157,8 @@
                   <path d="M33.6825 13.683C33.6825 6.12609 27.5564 0 19.9995 0C12.4426 0 6.31646 6.12609 6.31646 13.683C4.36283 13.9263 2.51562 15.2033 2.51562 18.168V25.3136C2.51562 28.6583 4.85694 29.8746 7.07663 29.8746H9.28111C9.70091 29.8746 10.0413 29.5342 10.0413 29.1144V14.3976C10.0413 13.9778 9.70091 13.6374 9.28111 13.6374H7.83679C7.83679 6.92018 13.2823 1.47472 19.9995 1.47472C26.7167 1.47472 32.1621 6.92018 32.1621 13.6374H30.7178C30.298 13.6374 29.9577 13.9778 29.9577 14.3976V29.0916C29.9577 29.5114 30.298 29.8518 30.7178 29.8518H32.1621Z" fill="currentColor"/>
                 </svg>
               </div>
-              <h3 class="h5 mb-2 mb-sm-3">Pharmaceutical Consultation</h3>
-              <p class="fs-sm mb-0">Personal support from our pharmacist team</p>
+              <h3 class="h5 mb-2 mb-sm-3">Pharmazeutische Beratung</h3>
+              <p class="fs-sm mb-0">Persönliche Unterstützung durch unser Apotheker-Team</p>
             </div>
           </div>
         </div>
@@ -172,10 +172,10 @@
     <!-- Video + Features -->
     <section class="container pt-5">
       <div class="position-relative mt-sm-2 mb-4 mb-sm-5">
-        <img class="d-block rounded-5" src="{% static 'img/medpac/video-cover.jpg' %}" alt="MEDPAC Process">
+        <img class="d-block rounded-5" src="{% static 'img/medpac/video-cover.jpg' %}" alt="MEDPAC Prozess">
         <div class="d-inline-flex position-absolute top-50 start-50 translate-middle z-2 p-4">
           <a class="btn btn-icon btn-xl btn-primary rounded-circle stretched-link"
-             href="https://www.youtube.com/watch?v=udMULpKcnn8" data-bs-toggle="video" aria-label="Play video">
+             href="https://www.youtube.com/watch?v=udMULpKcnn8" data-bs-toggle="video" aria-label="Video abspielen">
             <i class="ai-play-filled"></i>
           </a>
         </div>
@@ -187,8 +187,8 @@
               <path d="M20 1C9.5 1 1 9.5 1 20s8.5 19 19 19 19-8.5 19-19S30.5 1 20 1zm0 34c-8.3 0-15-6.7-15-15S11.7 5 20 5s15 6.7 15 15-6.7 15-15 15z"/>
               <path d="M26 19l-8-5v10l8-5z"/>
             </svg>
-            <h3 class="h4">Time Savings for Patients and Caregivers</h3>
-            <p class="mb-0">No more manual sorting of medications. Save valuable time for the important things in life.</p>
+            <h3 class="h4">Zeitersparnis für Patienten und Pflegende</h3>
+            <p class="mb-0">Keine Medikamente mehr manuell sortieren. Sie sparen wertvolle Zeit für die wichtigen Dinge im Leben.</p>
           </div>
         </div>
         <div class="col pb-4 mb-1">
@@ -196,8 +196,8 @@
             <svg class="d-block mb-3 mb-lg-4 text-primary" width="40" height="40" fill="currentColor">
               <path d="M20 1C9.5 1 1 9.5 1 20s8.5 19 19 19 19-8.5 19-19S30.5 1 20 1zm8 20h-7v7h-2v-7h-7v-2h7v-7h2v7h7v2z"/>
             </svg>
-            <h3 class="h4">Increased Safety Through Precise Blister Packaging</h3>
-            <p class="mb-0">You can see exactly when to take which medications. Mix-ups are avoided.</p>
+            <h3 class="h4">Erhöhte Sicherheit durch präzise Verblisterung</h3>
+            <p class="mb-0">Sie sehen genau, wann Sie welche Medikamente einnehmen müssen. Verwechslungen werden vermieden.</p>
           </div>
         </div>
         <div class="col pb-4 mb-1">
@@ -205,19 +205,19 @@
             <svg class="d-block mb-3 mb-lg-4 text-primary" width="40" height="40" fill="currentColor">
               <path d="M20 1C9.5 1 1 9.5 1 20s8.5 19 19 19 19-8.5 19-19S30.5 1 20 1zm0 34c-8.3 0-15-6.7-15-15S11.7 5 20 5s15 6.7 15 15-6.7 15-15 15zm-1-24h2v12h-2V11zm0 14h2v2h-2v-2z"/>
             </svg>
-            <h3 class="h4">Reduced Risk of Drug Interactions</h3>
-            <p class="mb-0">Our pharmacists check your medication plan for possible interactions.</p>
+            <h3 class="h4">Reduzierte Gefahr von Wechselwirkungen</h3>
+            <p class="mb-0">Unsere Apotheker prüfen Ihren Medikationsplan auf mögliche Wechselwirkungen.</p>
           </div>
         </div>
       </div>
     </section>
 
 
-    <!-- How it Works -->
-    <section class="container py-5 my-lg-3 my-xl-4 my-xxl-5" id="how-it-works">
+    <!-- Wie funktioniert es -->
+    <section class="container py-5 my-lg-3 my-xl-4 my-xxl-5" id="wie-funktioniert">
       <div class="text-center pb-3 pt-2 pt-sm-3 pt-md-4 pt-xl-5 mx-auto mb-sm-2 mb-md-3 mb-lg-4" style="max-width: 600px;">
-        <h2 class="h1">How Does MEDPAC Work?</h2>
-        <p class="mb-0">Your individual blister pack in just three simple steps</p>
+        <h2 class="h1">Wie funktioniert MEDPAC?</h2>
+        <p class="mb-0">In nur drei einfachen Schritten zu Ihrer individuellen Blisterverpackung</p>
       </div>
 
       <div class="row align-items-center py-2 py-sm-3 my-md-3">
@@ -227,8 +227,8 @@
               <div class="btn btn-lg btn-icon btn-primary fs-xl fw-bold rounded-circle position-absolute top-50 start-0 translate-middle-y z-2 pe-none">01</div>
               <div class="card border-0 ps-3" style="width: calc(100% - 1.75rem);">
                 <div class="card-body ps-4">
-                  <h3 class="h5 card-title pb-2 mb-1">Request Prescription</h3>
-                  <p class="card-text">Request the prescription for your medications and a copy of your medication plan from your doctor.</p>
+                  <h3 class="h5 card-title pb-2 mb-1">Rezept anfordern</h3>
+                  <p class="card-text">Fordern Sie bei Ihrem Arzt das Rezept für Ihre Medikamente und eine Kopie Ihres Medikationsplans an.</p>
                 </div>
               </div>
             </div>
@@ -237,8 +237,8 @@
               <div class="btn btn-lg btn-icon btn-primary fs-xl fw-bold rounded-circle position-absolute top-50 start-0 translate-middle-y z-2 pe-none">02</div>
               <div class="card border-0 ps-3" style="width: calc(100% - 1.75rem);">
                 <div class="card-body ps-4">
-                  <h3 class="h5 card-title pb-2 mb-1">Complete Registration Form</h3>
-                  <p class="card-text">Upload your prescription or send us the completed form together with your documents.</p>
+                  <h3 class="h5 card-title pb-2 mb-1">Anmeldeformular ausfüllen</h3>
+                  <p class="card-text">Laden Sie Ihr Rezept hoch oder senden Sie uns das ausgefüllte Formular zusammen mit Ihren Unterlagen zu.</p>
                 </div>
               </div>
             </div>
@@ -247,8 +247,8 @@
               <div class="btn btn-lg btn-icon btn-primary fs-xl fw-bold rounded-circle position-absolute top-50 start-0 translate-middle-y z-2 pe-none">03</div>
               <div class="card border-0 ps-3" style="width: calc(100% - 1.75rem);">
                 <div class="card-body ps-4">
-                  <h3 class="h5 card-title pb-2 mb-1">Enjoy MEDPAC Service</h3>
-                  <p class="card-text">Receive your individual blister roll directly to your home every 14 days. Free blister box included!</p>
+                  <h3 class="h5 card-title pb-2 mb-1">MEDPAC-Service genießen</h3>
+                  <p class="card-text">Erhalten Sie alle 14 Tage Ihre individuelle Blisterrolle direkt nach Hause. Kostenlose Blister-Box inklusive!</p>
                 </div>
               </div>
             </div>
@@ -256,13 +256,13 @@
         </div>
 
         <div class="col-lg-7 col-xl-6 pb-2 pb-lg-0 mb-4 mb-lg-0">
-          <img class="d-block mx-auto" src="{% static 'img/medpac/how-it-works.jpg' %}" width="600" alt="MEDPAC Process" data-aos="fade-right" data-aos-duration="600">
+          <img class="d-block mx-auto" src="{% static 'img/medpac/how-it-works.jpg' %}" width="600" alt="MEDPAC Prozess" data-aos="fade-right" data-aos-duration="600">
         </div>
       </div>
     </section>
 
 
-    <!-- Pricing -->
+    <!-- Preisinformation -->
     <section class="container py-5 my-lg-3 my-xl-4 my-xxl-5">
       <div class="row justify-content-center">
         <div class="col-lg-8 col-xl-7">
@@ -271,30 +271,30 @@
             
             <div class="position-relative z-2 text-center py-xl-3">
               <span class="badge bg-danger text-light rounded-pill fs-sm mb-3">Transparent & Fair</span>
-              <h2 class="display-4 mb-4">Only €5.95 per Delivery</h2>
+              <h2 class="display-4 mb-4">Nur 5,95€ pro Lieferung</h2>
               
               <ul class="list-unstyled fs-lg mb-4">
                 <li class="d-flex align-items-center justify-content-center mb-3">
                   <i class="ai-check-alt text-primary fs-4 me-2"></i>
-                  <span>Individual blister roll every 14 days</span>
+                  <span>Alle 14 Tage eine individuelle Blisterrolle</span>
                 </li>
                 <li class="d-flex align-items-center justify-content-center mb-3">
                   <i class="ai-check-alt text-primary fs-4 me-2"></i>
-                  <span>Free shipping within Germany</span>
+                  <span>Versandkostenfrei innerhalb Deutschlands</span>
                 </li>
                 <li class="d-flex align-items-center justify-content-center mb-3">
                   <i class="ai-check-alt text-primary fs-4 me-2"></i>
-                  <span>Free blister box with first delivery</span>
+                  <span>Kostenlose Blister-Box bei erster Lieferung</span>
                 </li>
                 <li class="d-flex align-items-center justify-content-center mb-3">
                   <i class="ai-check-alt text-primary fs-4 me-2"></i>
-                  <span>Medications billed separately</span>
+                  <span>Arzneimittel werden separat abgerechnet</span>
                 </li>
               </ul>
 
-              <p class="text-muted mb-4">Check if your health insurance covers the costs.</p>
+              <p class="text-muted mb-4">Erkundigen Sie sich, ob Ihre Krankenkasse die Kosten übernimmt.</p>
               
-              <a class="btn btn-primary btn-lg" href="#contact">Sign Up Now</a>
+              <a class="btn btn-primary btn-lg" href="#kontakt">Jetzt anmelden</a>
             </div>
           </div>
         </div>
@@ -302,12 +302,12 @@
     </section>
 
 
-    <!-- For Whom -->
+    <!-- Für wen -->
     <section class="container pb-5 mb-lg-3 mb-xl-4 mb-xxl-5">
-      <h2 class="h1 text-center pb-3 mb-lg-4">Who Is MEDPAC For?</h2>
+      <h2 class="h1 text-center pb-3 mb-lg-4">Für wen ist MEDPAC?</h2>
       <div class="row g-4">
         
-        <!-- For Patients -->
+        <!-- Für Patienten -->
         <div class="col-md-4">
           <div class="card zoom-effect h-100 border-0 rounded-5 overflow-hidden" style="min-height: 320px;">
             <span class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-40 z-2"></span>
@@ -316,14 +316,14 @@
                    style="background-image: url({% static 'img/medpac/patienten.jpg' %});"></div>
             </div>
             <a class="card-body d-flex flex-column justify-content-end align-items-start position-absolute top-0 start-0 w-100 h-100 text-decoration-none z-3"
-               href="#contact">
-              <span class="bg-light text-dark rounded-pill fs-base fw-semibold lh-1 py-3 px-4 mb-3">For Patients</span>
-              <p class="text-white mb-0">Time savings and safe medication intake, even on the go</p>
+               href="#kontakt">
+              <span class="bg-light text-dark rounded-pill fs-base fw-semibold lh-1 py-3 px-4 mb-3">Für Patienten</span>
+              <p class="text-white mb-0">Zeitersparnis und sichere Medikamenteneinnahme, auch unterwegs</p>
             </a>
           </div>
         </div>
 
-        <!-- For Caregivers -->
+        <!-- Für Angehörige -->
         <div class="col-md-4">
           <div class="card zoom-effect h-100 border-0 rounded-5 overflow-hidden" style="min-height: 320px;">
             <span class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-40 z-2"></span>
@@ -332,14 +332,14 @@
                    style="background-image: url({% static 'img/medpac/angehoerige.jpg' %});"></div>
             </div>
             <a class="card-body d-flex flex-column justify-content-end align-items-start position-absolute top-0 start-0 w-100 h-100 text-decoration-none z-3"
-               href="#contact">
-              <span class="bg-light text-dark rounded-pill fs-base fw-semibold lh-1 py-3 px-4 mb-3">For Caregivers</span>
-              <p class="text-white mb-0">Relief in caregiving – more time for actual care</p>
+               href="#kontakt">
+              <span class="bg-light text-dark rounded-pill fs-base fw-semibold lh-1 py-3 px-4 mb-3">Für Angehörige</span>
+              <p class="text-white mb-0">Entlastung bei der Pflege – mehr Zeit für die eigentliche Betreuung</p>
             </a>
           </div>
         </div>
 
-        <!-- On the Go -->
+        <!-- Unterwegs -->
         <div class="col-md-4">
           <div class="card zoom-effect h-100 border-0 rounded-5 overflow-hidden" style="min-height: 320px;">
             <span class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-40 z-2"></span>
@@ -348,9 +348,9 @@
                    style="background-image: url({% static 'img/medpac/unterwegs.jpg' %});"></div>
             </div>
             <a class="card-body d-flex flex-column justify-content-end align-items-start position-absolute top-0 start-0 w-100 h-100 text-decoration-none z-3"
-               href="#contact">
-              <span class="bg-light text-dark rounded-pill fs-base fw-semibold lh-1 py-3 px-4 mb-3">On the Go</span>
-              <p class="text-white mb-0">Practical for travel – simply detach needed blisters</p>
+               href="#kontakt">
+              <span class="bg-light text-dark rounded-pill fs-base fw-semibold lh-1 py-3 px-4 mb-3">Auch unterwegs</span>
+              <p class="text-white mb-0">Praktisch für Reisen – einfach benötigte Blister abtrennen</p>
             </a>
           </div>
         </div>
@@ -361,8 +361,8 @@
     <!-- Testimonials -->
     <section class="container py-5 mb-1 mb-sm-2 my-lg-3 my-xl-4 my-xxl-5">
       <div class="text-center pb-3 pt-2 mb-4 mb-lg-5">
-        <h2 class="h1 mb-3">What Our Customers Say</h2>
-        <p class="mx-auto" style="max-width: 600px;">Over 25,000 satisfied customers already trust MEDPAC</p>
+        <h2 class="h1 mb-3">Das sagen unsere Kunden</h2>
+        <p class="mx-auto" style="max-width: 600px;">Über 25.000 zufriedene Kunden vertrauen bereits auf MEDPAC</p>
       </div>
 
       <div class="swiper pb-2 pb-sm-4" data-swiper-options='{
@@ -395,11 +395,34 @@
                   <i class="ai-star-filled text-warning"></i>
                   <i class="ai-star-filled text-warning"></i>
                 </div>
-                <p class="card-text fs-lg">"As a caregiver, I save an enormous amount of time. I used to spend hours sorting medications. Now I can focus on the actual care. Highly recommended!"</p>
+                <p class="card-text fs-lg">"Der MEDPAC-Service hat mir das Leben erheblich erleichtert. Ich muss meine Tabletten nicht mehr selbst sortieren und habe immer die Sicherheit, dass alles richtig dosiert ist. Die Blisterbox ist praktisch und übersichtlich."</p>
+              </div>
+              <div class="card-footer border-0 pt-0">
+                <div class="h5 mb-1">Maria Schmidt</div>
+                <span class="text-muted">Patientin, 67 Jahre</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="swiper-slide h-auto">
+            <div class="card border-0 bg-info bg-opacity-10 h-100 text-center">
+              <div class="polygon-avatar bg-info mx-auto translate-middle-y">
+                <img src="{% static 'img/avatar/02.jpg' %}" alt="Thomas Müller">
+              </div>
+              <div class="card-body pt-0 mt-n4">
+                <div class="d-flex justify-content-center mb-3">
+                  <i class="ai-star-filled text-warning"></i>
+                  <i class="ai-star-filled text-warning"></i>
+                  <i class="ai-star-filled text-warning"></i>
+                  <i class="ai-star-filled text-warning"></i>
+                  <i class="ai-star-filled text-warning"></i>
+                </div>
+                <p class="card-text fs-lg">"Als Angehöriger spare ich enorm viel Zeit. Früher habe ich Stunden mit dem Sortieren der Medikamente verbracht. Jetzt kann ich mich auf die eigentliche Pflege konzentrieren. Sehr empfehlenswert!"</p>
               </div>
               <div class="card-footer border-0 pt-0">
                 <div class="h5 mb-1">Thomas Müller</div>
-                <span class="text-muted">Family Caregiver</span>
+                <span class="text-muted">Pflegender Angehöriger</span>
               </div>
             </div>
           </div>
@@ -418,11 +441,11 @@
                   <i class="ai-star-filled text-warning"></i>
                   <i class="ai-star-filled text-warning"></i>
                 </div>
-                <p class="card-text fs-lg">"MEDPAC is perfect especially when traveling. I simply tear off the blisters I need and have everything with me. No more worrying about forgetting something. The service is reliable and professional."</p>
+                <p class="card-text fs-lg">"Besonders auf Reisen ist MEDPAC perfekt. Ich reiße mir einfach die benötigten Blister ab und habe alles dabei. Keine Sorge mehr, etwas zu vergessen. Der Service ist zuverlässig und professionell."</p>
               </div>
               <div class="card-footer border-0 pt-0">
                 <div class="h5 mb-1">Anna Weber</div>
-                <span class="text-muted">Satisfied Customer</span>
+                <span class="text-muted">Zufriedene Kundin</span>
               </div>
             </div>
           </div>
@@ -434,26 +457,26 @@
     </section>
 
 
-    <!-- Contact Form -->
-    <section class="container py-5 my-lg-3 my-xl-4 my-xxl-5" id="contact">
+    <!-- Kontaktformular -->
+    <section class="container py-5 my-lg-3 my-xl-4 my-xxl-5" id="kontakt">
       <div class="row align-items-center">
         <div class="col-lg-6 pb-4 pb-lg-0 mb-3 mb-lg-0">
-          <h2 class="h1 pb-3 mb-4">Start MEDPAC Service Now</h2>
-          <p class="fs-lg pb-2 mb-4">Fill out the form and we will contact you within 24 hours. Alternatively, you can also call us directly or send an email.</p>
+          <h2 class="h1 pb-3 mb-4">Jetzt MEDPAC-Service starten</h2>
+          <p class="fs-lg pb-2 mb-4">Füllen Sie das Formular aus und wir melden uns innerhalb von 24 Stunden bei Ihnen. Alternativ können Sie uns auch direkt anrufen oder eine E-Mail schreiben.</p>
           
           <div class="d-flex align-items-start mb-3">
             <i class="ai-phone text-primary fs-3 me-3 mt-1"></i>
             <div>
-              <div class="h6 mb-1">Phone</div>
+              <div class="h6 mb-1">Telefon</div>
               <a href="tel:08008770120" class="text-decoration-none">0800 877 0120</a>
-              <div class="fs-sm text-muted">Mon-Fri: 8:00 AM - 6:00 PM</div>
+              <div class="fs-sm text-muted">Mo-Fr: 8:00-18:00 Uhr</div>
             </div>
           </div>
 
           <div class="d-flex align-items-start mb-3">
             <i class="ai-mail text-primary fs-3 me-3 mt-1"></i>
             <div>
-              <div class="h6 mb-1">Email</div>
+              <div class="h6 mb-1">E-Mail</div>
               <a href="mailto:service@medpac.de" class="text-decoration-none">service@medpac.de</a>
             </div>
           </div>
@@ -461,10 +484,10 @@
           <div class="d-flex align-items-start">
             <i class="ai-map-pin text-primary fs-3 me-3 mt-1"></i>
             <div>
-              <div class="h6 mb-1">Address</div>
+              <div class="h6 mb-1">Adresse</div>
               <p class="mb-0">
                 myCARE e.K.<br>
-                P.O. Box 19<br>
+                Postfach 19<br>
                 06877 Lutherstadt Wittenberg
               </p>
             </div>
@@ -477,56 +500,56 @@
               <form>
                 <div class="row g-3">
                   <div class="col-12">
-                    <label class="form-label" for="name">First and Last Name *</label>
+                    <label class="form-label" for="name">Vor- und Nachname *</label>
                     <input class="form-control form-control-lg" type="text" id="name" required>
                   </div>
 
                   <div class="col-sm-6">
-                    <label class="form-label" for="email">Email *</label>
+                    <label class="form-label" for="email">E-Mail *</label>
                     <input class="form-control form-control-lg" type="email" id="email" required>
                   </div>
 
                   <div class="col-sm-6">
-                    <label class="form-label" for="phone">Phone *</label>
+                    <label class="form-label" for="phone">Telefon *</label>
                     <input class="form-control form-control-lg" type="tel" id="phone" required>
                   </div>
 
                   <div class="col-12">
-                    <label class="form-label" for="address">Delivery Address</label>
-                    <input class="form-control form-control-lg" type="text" id="address" placeholder="Street, House Number">
+                    <label class="form-label" for="address">Lieferadresse</label>
+                    <input class="form-control form-control-lg" type="text" id="address" placeholder="Straße, Hausnummer">
                   </div>
 
                   <div class="col-sm-4">
-                    <input class="form-control form-control-lg" type="text" placeholder="Postal Code">
+                    <input class="form-control form-control-lg" type="text" placeholder="PLZ">
                   </div>
 
                   <div class="col-sm-8">
-                    <input class="form-control form-control-lg" type="text" placeholder="City">
+                    <input class="form-control form-control-lg" type="text" placeholder="Ort">
                   </div>
 
                   <div class="col-12">
-                    <label class="form-label" for="message">Message</label>
-                    <textarea class="form-control form-control-lg" id="message" rows="4" placeholder="Do you have questions? Write to us..."></textarea>
+                    <label class="form-label" for="message">Nachricht</label>
+                    <textarea class="form-control form-control-lg" id="message" rows="4" placeholder="Haben Sie Fragen? Schreiben Sie uns..."></textarea>
                   </div>
 
                   <div class="col-12">
                     <div class="form-check">
                       <input class="form-check-input" type="checkbox" id="privacy" required>
                       <label class="form-check-label fs-sm" for="privacy">
-                        I have read and accept the <a href="#" class="text-primary">Privacy Policy</a>. *
+                        Ich habe die <a href="#" class="text-primary">Datenschutzerklärung</a> gelesen und akzeptiere diese. *
                       </label>
                     </div>
                   </div>
 
                   <div class="col-12 pt-2">
                     <button class="btn btn-primary btn-lg w-100" type="submit">
-                      Send Request
+                      Anfrage senden
                       <i class="ai-send ms-2"></i>
                     </button>
                   </div>
 
                   <div class="col-12">
-                    <p class="fs-sm text-muted mb-0">* Required fields</p>
+                    <p class="fs-sm text-muted mb-0">* Pflichtfelder</p>
                   </div>
                 </div>
               </form>
@@ -542,9 +565,9 @@
       <div class="container py-md-2 py-lg-3 py-xl-5">
         <div class="row">
           <div class="col-lg-4 pb-4 pb-lg-0 mb-3 mb-lg-0">
-            <h2 class="h1 mb-3">Frequently Asked Questions</h2>
-            <p class="pb-2 mb-4">Have more questions? Call us or send us an email.</p>
-            <a class="btn btn-primary" href="#contact">Contact Us</a>
+            <h2 class="h1 mb-3">Häufig gestellte Fragen</h2>
+            <p class="pb-2 mb-4">Sie haben weitere Fragen? Rufen Sie uns an oder schreiben Sie uns eine E-Mail.</p>
+            <a class="btn btn-primary" href="#kontakt">Kontakt aufnehmen</a>
           </div>
 
           <div class="col-lg-8">
@@ -553,12 +576,12 @@
               <div class="accordion-item bg-light border-0 rounded-3 mb-3">
                 <h3 class="accordion-header">
                   <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true">
-                    How does ordering with MEDPAC work?
+                    Wie funktioniert die Bestellung bei MEDPAC?
                   </button>
                 </h3>
                 <div class="accordion-collapse collapse show" id="faq1" data-bs-parent="#faq">
                   <div class="accordion-body">
-                    You need a prescription from your doctor and a medication plan. Upload these documents or send them to us by mail. We take care of the rest and deliver your medications packaged in individual blisters every 14 days.
+                    Sie benötigen ein Rezept von Ihrem Arzt und einen Medikationsplan. Laden Sie diese Dokumente hoch oder senden Sie sie uns per Post. Wir kümmern uns um den Rest und liefern Ihre Medikamente alle 14 Tage verpackt in individuellen Blistern.
                   </div>
                 </div>
               </div>
@@ -566,12 +589,12 @@
               <div class="accordion-item bg-light border-0 rounded-3 mb-3">
                 <h3 class="accordion-header">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
-                    What does the MEDPAC service cost?
+                    Was kostet der MEDPAC-Service?
                   </button>
                 </h3>
                 <div class="accordion-collapse collapse" id="faq2" data-bs-parent="#faq">
                   <div class="accordion-body">
-                    The service costs €5.95 per delivery (every 14 days). Shipping within Germany is free. The costs for the medications themselves are billed separately through your prescription. With the first delivery, you receive the practical blister box free of charge.
+                    Der Service kostet 5,95€ pro Lieferung (alle 14 Tage). Der Versand innerhalb Deutschlands ist kostenlos. Die Kosten für die Medikamente selbst werden separat über Ihr Rezept abgerechnet. Bei der ersten Lieferung erhalten Sie die praktische Blister-Box kostenlos dazu.
                   </div>
                 </div>
               </div>
@@ -579,12 +602,12 @@
               <div class="accordion-item bg-light border-0 rounded-3 mb-3">
                 <h3 class="accordion-header">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
-                    Does my health insurance cover the costs?
+                    Übernimmt meine Krankenkasse die Kosten?
                   </button>
                 </h3>
                 <div class="accordion-collapse collapse" id="faq3" data-bs-parent="#faq">
                   <div class="accordion-body">
-                    Some health insurance companies cover the costs for the blister packaging service in full or in part. We recommend contacting your health insurance company directly. We are happy to support you with the appropriate documents.
+                    Einige Krankenkassen übernehmen die Kosten für den Verblisterungsservice ganz oder teilweise. Wir empfehlen, direkt bei Ihrer Krankenkasse nachzufragen. Gerne unterstützen wir Sie dabei mit entsprechenden Unterlagen.
                   </div>
                 </div>
               </div>
@@ -592,12 +615,12 @@
               <div class="accordion-item bg-light border-0 rounded-3 mb-3">
                 <h3 class="accordion-header">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
-                    Can I cancel the service at any time?
+                    Kann ich den Service jederzeit kündigen?
                   </button>
                 </h3>
                 <div class="accordion-collapse collapse" id="faq4" data-bs-parent="#faq">
                   <div class="accordion-body">
-                    Yes, you can cancel the MEDPAC service at any time without giving reasons. There is no minimum contract period or notice period. Simply inform us in time before the next delivery.
+                    Ja, Sie können den MEDPAC-Service jederzeit ohne Angabe von Gründen beenden. Es gibt keine Mindestlaufzeit oder Kündigungsfristen. Informieren Sie uns einfach rechtzeitig vor der nächsten Lieferung.
                   </div>
                 </div>
               </div>
@@ -605,12 +628,12 @@
               <div class="accordion-item bg-light border-0 rounded-3 mb-3">
                 <h3 class="accordion-header">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
-                    What happens if my medication changes?
+                    Was passiert, wenn sich meine Medikation ändert?
                   </button>
                 </h3>
                 <div class="accordion-collapse collapse" id="faq5" data-bs-parent="#faq">
                   <div class="accordion-body">
-                    Simply send us your new medication plan and the corresponding prescription. We will adjust your blister packaging accordingly. Please note a processing time of at least 14 days.
+                    Senden Sie uns einfach Ihren neuen Medikationsplan und das entsprechende Rezept zu. Wir passen Ihre Blisterverpackung entsprechend an. Bitte beachten Sie dabei eine Bearbeitungszeit von mindestens 14 Tagen.
                   </div>
                 </div>
               </div>
@@ -618,12 +641,12 @@
               <div class="accordion-item bg-light border-0 rounded-3">
                 <h3 class="accordion-header">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq6">
-                    How are my medications packaged?
+                    Wie werden meine Medikamente verpackt?
                   </button>
                 </h3>
                 <div class="accordion-collapse collapse" id="faq6" data-bs-parent="#faq">
                   <div class="accordion-body">
-                    Your medications are packaged using state-of-the-art blister packaging technology according to pharmaceutical standards. Each blister is clearly labeled with date, time, and time of intake. Our pharmacists check in advance for possible interactions.
+                    Ihre Medikamente werden mit modernster Verblisterungstechnologie nach pharmazeutischen Standards verpackt. Jeder Blister ist klar beschriftet mit Datum, Uhrzeit und Einnahmezeitpunkt. Unsere Apotheker prüfen vorab auf mögliche Wechselwirkungen.
                   </div>
                 </div>
               </div>
@@ -641,12 +664,12 @@
         <div class="position-absolute top-0 start-0 w-100 h-100 bg-primary opacity-10"></div>
         
         <div class="position-relative z-2 text-center py-lg-4">
-          <h2 class="display-4 mb-4">Free Blister Box with First Delivery!</h2>
-          <p class="fs-lg mb-4 pb-2">Start now with MEDPAC and receive the practical storage box for free.</p>
+          <h2 class="display-4 mb-4">Kostenlose Blister-Box zur ersten Lieferung!</h2>
+          <p class="fs-lg mb-4 pb-2">Starten Sie jetzt mit MEDPAC und erhalten Sie die praktische Aufbewahrungsbox gratis dazu.</p>
           
           <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center">
-            <a class="btn btn-primary btn-lg" href="#contact">
-              Sign Up Free Now
+            <a class="btn btn-primary btn-lg" href="#kontakt">
+              Jetzt kostenlos anmelden
               <i class="ai-arrow-right ms-2"></i>
             </a>
             <a class="btn btn-outline-primary btn-lg" href="tel:08008770120">
@@ -670,17 +693,17 @@
           <a class="navbar-brand d-inline-flex align-items-center mb-3" href="/">
             <span class="text-primary flex-shrink-0 me-2">
               <svg width="35" height="32" viewBox="0 0 36 33" xmlns="http://www.w3.org/2000/svg">
-                <path fill="#fff" d="M35.6,29c-1.1,3.4-5.4,4.4-7.9,1.9c-2.3-2.2-6.1-3.7-9.4-3.7c-3.1,0-7.5,1.8-10,4.1c-2.2,2-5.8,1.5-7.3-1.1c-1-1.8-1.2-4.1,0-6.2l0.6-1.1l0,0c0.6-0.7,4.4-5.2,12.5-5.7c0.5,1.8,2,3.1,3.9,3.1c2.2,0,4.1-1.9,4.1-4.2s-1.8-4.2-4.1-4.2c-2,0-3.6,1.4-4,3.3H7.7c-0.8,0-1.3-0.9-0.9-1.6l5.6-9.8c2.5-4.5,8.8-4.5,11.3,0L35.1,24C36,25.7,36.1,27.5,35.6,29z"/>
+                <path fill="currentColor" d="M35.6,29c-1.1,3.4-5.4,4.4-7.9,1.9c-2.3-2.2-6.1-3.7-9.4-3.7c-3.1,0-7.5,1.8-10,4.1c-2.2,2-5.8,1.5-7.3-1.1c-1-1.8-1.2-4.1,0-6.2l0.6-1.1l0,0c0.6-0.7,4.4-5.2,12.5-5.7c0.5,1.8,2,3.1,3.9,3.1c2.2,0,4.1-1.9,4.1-4.2s-1.8-4.2-4.1-4.2c-2,0-3.6,1.4-4,3.3H7.7c-0.8,0-1.3-0.9-0.9-1.6l5.6-9.8c2.5-4.5,8.8-4.5,11.3,0L35.1,24C36,25.7,36.1,27.5,35.6,29z"/>
               </svg>
             </span>
             <span class="text-white">MEDPAC</span>
           </a>
-          <p class="text-white opacity-70 pb-3 mb-4">Your reliable partner for individual medication packaging. Safety and convenience for your health.</p>
+          <p class="text-white opacity-70 pb-3 mb-4">Ihr zuverlässiger Partner für individuelle Medikamentenverpackung. Sicherheit und Komfort für Ihre Gesundheit.</p>
           
-          <h6 class="text-white mb-3">Subscribe to Newsletter</h6>
+          <h6 class="text-white mb-3">Newsletter abonnieren</h6>
           <form class="needs-validation" novalidate>
             <div class="input-group">
-              <input class="form-control" type="email" placeholder="Your Email" required>
+              <input class="form-control" type="email" placeholder="Ihre E-Mail" required>
               <button class="btn btn-primary" type="submit">
                 <i class="ai-send"></i>
               </button>
@@ -691,25 +714,25 @@
         <div class="col-lg-2 col-md-3 col-sm-6 offset-lg-1 mb-4 mb-md-0">
           <h6 class="text-white mb-3">Navigation</h6>
           <ul class="nav flex-column">
-            <li class="mb-2"><a class="nav-link p-0 text-white opacity-70" href="#how-it-works">How It Works</a></li>
-            <li class="mb-2"><a class="nav-link p-0 text-white opacity-70" href="#contact">Contact</a></li>
+            <li class="mb-2"><a class="nav-link p-0 text-white opacity-70" href="#wie-funktioniert">Wie funktioniert es</a></li>
+            <li class="mb-2"><a class="nav-link p-0 text-white opacity-70" href="#kontakt">Kontakt</a></li>
             <li class="mb-2"><a class="nav-link p-0 text-white opacity-70" href="#">Blog</a></li>
-            <li class="mb-2"><a class="nav-link p-0 text-white opacity-70" href="#">About Us</a></li>
+            <li class="mb-2"><a class="nav-link p-0 text-white opacity-70" href="#">Über uns</a></li>
           </ul>
         </div>
 
         <div class="col-lg-2 col-md-3 col-sm-6 mb-4 mb-md-0">
-          <h6 class="text-white mb-3">Legal</h6>
+          <h6 class="text-white mb-3">Rechtliches</h6>
           <ul class="nav flex-column">
-            <li class="mb-2"><a class="nav-link p-0 text-white opacity-70" href="#">Terms</a></li>
-            <li class="mb-2"><a class="nav-link p-0 text-white opacity-70" href="#">Privacy</a></li>
-            <li class="mb-2"><a class="nav-link p-0 text-white opacity-70" href="#">Imprint</a></li>
-            <li class="mb-2"><a class="nav-link p-0 text-white opacity-70" href="#">Withdrawal</a></li>
+            <li class="mb-2"><a class="nav-link p-0 text-white opacity-70" href="#">AGB</a></li>
+            <li class="mb-2"><a class="nav-link p-0 text-white opacity-70" href="#">Datenschutz</a></li>
+            <li class="mb-2"><a class="nav-link p-0 text-white opacity-70" href="#">Impressum</a></li>
+            <li class="mb-2"><a class="nav-link p-0 text-white opacity-70" href="#">Widerruf</a></li>
           </ul>
         </div>
 
         <div class="col-lg-3 col-md-6">
-          <h6 class="text-white mb-3">Contact</h6>
+          <h6 class="text-white mb-3">Kontakt</h6>
           <ul class="nav flex-column">
             <li class="mb-2 text-white opacity-70">
               <i class="ai-phone me-2"></i>
@@ -721,7 +744,7 @@
             </li>
             <li class="mb-3 text-white opacity-70">
               <i class="ai-map-pin me-2"></i>
-              P.O. Box 19<br>
+              Postfach 19<br>
               <span class="ms-4">06877 Lutherstadt Wittenberg</span>
             </li>
           </ul>
@@ -743,12 +766,10 @@
       <div class="border-top border-light pt-4">
         <div class="d-md-flex justify-content-between align-items-center text-center text-md-start">
           <p class="text-white opacity-70 mb-3 mb-md-0">
-            © 2025 MEDPAC. All rights reserved.
+            © 2025 MEDPAC. Alle Rechte vorbehalten.
           </p>
           <div class="d-flex justify-content-center gap-3">
-            <img src="https://abroadstours.com/static/img/footer/cards/1.png" alt="Visa card" loading="lazy">
-            <img src="https://abroadstours.com/static/img/footer/cards/2.png" alt="Mastercard" loading="lazy">
-            <img src="https://abroadstours.com/static/img/footer/cards/5.png" alt="PayPal" loading="lazy">
+            <img src="{% static 'img/payment-cards.png' %}" alt="Zahlungsmethoden" height="24">
           </div>
         </div>
       </div>
@@ -756,7 +777,7 @@
   </footer>
 
   <script>
-    // Prescription Upload Functionality
+    // Rezept-Upload Funktionalität
     document.getElementById('uploadBtn').addEventListener('click', function() {
       document.getElementById('fileInput').click();
     });
@@ -765,7 +786,7 @@
       const fileName = e.target.files[0]?.name;
       if (fileName) {
         document.getElementById('fileName').innerHTML = 
-          '<div class="alert alert-success d-flex align-items-center"><i class="ai-check-circle me-2"></i> ' + fileName + ' successfully uploaded</div>';
+          '<div class="alert alert-success d-flex align-items-center"><i class="ai-check-circle me-2"></i> ' + fileName + ' erfolgreich hochgeladen</div>';
       }
     });
   </script>
