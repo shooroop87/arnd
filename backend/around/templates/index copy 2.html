@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEDPAC - Individual Blister Packs for Your Medications</title>
+    <meta name="description" content="Get your medications precisely sorted by time and dosage in individual blister packs, delivered every 14 days to Germany and Austria.">
+    
+    <!-- Favicons -->
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    
+    <!-- Fonts & Styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-green: #2c5f2d;
+            --secondary-green: #4a8b4d;
+            --accent-yellow: #ffd700;
+            --light-bg: #f8f9fa;
+            --text-dark: #2d3436;
+            --text-gray: #636e72;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            color: var(--text-dark);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Navigation */
+        .navbar {
+            background: var(--white);
+            padding: 1.5rem 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar .container {
+            max-width: 1320px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--primary-green);
+            text-decoration: none;
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+            align-items: center;
+        }
+
+        .nav-menu a {
+            color: var(--text-dark);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-menu a:hover {
+            color: var(--primary-green);
+        }
+
+        .btn-primary {
+            background: var(--primary-green);
+            color: var(--white);
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            border: none;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .btn-primary:hover {
+            background: var(--secondary-green);
+            transform: translateY(-2px);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #2c5f2d 0%, #4a8b4d 100%);
+            padding: 6rem 2rem;
+            color: var(--white);
+        }
+
+        .hero .container {
+            max-width: 1320px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .hero-content h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero-content p {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+        }
+
+        .hero-badges {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .badge {
+            background: rgba(255,255,255,0.2);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+
+        .hero-stats {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            margin-top: 3rem;
+        }
+
+        .stats-number {
+            font-size: 3rem;
+            font-weight: 800;
+        }
+
+        .hero-image {
+            position: relative;
+        }
+
+        .hero-image img {
+            width: 100%;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+
+        /* Benefits Section */
+        .benefits {
+            padding: 5rem 2rem;
+            background: var(--light-bg);
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .section-title span {
+            color: var(--primary-green);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .section-title h2 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-top: 0.5rem;
+        }
+
+        .benefits-grid {
+            max-width: 1320px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .benefit-card {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            transition: transform 0.3s;
+        }
+
+        .benefit-card:hover {
+            transform: translateY(-8px);
+        }
+
+        .benefit-card h3 {
+            color: var(--primary-green);
+            margin: 1rem 0;
+        }
+
+        /* How It Works */
+        .how-it-works {
+            padding: 5rem 2rem;
+            background: var(--primary-green);
+            color: var(--white);
+        }
+
+        .how-it-works .container {
+            max-width: 1320px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .steps {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .step {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .step-number {
+            background: var(--accent-yellow);
+            color: var(--primary-green);
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            font-size: 1.5rem;
+            flex-shrink: 0;
+        }
+
+        /* Pricing */
+        .pricing {
+            padding: 5rem 2rem;
+        }
+
+        .pricing-card {
+            max-width: 600px;
+            margin: 0 auto;
+            background: var(--white);
+            padding: 3rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .price {
+            font-size: 3rem;
+            font-weight: 800;
+            color: var(--primary-green);
+            margin: 1rem 0;
+        }
+
+        .pricing-features {
+            list-style: none;
+            margin: 2rem 0;
+            text-align: left;
+        }
+
+        .pricing-features li {
+            padding: 0.75rem 0;
+            border-bottom: 1px solid var(--light-bg);
+        }
+
+        .pricing-features li:before {
+            content: "✓";
+            color: var(--primary-green);
+            font-weight: bold;
+            margin-right: 1rem;
+        }
+
+        /* Testimonials */
+        .testimonials {
+            padding: 5rem 2rem;
+            background: var(--light-bg);
+        }
+
+        .testimonial-grid {
+            max-width: 1320px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .testimonial-card {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+
+        .stars {
+            color: var(--accent-yellow);
+            margin-bottom: 1rem;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--primary-green);
+            color: var(--white);
+            padding: 4rem 2rem 2rem;
+        }
+
+        .footer-content {
+            max-width: 1320px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-bottom {
+            max-width: 1320px;
+            margin: 0 auto;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.2);
+            text-align: center;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero .container,
+            .how-it-works .container {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+
+            .nav-menu {
+                display: none;
+            }
+        }
+
+        /* Upload Button */
+        .btn-upload {
+            background: var(--accent-yellow);
+            color: var(--primary-green);
+            margin-left: 1rem;
+        }
+
+        .btn-upload:hover {
+            background: #ffed4e;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="/" class="logo">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="currentColor">
+                    <path d="M16 4L4 10v12l12 6 12-6V10L16 4zm0 2.5l9 4.5v9l-9 4.5-9-4.5v-9l9-4.5z"/>
+                </svg>
+                MEDPAC
+            </a>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#service">Service</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="btn-primary">Get Started</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badges">
+                    <span class="badge">🔒 Safety</span>
+                    <span class="badge">✓ Trust</span>
+                    <span class="badge">📦 Convenient</span>
+                </div>
+                <h1>Individual Blister Packs for Your Medications</h1>
+                <p>Your medications precisely sorted by time of intake and dosage. Delivered directly to your home every 14 days.</p>
+                <div style="display: flex; gap: 1rem;">
+                    <button class="btn-primary">Order Now</button>
+                    <button class="btn-primary btn-upload">
+                        📤 Upload Prescription
+                    </button>
+                </div>
+                <div class="hero-stats">
+                    <div>
+                        <div class="stats-number">4k+</div>
+                        <div>Satisfied Customers</div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="/api/placeholder/600/400" alt="Blister pack medication organization">
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits" id="about">
+        <div class="section-title">
+            <span>Our Advantages</span>
+            <h2>What MEDPAC Does for You</h2>
+        </div>
+        <div class="benefits-grid">
+            <div class="benefit-card">
+                <h3>⏱️ Time Savings</h3>
+                <p>No more manual sorting of medications. We handle everything for you professionally.</p>
+            </div>
+            <div class="benefit-card">
+                <h3>🛡️ Increased Safety</h3>
+                <p>Pharmaceutical-standard processing minimizes errors and ensures correct dosing.</p>
+            </div>
+            <div class="benefit-card">
+                <h3>✅ Error Prevention</h3>
+                <p>No mix-ups, no forgotten medications. Everything sorted clearly by intake time.</p>
+            </div>
+            <div class="benefit-card">
+                <h3>🎒 Practical for Travel</h3>
+                <p>Simply tear off the required blisters and take them with you - perfect for on the go.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works" id="service">
+        <div class="container">
+            <div>
+                <div class="section-title" style="text-align: left;">
+                    <span>Our Process</span>
+                    <h2>How It Works</h2>
+                </div>
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div>
+                            <h3>Request Prescription</h3>
+                            <p>Request the prescription for your medications and a copy of your medication plan from your doctor.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div>
+                            <h3>Complete Registration Form</h3>
+                            <p>Upload your prescription or send us the completed form together with your documents.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div>
+                            <h3>Enjoy MEDPAC Service</h3>
+                            <p>Receive your individual blister roll directly to your home every 14 days. Free blister box included!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="/api/placeholder/500/600" alt="How MEDPAC works">
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="pricing" id="pricing">
+        <div class="section-title">
+            <span>Pricing Information</span>
+            <h2>What Does MEDPAC Cost?</h2>
+        </div>
+        <div class="pricing-card">
+            <div class="price">€5.95</div>
+            <p style="font-size: 1.25rem; color: var(--text-gray);">per delivery</p>
+            <ul class="pricing-features">
+                <li>Individual blister roll every 14 days</li>
+                <li>Free shipping within Germany</li>
+                <li>Free blister box with first delivery</li>
+                <li>Medications billed separately</li>
+            </ul>
+            <p style="margin-top: 2rem; color: var(--text-gray);">
+                Check if your health insurance covers the costs.
+            </p>
+            <button class="btn-primary" style="margin-top: 2rem; width: 100%;">Get Started</button>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="section-title">
+            <span>Customer Reviews</span>
+            <h2>What Our Customers Say</h2>
+        </div>
+        <div class="testimonial-grid">
+            <div class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <p>"The MEDPAC service has made my life significantly easier. I no longer have to sort my tablets myself and always have the security that everything is correctly dosed."</p>
+                <strong>Maria Schmidt</strong><br>
+                <span style="color: var(--text-gray);">Patient</span>
+            </div>
+            <div class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <p>"As a caregiver, I save an enormous amount of time. I used to spend hours sorting medications. Now I can focus on actual care. Highly recommended!"</p>
+                <strong>Thomas Müller</strong><br>
+                <span style="color: var(--text-gray);">Family Caregiver</span>
+            </div>
+            <div class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <p>"MEDPAC is perfect for travel. I simply tear off the required blisters and have everything with me. No more worries about forgetting something. The service is reliable and professional."</p>
+                <strong>Anna Weber</strong><br>
+                <span style="color: var(--text-gray);">Satisfied Customer</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="footer-content">
+            <div>
+                <h3>MEDPAC</h3>
+                <p>Your trusted partner for medication management and blister pack services.</p>
+            </div>
+            <div>
+                <h4>Quick Links</h4>
+                <ul style="list-style: none;">
+                    <li><a href="#home" style="color: white; text-decoration: none;">Home</a></li>
+                    <li><a href="#about" style="color: white; text-decoration: none;">About</a></li>
+                    <li><a href="#service" style="color: white; text-decoration: none;">Service</a></li>
+                    <li><a href="#pricing" style="color: white; text-decoration: none;">Pricing</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Contact</h4>
+                <p>📞 0800 877 0120</p>
+                <p>✉️ service@medpac.de</p>
+                <p>📍 Postfach 19<br>06877 Lutherstadt Wittenberg</p>
+                <p>🕒 Mon-Fri: 8:00-18:00<br>Sat: 9:00-12:00</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 MEDPAC. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Upload prescription functionality
+        document.querySelector('.btn-upload').addEventListener('click', () => {
+            const input = document.createElement('input');
+            input.type = 'file';
+            input.accept = 'image/*,.pdf';
+            input.onchange = (e) => {
+                const file = e.target.files[0];
+                if (file) {
+                    alert(`✓ ${file.name} uploaded successfully!`);
+                }
+            };
+            input.click();
+        });
+    </script>
+</body>
+</html>
